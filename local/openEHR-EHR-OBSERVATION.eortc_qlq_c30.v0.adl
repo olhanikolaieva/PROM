@@ -1,0 +1,250 @@
+archetype (adl_version=1.4; uid=87354b94-7e27-49af-a22b-121536e8e822)
+	openEHR-EHR-OBSERVATION.eortc_qlq_c30.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			author = <
+			>
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["name"] = <"Olha Nikolaieva">
+		["email"] = <"olha.nikolaieva.med@gmail.com">
+		["organisation"] = <"University Hospital Basel">
+		["date"] = <"2025-05-14">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			copyright = <"© openEHR Foundation">
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			copyright = <"© openEHR Foundation">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"e1bf75f532bfab55ce5d25253fe72408">
+		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30)
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- ANY
+										value matches {
+											0.0|[local::at0005],
+											1.0|[local::at0006],
+											2.0|[local::at0007],
+											3.0|[local::at0008]
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30)">
+					description = <"EORTC QLQ C30">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"ANY">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Very much">
+					description = <"">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30) (en)">
+					description = <"*EORTC QLQ C30 (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"*ANY (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+			>
+		>
+		["fr"] = <
+			items = <
+				["at0000"] = <
+					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30) (en)">
+					description = <"*EORTC QLQ C30 (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"*ANY (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+			>
+		>
+		["it"] = <
+			items = <
+				["at0000"] = <
+					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30) (en)">
+					description = <"*EORTC QLQ C30 (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"*ANY (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+			>
+		>
+	>
