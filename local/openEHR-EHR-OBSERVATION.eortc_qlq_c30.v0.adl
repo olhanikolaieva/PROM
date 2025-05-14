@@ -12,13 +12,13 @@ language
 			author = <
 			>
 		>
-		["fr"] = <
-			language = <[ISO_639-1::fr]>
+		["it"] = <
+			language = <[ISO_639-1::it]>
 			author = <
 			>
 		>
-		["it"] = <
-			language = <[ISO_639-1::it]>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
 			author = <
 			>
 		>
@@ -26,10 +26,10 @@ language
 
 description
 	original_author = <
-		["name"] = <"Olha Nikolaieva">
-		["email"] = <"olha.nikolaieva.med@gmail.com">
-		["organisation"] = <"University Hospital Basel">
 		["date"] = <"2025-05-14">
+		["name"] = <"Olha Nikolaieva">
+		["organisation"] = <"University Hospital Basel">
+		["email"] = <"olha.nikolaieva.med@gmail.com">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -64,9 +64,6 @@ description
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
-		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
-		["custodian_namespace"] = <"org.openehr">
 		["references"] = <"Aaronson NK, Ahmedzai S, Bergman B, Bullinger M, Cull A, Duez NJ, et al. The European Organization for Research and Treatment of Cancer QLQ-C30: a quality-of-life instrument for use in international clinical trials in oncology.
 J Natl Cancer Inst. 1993 Mar 3;85(5):365–76. doi: 10.1093/jnci/85.5.365. PMID: 8433390.
 
@@ -79,7 +76,10 @@ Cocks K, King MT, Velikova G, Fayers PM, Brown JM. Evidence-based guidelines for
 J Clin Oncol. 2011 Jan 1;29(1):89–96. doi: 10.1200/JCO.2010.28.0107. PMID: 21098316.
 
 Fayers PM, Machin D. Quality of Life: The Assessment, Analysis and Interpretation of Patient-reported Outcomes (2nd ed.). Wiley, 2007.">
-		["MD5-CAM-1.0.1"] = <"7407f0efd7d9fb2fefa17f81ea4508bd">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"b028cce1e43b907156537b295dd47c87">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
@@ -349,6 +349,16 @@ definition
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0170] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0171] occurrences matches {0..1} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -1007,6 +1017,15 @@ ontology
 					text = <"Select the number between 1 and 7">
 					description = <"For the following questions please select the number between 1 and 7 that best applies to you">
 				>
+				["at0170"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0171"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
+					comment = <"e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
+				>
 			>
 		>
 		["de"] = <
@@ -1658,6 +1677,15 @@ ontology
 				["at0169"] = <
 					text = <"*Select the number between 1 and 7 (en)">
 					description = <"Bitte kreisen Sie bei den folgenden Fragen die Zahl zwischen 1 und 7 ein, die am besten auf Sie zutrifft:">
+				>
+				["at0170"] = <
+					text = <"*Item tree (en)">
+					description = <"@ internal @">
+				>
+				["at0171"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
+					comment = <"e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
 			>
 		>
@@ -2311,6 +2339,15 @@ ontology
 					text = <"*Select the number between 1 and 7 (en)">
 					description = <"Pour les questions suivantes, veuillez répondre en entourant le chiffre entre 1 et 7 qui s'applique le mieux à votre situation">
 				>
+				["at0170"] = <
+					text = <"*Item tree (en)">
+					description = <"@ internal @">
+				>
+				["at0171"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
+					comment = <"e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
+				>
 			>
 		>
 		["it"] = <
@@ -2962,6 +2999,15 @@ ontology
 				["at0169"] = <
 					text = <"*Select the number between 1 and 7 (en)">
 					description = <"Per le seguenti domande ponga un cerchio intorno al numero da 1 a 7 che meglio corrisponde alla Sua risposta">
+				>
+				["at0170"] = <
+					text = <"*Item tree (en)">
+					description = <"@ internal @">
+				>
+				["at0171"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
+					comment = <"e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
 			>
 		>
