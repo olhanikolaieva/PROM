@@ -55,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"464c0bf666f40c3297e82d6001c4c788">
+		["MD5-CAM-1.0.1"] = <"2788ba0930fae228edea8119e48cee8e">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
@@ -1657,7 +1657,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"*1. Strenuous activities (en)">
-					description = <"">
+					description = <"1. Avez-vous des difficultés à faire certains efforts physiques pénibles comme porter un sac à provisions chargé ou une valise ?">
 				>
 				["at0005"] = <
 					text = <"Pas du tout">
@@ -1677,7 +1677,7 @@ ontology
 				>
 				["at0009"] = <
 					text = <"*2. Long walk (en)">
-					description = <"">
+					description = <"2. Avez-vous des difficultés à faire une longue promenade ?">
 				>
 				["at0010"] = <
 					text = <"Pas du tout">
@@ -1697,7 +1697,7 @@ ontology
 				>
 				["at0014"] = <
 					text = <"*3. Short walk outside (en)">
-					description = <"">
+					description = <"3. Avez-vous des difficultés à faire un petit tour dehors ?">
 				>
 				["at0015"] = <
 					text = <"Pas du tout">
@@ -1717,7 +1717,7 @@ ontology
 				>
 				["at0019"] = <
 					text = <"*4. Stay in bed or chair (en)">
-					description = <"">
+					description = <"4. Êtes-vous obligé(e) de rester au lit ou dans un fauteuil pendant la journée ?">
 				>
 				["at0020"] = <
 					text = <"Pas du tout">
@@ -1737,7 +1737,7 @@ ontology
 				>
 				["at0024"] = <
 					text = <"*5. Help with eating, dressing, washing (en)">
-					description = <"">
+					description = <"5. Avez-vous besoin d'aide pour manger, vous habiller, faire votre toilette ou aller aux toilettes ?">
 				>
 				["at0025"] = <
 					text = <"Pas du tout">
@@ -1757,7 +1757,7 @@ ontology
 				>
 				["at0029"] = <
 					text = <"*6. Limited in work or daily activities (en)">
-					description = <"">
+					description = <"6. Avez-vous été gêné(e) pour faire votre travail ou vos activités de tous les jours ?">
 				>
 				["at0030"] = <
 					text = <"Pas du tout">
@@ -1777,7 +1777,7 @@ ontology
 				>
 				["at0034"] = <
 					text = <"*7. Limited in hobbies (en)">
-					description = <"">
+					description = <"7. Avez-vous été gêné(e) dans vos activités de loisirs ?">
 				>
 				["at0035"] = <
 					text = <"Pas du tout">
@@ -1797,7 +1797,7 @@ ontology
 				>
 				["at0039"] = <
 					text = <"*8. Short of breath (en)">
-					description = <"">
+					description = <"8. Avez-vous eu le souffle court ?">
 				>
 				["at0040"] = <
 					text = <"Pas du tout">
@@ -1817,7 +1817,7 @@ ontology
 				>
 				["at0044"] = <
 					text = <"*9. Pain (en)">
-					description = <"">
+					description = <"9. Avez-vous ressenti de la douleur ?">
 				>
 				["at0045"] = <
 					text = <"Pas du tout">
@@ -1837,7 +1837,7 @@ ontology
 				>
 				["at0049"] = <
 					text = <"*10. Need to rest (en)">
-					description = <"">
+					description = <"10. Avez-vous eu besoin de repos ?">
 				>
 				["at0050"] = <
 					text = <"Pas du tout">
@@ -1857,7 +1857,7 @@ ontology
 				>
 				["at0054"] = <
 					text = <"*11. Trouble sleeping (en)">
-					description = <"">
+					description = <"11. Avez-vous eu des difficultés à dormir ?">
 				>
 				["at0055"] = <
 					text = <"Pas du tout">
@@ -1877,7 +1877,7 @@ ontology
 				>
 				["at0059"] = <
 					text = <"*12. Weakness (en)">
-					description = <"">
+					description = <"12. Vous êtes-vous senti(e) faible ?">
 				>
 				["at0060"] = <
 					text = <"Pas du tout">
@@ -1897,7 +1897,7 @@ ontology
 				>
 				["at0064"] = <
 					text = <"*13. Lacked appetite (en)">
-					description = <"">
+					description = <"13. Avez-vous manqué d'appétit ?">
 				>
 				["at0065"] = <
 					text = <"Pas du tout">
@@ -1917,7 +1917,7 @@ ontology
 				>
 				["at0069"] = <
 					text = <"*14. Nausea (en)">
-					description = <"">
+					description = <"14. Avez-vous eu des nausées (mal au coeur) ?">
 				>
 				["at0070"] = <
 					text = <"Pas du tout">
@@ -1937,7 +1937,7 @@ ontology
 				>
 				["at0074"] = <
 					text = <"*15. Vomiting (en)">
-					description = <"">
+					description = <"15. Avez-vous vomi ?">
 				>
 				["at0075"] = <
 					text = <"Pas du tout">
@@ -1957,7 +1957,7 @@ ontology
 				>
 				["at0079"] = <
 					text = <"*16. Constipation (en)">
-					description = <"">
+					description = <"16. Avez-vous été constipé(e) ?">
 				>
 				["at0080"] = <
 					text = <"Pas du tout">
@@ -1977,7 +1977,7 @@ ontology
 				>
 				["at0084"] = <
 					text = <"*17. Diarrhea (en)">
-					description = <"">
+					description = <"17. Avez-vous eu de la diarrhée ?">
 				>
 				["at0085"] = <
 					text = <"Pas du tout">
@@ -1997,7 +1997,7 @@ ontology
 				>
 				["at0089"] = <
 					text = <"*18. Tiredness (en)">
-					description = <"">
+					description = <"18. Étiez-vous fatigué(e) ?">
 				>
 				["at0090"] = <
 					text = <"Pas du tout">
@@ -2017,7 +2017,7 @@ ontology
 				>
 				["at0094"] = <
 					text = <"*19. Pain interfere with daily activities (en)">
-					description = <"">
+					description = <"19. Des douleurs ont-elles perturbé vos activités quotidiennes ?">
 				>
 				["at0095"] = <
 					text = <"Pas du tout">
@@ -2037,7 +2037,7 @@ ontology
 				>
 				["at0099"] = <
 					text = <"*20. Concentrating (en)">
-					description = <"">
+					description = <"20. Avez-vous eu des difficultés à vous concentrer sur certaines choses, par exemple, pour lire le journal ou regarder la télévision ?">
 				>
 				["at0100"] = <
 					text = <"Pas du tout">
@@ -2057,7 +2057,7 @@ ontology
 				>
 				["at0104"] = <
 					text = <"*21. Tension (en)">
-					description = <"">
+					description = <"21. Vous êtes-vous senti(e) tendu(e) ?">
 				>
 				["at0105"] = <
 					text = <"Pas du tout">
@@ -2077,7 +2077,7 @@ ontology
 				>
 				["at0109"] = <
 					text = <"*22. Worry (en)">
-					description = <"">
+					description = <"22. Vous êtes-vous fait du souci ?">
 				>
 				["at0110"] = <
 					text = <"Pas du tout">
@@ -2097,7 +2097,7 @@ ontology
 				>
 				["at0114"] = <
 					text = <"*23. Irritation (en)">
-					description = <"">
+					description = <"23. Vous êtes-vous senti(e) irritable ?">
 				>
 				["at0115"] = <
 					text = <"Pas du tout">
@@ -2117,7 +2117,7 @@ ontology
 				>
 				["at0119"] = <
 					text = <"*24. Depressed (en)">
-					description = <"">
+					description = <"24. Vous êtes-vous senti(e) déprimé(e) ?">
 				>
 				["at0120"] = <
 					text = <"Pas du tout">
@@ -2137,7 +2137,7 @@ ontology
 				>
 				["at0124"] = <
 					text = <"*25. Difficulty remembering things (en)">
-					description = <"">
+					description = <"25. Avez-vous eu des difficultés à vous souvenir de certaines choses ?">
 				>
 				["at0125"] = <
 					text = <"Pas du tout">
@@ -2157,7 +2157,7 @@ ontology
 				>
 				["at0129"] = <
 					text = <"*26. Family life (en)">
-					description = <"">
+					description = <"26. Votre état physique ou votre traitement médical vous ont-ils gêné(e) dans votre vie familiale ?">
 				>
 				["at0130"] = <
 					text = <"Pas du tout">
@@ -2177,7 +2177,7 @@ ontology
 				>
 				["at0134"] = <
 					text = <"*27. Social life (en)">
-					description = <"">
+					description = <"27. Votre état physique ou votre traitement médical vous ont-ils gêné(e) dans vos activités sociales (par exemple, sortir avec des amis, aller au cinéma... ) ?">
 				>
 				["at0135"] = <
 					text = <"Pas du tout">
@@ -2197,7 +2197,7 @@ ontology
 				>
 				["at0139"] = <
 					text = <"*28. Financial difficulties (en)">
-					description = <"">
+					description = <"28. Votre état physique ou votre traitement médical vous ont-ils causé des problèmes financiers ?">
 				>
 				["at0140"] = <
 					text = <"Pas du tout">
@@ -2217,7 +2217,7 @@ ontology
 				>
 				["at0144"] = <
 					text = <"*29. Overall heath rate (en)">
-					description = <"">
+					description = <"29. Comment évalueriez-vous votre état de santé au cours de la semaine passée ?">
 				>
 				["at0146"] = <
 					text = <"1. Très mauvaise">
@@ -2249,7 +2249,7 @@ ontology
 				>
 				["at0160"] = <
 					text = <"*30. Overall quality of life rate (en)">
-					description = <"">
+					description = <"30. Comment évalueriez-vous l'ensemble de votre qualité de vie au cours de la semaine passée ?">
 				>
 				["at0161"] = <
 					text = <"1. Très mauvaise">
@@ -2281,11 +2281,11 @@ ontology
 				>
 				["at0168"] = <
 					text = <"*During the past week: (en)">
-					description = <"">
+					description = <"Au cours de la semaine passée :">
 				>
 				["at0169"] = <
 					text = <"*Select the number between 1 and 7 (en)">
-					description = <"">
+					description = <"Pour les questions suivantes, veuillez répondre en entourant le chiffre entre 1 et 7 qui s'applique le mieux à votre situation">
 				>
 			>
 		>
