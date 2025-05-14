@@ -35,18 +35,30 @@ description
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
+			purpose = <"*To record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
+			keywords = <"*EORTC QLQ C30, PROM, quality of life, cancer, oncology. (en)", ...>
 			copyright = <"© openEHR Foundation">
+			use = <"*Use to record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"To record the results for each component parameter for the EORTC quality of life questionnaire. ">
+			keywords = <"EORTC QLQ C30, PROM, quality of life, cancer, oncology.", ...>
+			use = <"Use to record the results for each component parameter for the EORTC quality of life questionnaire. ">
 		>
 		["it"] = <
 			language = <[ISO_639-1::it]>
+			purpose = <"*To record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
+			keywords = <"*EORTC QLQ C30, PROM, quality of life, cancer, oncology. (en)", ...>
 			copyright = <"© openEHR Foundation">
+			use = <"*Use to record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
 		>
 		["fr"] = <
 			language = <[ISO_639-1::fr]>
+			purpose = <"*To record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
+			keywords = <"*EORTC QLQ C30, PROM, quality of life, cancer, oncology. (en)", ...>
 			copyright = <"© openEHR Foundation">
+			use = <"*Use to record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
 		>
 	>
 	other_details = <
@@ -55,7 +67,19 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d0660442b2936f3d0cd06a388beb186b">
+		["references"] = <"Aaronson NK, Ahmedzai S, Bergman B, Bullinger M, Cull A, Duez NJ, et al. The European Organization for Research and Treatment of Cancer QLQ-C30: a quality-of-life instrument for use in international clinical trials in oncology.
+J Natl Cancer Inst. 1993 Mar 3;85(5):365–76. doi: 10.1093/jnci/85.5.365. PMID: 8433390.
+
+EORTC QLQ-C30 Scoring Manual (3rd Edition). Fayers PM, Aaronson NK, Bjordal K, Groenvold M, Curran D, Bottomley A; on behalf of the EORTC Quality of Life Group.
+Published by the European Organisation for Research and Treatment of Cancer, Brussels, 2001. Available upon request from EORTC QLG: https://qol.eortc.org/manuals/
+
+Official EORTC QLQ-C30 Questionnaire and Translations https://qol.eortc.org/questionnaire/eortc-qlq-c30/
+
+Cocks K, King MT, Velikova G, Fayers PM, Brown JM. Evidence-based guidelines for determination of sample size and interpretation of the European Organisation for the Research and Treatment of Cancer Quality of Life Questionnaire Core 30.
+J Clin Oncol. 2011 Jan 1;29(1):89–96. doi: 10.1200/JCO.2010.28.0107. PMID: 21098316.
+
+Fayers PM, Machin D. Quality of Life: The Assessment, Analysis and Interpretation of Patient-reported Outcomes (2nd ed.). Wiley, 2007.">
+		["MD5-CAM-1.0.1"] = <"7407f0efd7d9fb2fefa17f81ea4508bd">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
@@ -337,7 +361,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30)">
-					description = <"EORTC QLQ C30">
+					description = <"The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains.">
 				>
 				["at0001"] = <
 					text = <"History">
@@ -989,7 +1013,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30) (en)">
-					description = <"*EORTC QLQ C30 (en)">
+					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
 					text = <"History">
@@ -1641,7 +1665,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30) (en)">
-					description = <"*EORTC QLQ C30 (en)">
+					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
 					text = <"History">
@@ -2293,7 +2317,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30) (en)">
-					description = <"*EORTC QLQ C30 (en)">
+					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
 					text = <"History">
