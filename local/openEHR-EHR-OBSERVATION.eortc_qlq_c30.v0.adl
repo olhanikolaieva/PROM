@@ -55,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5b604210b2f54cba452257fa76ac69a7">
+		["MD5-CAM-1.0.1"] = <"f30d07a62b58e7788d7d5756d1ccdf66">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
@@ -295,15 +295,23 @@ definition
 									ELEMENT[at0144] occurrences matches {0..1} matches {    -- 29. Overall heath rate
 										value matches {
 											1.0|[local::at0146],
-											7.0|[local::at0154]
+											2.0|[local::at0154],
+											3.0|[local::at0155],
+											4.0|[local::at0156],
+											5.0|[local::at0157],
+											6.0|[local::at0158],
+											7.0|[local::at0159]
 										}
 									}
-									ELEMENT[at0149] occurrences matches {0..1} matches {    -- 30. Overall quality of life rate
+									ELEMENT[at0160] occurrences matches {0..1} matches {    -- 30. Overall quality of life rate
 										value matches {
-											0.0|[local::at0150],
-											1.0|[local::at0151],
-											2.0|[local::at0152],
-											3.0|[local::at0153]
+											1.0|[local::at0161],
+											2.0|[local::at0162],
+											3.0|[local::at0163],
+											4.0|[local::at0164],
+											5.0|[local::at0165],
+											6.0|[local::at0166],
+											7.0|[local::at0167]
 										}
 									}
 								}
@@ -900,31 +908,63 @@ ontology
 					description = <"">
 				>
 				["at0146"] = <
-					text = <"Very poor">
-					description = <"">
-				>
-				["at0149"] = <
-					text = <"30. Overall quality of life rate">
-					description = <"">
-				>
-				["at0150"] = <
-					text = <"Not at all">
-					description = <"">
-				>
-				["at0151"] = <
-					text = <"A little">
-					description = <"">
-				>
-				["at0152"] = <
-					text = <"Quite a bit">
-					description = <"">
-				>
-				["at0153"] = <
-					text = <"Very much">
+					text = <"1. Very poor">
 					description = <"">
 				>
 				["at0154"] = <
-					text = <"Worst pain imaginable">
+					text = <"2.">
+					description = <"">
+				>
+				["at0155"] = <
+					text = <"3.">
+					description = <"">
+				>
+				["at0156"] = <
+					text = <"4.">
+					description = <"">
+				>
+				["at0157"] = <
+					text = <"5.">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"6.">
+					description = <"">
+				>
+				["at0159"] = <
+					text = <"7. Excellent">
+					description = <"">
+				>
+				["at0160"] = <
+					text = <"30. Overall quality of life rate">
+					description = <"">
+				>
+				["at0161"] = <
+					text = <"1. Very poor">
+					description = <"">
+				>
+				["at0162"] = <
+					text = <"2.">
+					description = <"">
+				>
+				["at0163"] = <
+					text = <"3.">
+					description = <"">
+				>
+				["at0164"] = <
+					text = <"4.">
+					description = <"">
+				>
+				["at0165"] = <
+					text = <"5.">
+					description = <"">
+				>
+				["at0166"] = <
+					text = <"6.">
+					description = <"">
+				>
+				["at0167"] = <
+					text = <"7. Excellent">
 					description = <"">
 				>
 			>
@@ -1512,31 +1552,63 @@ ontology
 					description = <"">
 				>
 				["at0146"] = <
-					text = <"Wenig">
-					description = <"">
-				>
-				["at0149"] = <
-					text = <"*30. Overall quality of life rate (en)">
-					description = <"">
-				>
-				["at0150"] = <
-					text = <"Überhaupt nicht">
-					description = <"">
-				>
-				["at0151"] = <
-					text = <"Wenig">
-					description = <"">
-				>
-				["at0152"] = <
-					text = <"Mässig">
-					description = <"">
-				>
-				["at0153"] = <
-					text = <"Sehr">
+					text = <"1. Sehr schlecht">
 					description = <"">
 				>
 				["at0154"] = <
-					text = <"*Worst pain imaginable (en)">
+					text = <"2.">
+					description = <"">
+				>
+				["at0155"] = <
+					text = <"3.">
+					description = <"">
+				>
+				["at0156"] = <
+					text = <"4.">
+					description = <"">
+				>
+				["at0157"] = <
+					text = <"5.">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"6.">
+					description = <"">
+				>
+				["at0159"] = <
+					text = <"7. Ausgezeichnet">
+					description = <"">
+				>
+				["at0160"] = <
+					text = <"*30. Overall quality of life rate (en)">
+					description = <"">
+				>
+				["at0161"] = <
+					text = <"1. Sehr schlecht">
+					description = <"">
+				>
+				["at0162"] = <
+					text = <"2.">
+					description = <"">
+				>
+				["at0163"] = <
+					text = <"3.">
+					description = <"">
+				>
+				["at0164"] = <
+					text = <"4.">
+					description = <"">
+				>
+				["at0165"] = <
+					text = <"5.">
+					description = <"">
+				>
+				["at0166"] = <
+					text = <"6.">
+					description = <"">
+				>
+				["at0167"] = <
+					text = <"7. Ausgezeichnet">
 					description = <"">
 				>
 			>
@@ -2124,31 +2196,63 @@ ontology
 					description = <"">
 				>
 				["at0146"] = <
-					text = <"Un peu">
-					description = <"">
-				>
-				["at0149"] = <
-					text = <"*30. Overall quality of life rate (en)">
-					description = <"">
-				>
-				["at0150"] = <
-					text = <"Pas du tout">
-					description = <"">
-				>
-				["at0151"] = <
-					text = <"Un peu">
-					description = <"">
-				>
-				["at0152"] = <
-					text = <"Assez">
-					description = <"">
-				>
-				["at0153"] = <
-					text = <"Beaucoup">
+					text = <"1. Très mauvaise">
 					description = <"">
 				>
 				["at0154"] = <
-					text = <"*Worst pain imaginable (en)">
+					text = <"2.">
+					description = <"">
+				>
+				["at0155"] = <
+					text = <"3.">
+					description = <"">
+				>
+				["at0156"] = <
+					text = <"4.">
+					description = <"">
+				>
+				["at0157"] = <
+					text = <"5.">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"6.">
+					description = <"">
+				>
+				["at0159"] = <
+					text = <"7. Excellente">
+					description = <"">
+				>
+				["at0160"] = <
+					text = <"*30. Overall quality of life rate (en)">
+					description = <"">
+				>
+				["at0161"] = <
+					text = <"1. Très mauvaise">
+					description = <"">
+				>
+				["at0162"] = <
+					text = <"2.">
+					description = <"">
+				>
+				["at0163"] = <
+					text = <"3.">
+					description = <"">
+				>
+				["at0164"] = <
+					text = <"4.">
+					description = <"">
+				>
+				["at0165"] = <
+					text = <"5.">
+					description = <"">
+				>
+				["at0166"] = <
+					text = <"6.">
+					description = <"">
+				>
+				["at0167"] = <
+					text = <"7. Excellente">
 					description = <"">
 				>
 			>
@@ -2736,31 +2840,63 @@ ontology
 					description = <"">
 				>
 				["at0146"] = <
-					text = <"Un po'">
-					description = <"">
-				>
-				["at0149"] = <
-					text = <"*30. Overall quality of life rate (en)">
-					description = <"">
-				>
-				["at0150"] = <
-					text = <"No">
-					description = <"">
-				>
-				["at0151"] = <
-					text = <"Un po'">
-					description = <"">
-				>
-				["at0152"] = <
-					text = <"Parecchio">
-					description = <"">
-				>
-				["at0153"] = <
-					text = <"Moltissimo">
+					text = <"1. Pessima">
 					description = <"">
 				>
 				["at0154"] = <
-					text = <"*Worst pain imaginable (en)">
+					text = <"2.">
+					description = <"">
+				>
+				["at0155"] = <
+					text = <"3.">
+					description = <"">
+				>
+				["at0156"] = <
+					text = <"4.">
+					description = <"">
+				>
+				["at0157"] = <
+					text = <"5.">
+					description = <"">
+				>
+				["at0158"] = <
+					text = <"6.">
+					description = <"">
+				>
+				["at0159"] = <
+					text = <"7. Ottima">
+					description = <"">
+				>
+				["at0160"] = <
+					text = <"*30. Overall quality of life rate (en)">
+					description = <"">
+				>
+				["at0161"] = <
+					text = <"1. Pessima">
+					description = <"">
+				>
+				["at0162"] = <
+					text = <"2.">
+					description = <"">
+				>
+				["at0163"] = <
+					text = <"3.">
+					description = <"">
+				>
+				["at0164"] = <
+					text = <"4.">
+					description = <"">
+				>
+				["at0165"] = <
+					text = <"5.">
+					description = <"">
+				>
+				["at0166"] = <
+					text = <"6.">
+					description = <"">
+				>
+				["at0167"] = <
+					text = <"7. Ottima">
 					description = <"">
 				>
 			>
