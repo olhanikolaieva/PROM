@@ -12,13 +12,13 @@ language
 			author = <
 			>
 		>
-		["fr"] = <
-			language = <[ISO_639-1::fr]>
+		["it"] = <
+			language = <[ISO_639-1::it]>
 			author = <
 			>
 		>
-		["it"] = <
-			language = <[ISO_639-1::it]>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
 			author = <
 			>
 		>
@@ -26,10 +26,10 @@ language
 
 description
 	original_author = <
-		["name"] = <"Olha Nikolaieva">
-		["email"] = <"olha.nikolaieva.med@gmail.com">
-		["organisation"] = <"University Hospital Basel">
 		["date"] = <"2025-05-14">
+		["name"] = <"Olha Nikolaieva">
+		["organisation"] = <"University Hospital Basel">
+		["email"] = <"olha.nikolaieva.med@gmail.com">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -64,9 +64,6 @@ description
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
-		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
-		["custodian_namespace"] = <"org.openehr">
 		["references"] = <"Aaronson NK, Ahmedzai S, Bergman B, Bullinger M, Cull A, Duez NJ, et al. The European Organization for Research and Treatment of Cancer QLQ-C30: a quality-of-life instrument for use in international clinical trials in oncology.
 J Natl Cancer Inst. 1993 Mar 3;85(5):365–76. doi: 10.1093/jnci/85.5.365. PMID: 8433390.
 
@@ -79,7 +76,10 @@ Cocks K, King MT, Velikova G, Fayers PM, Brown JM. Evidence-based guidelines for
 J Clin Oncol. 2011 Jan 1;29(1):89–96. doi: 10.1200/JCO.2010.28.0107. PMID: 21098316.
 
 Fayers PM, Machin D. Quality of Life: The Assessment, Analysis and Interpretation of Patient-reported Outcomes (2nd ed.). Wiley, 2007.">
-		["MD5-CAM-1.0.1"] = <"7407f0efd7d9fb2fefa17f81ea4508bd">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"74f966e8e6ace8086059e08b426f247d">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
@@ -342,6 +342,205 @@ definition
 													5.0|[local::at0165],
 													6.0|[local::at0166],
 													7.0|[local::at0167]
+												}
+											}
+										}
+									}
+									CLUSTER[at0170] occurrences matches {0..1} matches {    -- Scoring
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0171] occurrences matches {0..1} matches {    -- Global health status / QoL
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..7.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0172] occurrences matches {0..1} matches {    -- Physical functioning
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..4.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0173] occurrences matches {0..1} matches {    -- Emotional functioning
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..4.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0174] occurrences matches {0..1} matches {    -- Cognitive functioning
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..4.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0175] occurrences matches {0..1} matches {    -- Social functioning
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..4.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0176] occurrences matches {0..1} matches {    -- Fatigue
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..4.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0177] occurrences matches {0..1} matches {    -- Nausea and vomiting
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..4.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0178] occurrences matches {0..1} matches {    -- Score
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..4.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0179] occurrences matches {0..1} matches {    -- Pain
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..4.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0180] occurrences matches {0..1} matches {    -- Dyspnoea
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..4.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0181] occurrences matches {0..1} matches {    -- Insomnia
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..4.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0182] occurrences matches {0..1} matches {    -- Appetite loss
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..4.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0183] occurrences matches {0..1} matches {    -- Constipation
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..4.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0184] occurrences matches {0..1} matches {    -- Diarrhoea
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..4.0|>
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0185] occurrences matches {0..1} matches {    -- Financial difficulties
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::507]>
+														list = <
+															["1"] = <
+																units = <"1">
+																magnitude = <|1.0..4.0|>
+															>
+														>
+													>
 												}
 											}
 										}
@@ -1007,6 +1206,70 @@ ontology
 					text = <"Select the number between 1 and 7">
 					description = <"For the following questions please select the number between 1 and 7 that best applies to you">
 				>
+				["at0170"] = <
+					text = <"Scoring">
+					description = <"">
+				>
+				["at0171"] = <
+					text = <"Global health status / QoL">
+					description = <"">
+				>
+				["at0172"] = <
+					text = <"Physical functioning">
+					description = <"">
+				>
+				["at0173"] = <
+					text = <"Emotional functioning">
+					description = <"">
+				>
+				["at0174"] = <
+					text = <"Cognitive functioning">
+					description = <"">
+				>
+				["at0175"] = <
+					text = <"Social functioning">
+					description = <"">
+				>
+				["at0176"] = <
+					text = <"Fatigue">
+					description = <"">
+				>
+				["at0177"] = <
+					text = <"Nausea and vomiting">
+					description = <"">
+				>
+				["at0178"] = <
+					text = <"Score">
+					description = <"">
+				>
+				["at0179"] = <
+					text = <"Pain">
+					description = <"">
+				>
+				["at0180"] = <
+					text = <"Dyspnoea">
+					description = <"">
+				>
+				["at0181"] = <
+					text = <"Insomnia">
+					description = <"">
+				>
+				["at0182"] = <
+					text = <"Appetite loss">
+					description = <"">
+				>
+				["at0183"] = <
+					text = <"Constipation">
+					description = <"">
+				>
+				["at0184"] = <
+					text = <"Diarrhoea">
+					description = <"">
+				>
+				["at0185"] = <
+					text = <"Financial difficulties">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
@@ -1658,6 +1921,70 @@ ontology
 				["at0169"] = <
 					text = <"*Select the number between 1 and 7 (en)">
 					description = <"Bitte kreisen Sie bei den folgenden Fragen die Zahl zwischen 1 und 7 ein, die am besten auf Sie zutrifft:">
+				>
+				["at0170"] = <
+					text = <"*Scoring (en)">
+					description = <"">
+				>
+				["at0171"] = <
+					text = <"*Global health status / QoL (en)">
+					description = <"">
+				>
+				["at0172"] = <
+					text = <"*Physical functioning (en)">
+					description = <"">
+				>
+				["at0173"] = <
+					text = <"*Emotional functioning (en)">
+					description = <"">
+				>
+				["at0174"] = <
+					text = <"*Cognitive functioning (en)">
+					description = <"">
+				>
+				["at0175"] = <
+					text = <"*Social functioning (en)">
+					description = <"">
+				>
+				["at0176"] = <
+					text = <"*Fatigue (en)">
+					description = <"">
+				>
+				["at0177"] = <
+					text = <"*Nausea and vomiting (en)">
+					description = <"">
+				>
+				["at0178"] = <
+					text = <"*Score (en)">
+					description = <"">
+				>
+				["at0179"] = <
+					text = <"*Pain (en)">
+					description = <"">
+				>
+				["at0180"] = <
+					text = <"*Dyspnoea (en)">
+					description = <"">
+				>
+				["at0181"] = <
+					text = <"*Insomnia (en)">
+					description = <"">
+				>
+				["at0182"] = <
+					text = <"*Appetite loss (en)">
+					description = <"">
+				>
+				["at0183"] = <
+					text = <"*Constipation (en)">
+					description = <"">
+				>
+				["at0184"] = <
+					text = <"*Diarrhoea (en)">
+					description = <"">
+				>
+				["at0185"] = <
+					text = <"*Financial difficulties (en)">
+					description = <"">
 				>
 			>
 		>
@@ -2311,6 +2638,70 @@ ontology
 					text = <"*Select the number between 1 and 7 (en)">
 					description = <"Pour les questions suivantes, veuillez répondre en entourant le chiffre entre 1 et 7 qui s'applique le mieux à votre situation">
 				>
+				["at0170"] = <
+					text = <"*Scoring (en)">
+					description = <"">
+				>
+				["at0171"] = <
+					text = <"*Global health status / QoL (en)">
+					description = <"">
+				>
+				["at0172"] = <
+					text = <"*Physical functioning (en)">
+					description = <"">
+				>
+				["at0173"] = <
+					text = <"*Emotional functioning (en)">
+					description = <"">
+				>
+				["at0174"] = <
+					text = <"*Cognitive functioning (en)">
+					description = <"">
+				>
+				["at0175"] = <
+					text = <"*Social functioning (en)">
+					description = <"">
+				>
+				["at0176"] = <
+					text = <"*Fatigue (en)">
+					description = <"">
+				>
+				["at0177"] = <
+					text = <"*Nausea and vomiting (en)">
+					description = <"">
+				>
+				["at0178"] = <
+					text = <"*Score (en)">
+					description = <"">
+				>
+				["at0179"] = <
+					text = <"*Pain (en)">
+					description = <"">
+				>
+				["at0180"] = <
+					text = <"*Dyspnoea (en)">
+					description = <"">
+				>
+				["at0181"] = <
+					text = <"*Insomnia (en)">
+					description = <"">
+				>
+				["at0182"] = <
+					text = <"*Appetite loss (en)">
+					description = <"">
+				>
+				["at0183"] = <
+					text = <"*Constipation (en)">
+					description = <"">
+				>
+				["at0184"] = <
+					text = <"*Diarrhoea (en)">
+					description = <"">
+				>
+				["at0185"] = <
+					text = <"*Financial difficulties (en)">
+					description = <"">
+				>
 			>
 		>
 		["it"] = <
@@ -2962,6 +3353,70 @@ ontology
 				["at0169"] = <
 					text = <"*Select the number between 1 and 7 (en)">
 					description = <"Per le seguenti domande ponga un cerchio intorno al numero da 1 a 7 che meglio corrisponde alla Sua risposta">
+				>
+				["at0170"] = <
+					text = <"*Scoring (en)">
+					description = <"">
+				>
+				["at0171"] = <
+					text = <"*Global health status / QoL (en)">
+					description = <"">
+				>
+				["at0172"] = <
+					text = <"*Physical functioning (en)">
+					description = <"">
+				>
+				["at0173"] = <
+					text = <"*Emotional functioning (en)">
+					description = <"">
+				>
+				["at0174"] = <
+					text = <"*Cognitive functioning (en)">
+					description = <"">
+				>
+				["at0175"] = <
+					text = <"*Social functioning (en)">
+					description = <"">
+				>
+				["at0176"] = <
+					text = <"*Fatigue (en)">
+					description = <"">
+				>
+				["at0177"] = <
+					text = <"*Nausea and vomiting (en)">
+					description = <"">
+				>
+				["at0178"] = <
+					text = <"*Score (en)">
+					description = <"">
+				>
+				["at0179"] = <
+					text = <"*Pain (en)">
+					description = <"">
+				>
+				["at0180"] = <
+					text = <"*Dyspnoea (en)">
+					description = <"">
+				>
+				["at0181"] = <
+					text = <"*Insomnia (en)">
+					description = <"">
+				>
+				["at0182"] = <
+					text = <"*Appetite loss (en)">
+					description = <"">
+				>
+				["at0183"] = <
+					text = <"*Constipation (en)">
+					description = <"">
+				>
+				["at0184"] = <
+					text = <"*Diarrhoea (en)">
+					description = <"">
+				>
+				["at0185"] = <
+					text = <"*Financial difficulties (en)">
+					description = <"">
 				>
 			>
 		>
