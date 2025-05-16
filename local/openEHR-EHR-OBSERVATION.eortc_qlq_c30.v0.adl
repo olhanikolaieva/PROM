@@ -79,7 +79,7 @@ Fayers PM, Machin D. Quality of Life: The Assessment, Analysis and Interpretatio
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"74f966e8e6ace8086059e08b426f247d">
+		["MD5-CAM-1.0.1"] = <"7406fc331707cb0fe1db879d4f96f92b">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
@@ -548,6 +548,16 @@ definition
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0186] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0187] occurrences matches {0..1} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -1270,6 +1280,15 @@ ontology
 					text = <"Financial difficulties">
 					description = <"">
 				>
+				["at0186"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0187"] = <
+					text = <"Extension">
+					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
 			>
 		>
 		["de"] = <
@@ -1985,6 +2004,15 @@ ontology
 				["at0185"] = <
 					text = <"*Financial difficulties (en)">
 					description = <"">
+				>
+				["at0186"] = <
+					text = <"*Item tree (en)">
+					description = <"@ internal @">
+				>
+				["at0187"] = <
+					text = <"Erweiterung">
+					description = <"Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.">
+					comment = <"Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen.">
 				>
 			>
 		>
@@ -2702,6 +2730,15 @@ ontology
 					text = <"*Financial difficulties (en)">
 					description = <"">
 				>
+				["at0186"] = <
+					text = <"*Item tree (en)">
+					description = <"@ internal @">
+				>
+				["at0187"] = <
+					text = <"Extension">
+					description = <"Informations supplémentaires nécessaires pour étendre le modèle au contenu local ou pour l'aligner sur d'autres modèles de référence ou formalismes.">
+					comment = <"Par exemple : exigences locales en matière d'information ou métadonnées supplémentaires pour s'aligner sur FHIR.">
+				>
 			>
 		>
 		["it"] = <
@@ -3417,6 +3454,15 @@ ontology
 				["at0185"] = <
 					text = <"*Financial difficulties (en)">
 					description = <"">
+				>
+				["at0186"] = <
+					text = <"*Item tree (en)">
+					description = <"@ internal @">
+				>
+				["at0187"] = <
+					text = <"Extension">
+					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
 				>
 			>
 		>
