@@ -79,7 +79,7 @@ Fayers PM, Machin D. Quality of Life: The Assessment, Analysis and Interpretatio
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"478d13d49914d4774bafeaee84f29c52">
+		["MD5-CAM-1.0.1"] = <"fbd0cfb980d0d57e610ec473fa8b90cf">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
@@ -2661,63 +2661,63 @@ ontology
 				>
 				["at0171"] = <
 					text = <"QL2 scale">
-					description = <"*Global health status/Quality of life  (en)">
+					description = <"État de santé global / Qualité de vie">
 				>
 				["at0172"] = <
 					text = <"PF2 scale">
-					description = <"">
+					description = <"Fonctionnement physique">
 				>
 				["at0173"] = <
 					text = <"EF scale">
-					description = <"">
+					description = <"Fonctionnement émotionnel">
 				>
 				["at0174"] = <
 					text = <"CF scale">
-					description = <"">
+					description = <"Fonctionnement cognitif">
 				>
 				["at0175"] = <
 					text = <"SF scale">
-					description = <"">
+					description = <"Fonctionnement social">
 				>
 				["at0176"] = <
 					text = <"FA scale">
-					description = <"">
+					description = <"Fatigue">
 				>
 				["at0177"] = <
 					text = <"NV scale">
-					description = <"">
+					description = <"Nausées et vomissements">
 				>
 				["at0178"] = <
 					text = <"RF2 scale">
-					description = <"">
+					description = <"Fonctionnement dans le rôle">
 				>
 				["at0179"] = <
 					text = <"PA scale">
-					description = <"">
+					description = <"Douleur">
 				>
 				["at0180"] = <
 					text = <"DY scale">
-					description = <"">
+					description = <"Dyspnée">
 				>
 				["at0181"] = <
 					text = <"SL scale">
-					description = <"">
+					description = <"Insomnie">
 				>
 				["at0182"] = <
 					text = <"AP scale">
-					description = <"">
+					description = <"Perte d’appétit">
 				>
 				["at0183"] = <
 					text = <"CO scale">
-					description = <"">
+					description = <"Constipation">
 				>
 				["at0184"] = <
 					text = <"DI scale">
-					description = <"">
+					description = <"Diarrhée">
 				>
 				["at0185"] = <
 					text = <"FI scale">
-					description = <"">
+					description = <"Difficultés financières">
 				>
 				["at0186"] = <
 					text = <"*Item tree (en)">
@@ -2730,7 +2730,7 @@ ontology
 				>
 				["at0188"] = <
 					text = <"Total sum">
-					description = <"">
+					description = <"Somme totale">
 				>
 			>
 		>
