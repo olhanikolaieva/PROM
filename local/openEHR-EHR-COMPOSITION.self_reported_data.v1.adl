@@ -314,13 +314,13 @@ Les sections/contenus principaux sont volontairement sans contraintes. Cela perm
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"266ac36187f772cd9e89dc1f188a098e">
+		["MD5-CAM-1.0.1"] = <"9a393ebbc9f20c0fbc277d042c050df7">
 		["build_uid"] = <"5e6b0dcf-eae2-449a-be94-7bc12dc37b9f">
 		["revision"] = <"1.1.1">
 	>
 
 definition
-	COMPOSITION[at0000] matches {    -- Self-reported data - Basel
+	COMPOSITION[at0000] matches {    -- Self-reported data
 		category matches {
 			DV_CODED_TEXT matches {
 				defining_code matches {
@@ -357,7 +357,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Self-reported data - Basel">
+					text = <"Self-reported data">
 					description = <"Generic container for information provided by an individual.">
 				>
 				["at0003"] = <
@@ -383,7 +383,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Self-reported data - Basel (en)">
+					text = <"*Self-reported data (en)">
 					description = <"Generisk container for informasjon gitt av et individ.">
 				>
 				["at0003"] = <
@@ -409,7 +409,7 @@ ontology
 		["nn"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Self-reported data - Basel (en)">
+					text = <"*Self-reported data (en)">
 					description = <"*Generic container for information provided by an individual. (en)">
 				>
 				["at0003"] = <
@@ -435,7 +435,7 @@ ontology
 		["sv"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Self-reported data - Basel (en)">
+					text = <"*Self-reported data (en)">
 					description = <"Generell behållare för information som tillhandahålls av en individ.">
 				>
 				["at0003"] = <
@@ -461,7 +461,7 @@ ontology
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Self-reported data - Basel (en)">
+					text = <"*Self-reported data (en)">
 					description = <"Generischer Container für Informationen, die von einer Person bereitgestellt werden.">
 				>
 				["at0003"] = <
@@ -487,7 +487,7 @@ ontology
 		["fr"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Self-reported data - Basel (en)">
+					text = <"*Self-reported data (en)">
 					description = <"Conteneur générique pour des informations fournies par un individu.">
 				>
 				["at0003"] = <
@@ -513,7 +513,7 @@ ontology
 		["pt"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Self-reported data - Basel (en)">
+					text = <"*Self-reported data (en)">
 					description = <"Contentor genérico para informação fornecida por um indivíduo.">
 				>
 				["at0003"] = <
@@ -539,7 +539,7 @@ ontology
 		["fi"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Self-reported data - Basel (en)">
+					text = <"*Self-reported data (en)">
 					description = <"Geneerinen säiliö henkilön itse ilmoittamille tiedoille.">
 				>
 				["at0003"] = <
@@ -565,7 +565,7 @@ ontology
 		["zh-cn"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Self-reported data - Basel (en)">
+					text = <"*Self-reported data (en)">
 					description = <"针对个人所提供信息的容器。又可称为“自我报告的数据”">
 				>
 				["at0003"] = <
@@ -591,7 +591,7 @@ ontology
 		["it"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Self-reported data - Basel (en)">
+					text = <"*Self-reported data (en)">
 					description = <"*Generic container for information provided by an individual. (en)">
 				>
 				["at0003"] = <
