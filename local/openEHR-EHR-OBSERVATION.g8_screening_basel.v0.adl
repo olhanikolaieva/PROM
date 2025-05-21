@@ -1,0 +1,278 @@
+archetype (adl_version=1.4; uid=87d771a2-432b-4367-bd30-e410a1d12057)
+	openEHR-EHR-OBSERVATION.g8_screening_basel.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::de]>
+
+description
+	original_author = <
+		["name"] = <"Olha Nikolaieva">
+		["email"] = <"olha.nikolaieva.med@gmail.com">
+		["organisation"] = <"University Hospital Basel">
+		["date"] = <"2025-05-21">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"c43842401fd0017f33da55bcb82497f5">
+		["build_uid"] = <"f155c70c-9ad1-3080-bcd8-71234ffc27f6">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- G8-Screening Basel
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- 1. Weniger gegessen
+										value matches {
+											0|[local::at0013],
+											1|[local::at0014],
+											2|[local::at0015]
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- 2. Niedergeschlagen, Gedächtnis
+										value matches {
+											0|[local::at0016],
+											1|[local::at0017],
+											2|[local::at0018]
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- 3. Medikamente pro Tag
+										value matches {
+											0|[local::at0019],
+											1|[local::at0020],
+											2|[local::at0021]
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- 4. Gesundheit im Vergleich
+										value matches {
+											0|[local::at0022],
+											1|[local::at0023],
+											2|[local::at0024],
+											3|[local::at0025],
+											4|[local::at0026]
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- 5. Bewegung im Alltag
+										value matches {
+											0|[local::at0027],
+											1|[local::at0028],
+											2|[local::at0029]
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- 6. Grösse
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::122]>
+												list = <
+													["1"] = <
+														units = <"cm">
+														magnitude = <|120.0..235.0|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {    -- 7. Aktuelles Gewicht
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::124]>
+												list = <
+													["1"] = <
+														units = <"kg">
+														magnitude = <|35.0..180.0|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- 8. Gewicht vor 3 Monaten
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::124]>
+												list = <
+													["1"] = <
+														units = <"kg">
+														magnitude = <|35.0..180.0|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {    -- Gesamtpunktzahl
+										value matches {
+											DV_COUNT matches {*}
+											DV_QUANTITY matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0030] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0031] occurrences matches {0..1} matches {    -- Erweiterung
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"G8-Screening Basel">
+					description = <"G8 screening_Basel">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"1. Weniger gegessen">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"2. Niedergeschlagen, Gedächtnis">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"3. Medikamente pro Tag">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"4. Gesundheit im Vergleich">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"5. Bewegung im Alltag">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"6. Grösse">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"7. Aktuelles Gewicht">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"8. Gewicht vor 3 Monaten">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Gesamtpunktzahl">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Ja, sehr">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Ja, ein wenig">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Nein, überhaupt nicht">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Ja, sehr">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Ja, ein wenig">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Nein, überhaupt nicht">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Keine">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"1-3 pro Tag">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"4 oder mehr pro Tag">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Nicht so gut">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Weniger gut">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Gleich gut">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Besser">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Weiss nicht">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Ich bin meist am Sitzen und Liegen">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Ich kann mich im Haushalt selbstständig bewegen, gehe aber kaum nach draussen">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Ich gehe nach draussen">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0031"] = <
+					text = <"Erweiterung">
+					description = <"Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.">
+					comment = <"Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen.">
+				>
+			>
+		>
+	>
