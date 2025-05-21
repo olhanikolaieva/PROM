@@ -79,7 +79,7 @@ Fayers PM, Machin D. Quality of Life: The Assessment, Analysis and Interpretatio
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2d8e26425446b4a3a85aca3375f16a66">
+		["MD5-CAM-1.0.1"] = <"4627a50bfa85e713ff2bcc0aea618b9d">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
@@ -3385,63 +3385,63 @@ ontology
 					description = <"Per le seguenti domande ponga un cerchio intorno al numero da 1 a 7 che meglio corrisponde alla Sua risposta">
 				>
 				["at0171"] = <
-					text = <"*QL2 scale (en)">
+					text = <"QL2 scale">
 					description = <"*Global health status/Quality of life  (en)">
 				>
 				["at0172"] = <
-					text = <"*PF2 scale (en)">
+					text = <"PF2 scale">
 					description = <"">
 				>
 				["at0173"] = <
-					text = <"*EF scale (en)">
+					text = <"EF scale">
 					description = <"">
 				>
 				["at0174"] = <
-					text = <"*CF scale (en)">
+					text = <"CF scale">
 					description = <"">
 				>
 				["at0175"] = <
-					text = <"*SF scale (en)">
+					text = <"SF scale">
 					description = <"">
 				>
 				["at0176"] = <
-					text = <"*FA scale (en)">
+					text = <"FA scale">
 					description = <"">
 				>
 				["at0177"] = <
-					text = <"*NV scale (en)">
+					text = <"NV scale">
 					description = <"">
 				>
 				["at0178"] = <
-					text = <"*RF2 scale (en)">
+					text = <"RF2 scale">
 					description = <"">
 				>
 				["at0179"] = <
-					text = <"*PA scale (en)">
+					text = <"PA scale">
 					description = <"">
 				>
 				["at0180"] = <
-					text = <"*DY scale (en)">
+					text = <"DY scale">
 					description = <"">
 				>
 				["at0181"] = <
-					text = <"*SL scale (en)">
+					text = <"SL scale">
 					description = <"">
 				>
 				["at0182"] = <
-					text = <"*AP scale (en)">
+					text = <"AP scale">
 					description = <"">
 				>
 				["at0183"] = <
-					text = <"*CO scale (en)">
+					text = <"CO scale">
 					description = <"">
 				>
 				["at0184"] = <
-					text = <"*DI scale (en)">
+					text = <"DI scale">
 					description = <"">
 				>
 				["at0185"] = <
-					text = <"*FI scale (en)">
+					text = <"FI scale">
 					description = <"">
 				>
 				["at0186"] = <
@@ -3454,7 +3454,7 @@ ontology
 					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
 				>
 				["at0188"] = <
-					text = <"*Total sum (en)">
+					text = <"Total sum">
 					description = <"">
 				>
 			>
