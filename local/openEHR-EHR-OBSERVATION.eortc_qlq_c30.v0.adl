@@ -79,7 +79,7 @@ Fayers PM, Machin D. Quality of Life: The Assessment, Analysis and Interpretatio
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"095ad85680c79c3b44aeeb366665941d">
+		["MD5-CAM-1.0.1"] = <"018f8ab4c79e2d8e1fe80490961dfd33">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
@@ -2012,7 +2012,7 @@ ontology
 		["fr"] = <
 			items = <
 				["at0000"] = <
-					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30) (en)">
+					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30)">
 					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
@@ -2028,7 +2028,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"*1. Strenuous activities (en)">
+					text = <"1. Activités intenses">
 					description = <"1. Avez-vous des difficultés à faire certains efforts physiques pénibles comme porter un sac à provisions chargé ou une valise ?">
 				>
 				["at0005"] = <
@@ -2048,7 +2048,7 @@ ontology
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"*2. Long walk (en)">
+					text = <"2. Longue marche">
 					description = <"2. Avez-vous des difficultés à faire une longue promenade ?">
 				>
 				["at0010"] = <
@@ -2068,7 +2068,7 @@ ontology
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"*3. Short walk outside (en)">
+					text = <"3. Petite marche à l’extérieur">
 					description = <"3. Avez-vous des difficultés à faire un petit tour dehors ?">
 				>
 				["at0015"] = <
@@ -2088,7 +2088,7 @@ ontology
 					description = <"">
 				>
 				["at0019"] = <
-					text = <"*4. Stay in bed or chair (en)">
+					text = <"4. Rester au lit ou sur une chaise">
 					description = <"4. Êtes-vous obligé(e) de rester au lit ou dans un fauteuil pendant la journée ?">
 				>
 				["at0020"] = <
@@ -2108,7 +2108,7 @@ ontology
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"*5. Help with eating, dressing, washing (en)">
+					text = <"5. Aide pour manger, s’habiller, se laver">
 					description = <"5. Avez-vous besoin d'aide pour manger, vous habiller, faire votre toilette ou aller aux toilettes ?">
 				>
 				["at0025"] = <
@@ -2128,7 +2128,7 @@ ontology
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"*6. Limited in work or daily activities (en)">
+					text = <"6. Limité dans le travail ou les activités quotidiennes">
 					description = <"6. Avez-vous été gêné(e) pour faire votre travail ou vos activités de tous les jours ?">
 				>
 				["at0030"] = <
@@ -2148,7 +2148,7 @@ ontology
 					description = <"">
 				>
 				["at0034"] = <
-					text = <"*7. Limited in hobbies (en)">
+					text = <"7. Limité dans les loisirs">
 					description = <"7. Avez-vous été gêné(e) dans vos activités de loisirs ?">
 				>
 				["at0035"] = <
@@ -2168,7 +2168,7 @@ ontology
 					description = <"">
 				>
 				["at0039"] = <
-					text = <"*8. Short of breath (en)">
+					text = <"8. Essoufflement">
 					description = <"8. Avez-vous eu le souffle court ?">
 				>
 				["at0040"] = <
@@ -2188,7 +2188,7 @@ ontology
 					description = <"">
 				>
 				["at0044"] = <
-					text = <"*9. Pain (en)">
+					text = <"9. Douleur">
 					description = <"9. Avez-vous ressenti de la douleur ?">
 				>
 				["at0045"] = <
@@ -2208,7 +2208,7 @@ ontology
 					description = <"">
 				>
 				["at0049"] = <
-					text = <"*10. Need to rest (en)">
+					text = <"10. Besoin de repos">
 					description = <"10. Avez-vous eu besoin de repos ?">
 				>
 				["at0050"] = <
@@ -2228,7 +2228,7 @@ ontology
 					description = <"">
 				>
 				["at0054"] = <
-					text = <"*11. Trouble sleeping (en)">
+					text = <"11. Problèmes de sommeil">
 					description = <"11. Avez-vous eu des difficultés à dormir ?">
 				>
 				["at0055"] = <
@@ -2248,7 +2248,7 @@ ontology
 					description = <"">
 				>
 				["at0059"] = <
-					text = <"*12. Weakness (en)">
+					text = <"12. Faiblesse">
 					description = <"12. Vous êtes-vous senti(e) faible ?">
 				>
 				["at0060"] = <
@@ -2268,7 +2268,7 @@ ontology
 					description = <"">
 				>
 				["at0064"] = <
-					text = <"*13. Lacked appetite (en)">
+					text = <"13. Manque d’appétit">
 					description = <"13. Avez-vous manqué d'appétit ?">
 				>
 				["at0065"] = <
@@ -2288,7 +2288,7 @@ ontology
 					description = <"">
 				>
 				["at0069"] = <
-					text = <"*14. Nausea (en)">
+					text = <"14. Nausée">
 					description = <"14. Avez-vous eu des nausées (mal au coeur) ?">
 				>
 				["at0070"] = <
@@ -2308,7 +2308,7 @@ ontology
 					description = <"">
 				>
 				["at0074"] = <
-					text = <"*15. Vomiting (en)">
+					text = <"15. Vomissements">
 					description = <"15. Avez-vous vomi ?">
 				>
 				["at0075"] = <
@@ -2328,7 +2328,7 @@ ontology
 					description = <"">
 				>
 				["at0079"] = <
-					text = <"*16. Constipation (en)">
+					text = <"16. Constipation">
 					description = <"16. Avez-vous été constipé(e) ?">
 				>
 				["at0080"] = <
@@ -2348,7 +2348,7 @@ ontology
 					description = <"">
 				>
 				["at0084"] = <
-					text = <"*17. Diarrhea (en)">
+					text = <"17. Diarrhée">
 					description = <"17. Avez-vous eu de la diarrhée ?">
 				>
 				["at0085"] = <
@@ -2368,7 +2368,7 @@ ontology
 					description = <"">
 				>
 				["at0089"] = <
-					text = <"*18. Tiredness (en)">
+					text = <"18. Fatigue">
 					description = <"18. Étiez-vous fatigué(e) ?">
 				>
 				["at0090"] = <
@@ -2388,7 +2388,7 @@ ontology
 					description = <"">
 				>
 				["at0094"] = <
-					text = <"*19. Pain interfere with daily activities (en)">
+					text = <"19. Douleur gênant les activités quotidiennes">
 					description = <"19. Des douleurs ont-elles perturbé vos activités quotidiennes ?">
 				>
 				["at0095"] = <
@@ -2408,7 +2408,7 @@ ontology
 					description = <"">
 				>
 				["at0099"] = <
-					text = <"*20. Concentrating (en)">
+					text = <"20. Difficulté de concentration">
 					description = <"20. Avez-vous eu des difficultés à vous concentrer sur certaines choses, par exemple, pour lire le journal ou regarder la télévision ?">
 				>
 				["at0100"] = <
@@ -2428,7 +2428,7 @@ ontology
 					description = <"">
 				>
 				["at0104"] = <
-					text = <"*21. Tension (en)">
+					text = <"21. Tension">
 					description = <"21. Vous êtes-vous senti(e) tendu(e) ?">
 				>
 				["at0105"] = <
@@ -2448,7 +2448,7 @@ ontology
 					description = <"">
 				>
 				["at0109"] = <
-					text = <"*22. Worry (en)">
+					text = <"22. Inquiétude">
 					description = <"22. Vous êtes-vous fait du souci ?">
 				>
 				["at0110"] = <
@@ -2468,7 +2468,7 @@ ontology
 					description = <"">
 				>
 				["at0114"] = <
-					text = <"*23. Irritation (en)">
+					text = <"23. Irritabilité">
 					description = <"23. Vous êtes-vous senti(e) irritable ?">
 				>
 				["at0115"] = <
@@ -2488,7 +2488,7 @@ ontology
 					description = <"">
 				>
 				["at0119"] = <
-					text = <"*24. Depressed (en)">
+					text = <"24. Dépression">
 					description = <"24. Vous êtes-vous senti(e) déprimé(e) ?">
 				>
 				["at0120"] = <
@@ -2508,7 +2508,7 @@ ontology
 					description = <"">
 				>
 				["at0124"] = <
-					text = <"*25. Difficulty remembering things (en)">
+					text = <"25. Difficulté à se souvenir des choses">
 					description = <"25. Avez-vous eu des difficultés à vous souvenir de certaines choses ?">
 				>
 				["at0125"] = <
@@ -2528,7 +2528,7 @@ ontology
 					description = <"">
 				>
 				["at0129"] = <
-					text = <"*26. Family life (en)">
+					text = <"26. Vie familiale">
 					description = <"26. Votre état physique ou votre traitement médical vous ont-ils gêné(e) dans votre vie familiale ?">
 				>
 				["at0130"] = <
@@ -2548,7 +2548,7 @@ ontology
 					description = <"">
 				>
 				["at0134"] = <
-					text = <"*27. Social life (en)">
+					text = <"27. Vie sociale">
 					description = <"27. Votre état physique ou votre traitement médical vous ont-ils gêné(e) dans vos activités sociales (par exemple, sortir avec des amis, aller au cinéma... ) ?">
 				>
 				["at0135"] = <
@@ -2568,7 +2568,7 @@ ontology
 					description = <"">
 				>
 				["at0139"] = <
-					text = <"*28. Financial difficulties (en)">
+					text = <"28. Difficultés financières">
 					description = <"28. Votre état physique ou votre traitement médical vous ont-ils causé des problèmes financiers ?">
 				>
 				["at0140"] = <
@@ -2588,7 +2588,7 @@ ontology
 					description = <"">
 				>
 				["at0144"] = <
-					text = <"*29. Overall heath rate (en)">
+					text = <"29. État de santé général">
 					description = <"29. Comment évalueriez-vous votre état de santé au cours de la semaine passée ?">
 				>
 				["at0146"] = <
@@ -2620,7 +2620,7 @@ ontology
 					description = <"">
 				>
 				["at0160"] = <
-					text = <"*30. Overall quality of life rate (en)">
+					text = <"30. Qualité de vie globale">
 					description = <"30. Comment évalueriez-vous l'ensemble de votre qualité de vie au cours de la semaine passée ?">
 				>
 				["at0161"] = <
@@ -2652,11 +2652,11 @@ ontology
 					description = <"">
 				>
 				["at0168"] = <
-					text = <"*During the past week: (en)">
+					text = <"Au cours de la semaine passée :">
 					description = <"Au cours de la semaine passée :">
 				>
 				["at0169"] = <
-					text = <"*Select the number between 1 and 7 (en)">
+					text = <"Choisissez un nombre entre 1 et 7">
 					description = <"Pour les questions suivantes, veuillez répondre en entourant le chiffre entre 1 et 7 qui s'applique le mieux à votre situation">
 				>
 				["at0171"] = <
