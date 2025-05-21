@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "0.1.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "927340d58cbd3a0aa8fae88570e624b8",
+      "MD5-CAM-1.0.1" : "4ab867483021130719f76e1ccdc6ac10",
       "PARENT:MD5-CAM-1.0.1" : "B90C9995DE7CA7BCA27AAC9A42E00280"
     },
     "details" : {
@@ -220,7 +220,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "G8-Screening",
+          "text" : "MedNota Onco G8-Screening Baseline",
           "description" : "Generischer Container für Informationen, die von einer Person bereitgestellt werden."
         }
       },
@@ -281,7 +281,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "c43842401fd0017f33da55bcb82497f5"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.g8_screening_basel.v0",
     "differential" : true,
