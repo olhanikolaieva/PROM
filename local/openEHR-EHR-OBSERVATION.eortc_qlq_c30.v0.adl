@@ -79,7 +79,7 @@ Fayers PM, Machin D. Quality of Life: The Assessment, Analysis and Interpretatio
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7406fc331707cb0fe1db879d4f96f92b">
+		["MD5-CAM-1.0.1"] = <"fbd0cfb980d0d57e610ec473fa8b90cf">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
@@ -346,203 +346,196 @@ definition
 											}
 										}
 									}
-									CLUSTER[at0170] occurrences matches {0..1} matches {    -- Scoring
-										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0171] occurrences matches {0..1} matches {    -- Global health status / QoL
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..7.0|>
-															>
-														>
+									ELEMENT[at0171] occurrences matches {0..1} matches {    -- QL2 scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
-											ELEMENT[at0172] occurrences matches {0..1} matches {    -- Physical functioning
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..4.0|>
-															>
-														>
+												>
+											>
+										}
+									}
+									ELEMENT[at0172] occurrences matches {0..1} matches {    -- PF2 scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
-											ELEMENT[at0173] occurrences matches {0..1} matches {    -- Emotional functioning
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..4.0|>
-															>
-														>
+												>
+											>
+										}
+									}
+									ELEMENT[at0178] occurrences matches {0..1} matches {    -- RF2 scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
-											ELEMENT[at0174] occurrences matches {0..1} matches {    -- Cognitive functioning
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..4.0|>
-															>
-														>
+												>
+											>
+										}
+									}
+									ELEMENT[at0173] occurrences matches {0..1} matches {    -- EF scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
-											ELEMENT[at0175] occurrences matches {0..1} matches {    -- Social functioning
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..4.0|>
-															>
-														>
+												>
+											>
+										}
+									}
+									ELEMENT[at0174] occurrences matches {0..1} matches {    -- CF scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
-											ELEMENT[at0176] occurrences matches {0..1} matches {    -- Fatigue
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..4.0|>
-															>
-														>
+												>
+											>
+										}
+									}
+									ELEMENT[at0175] occurrences matches {0..1} matches {    -- SF scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
-											ELEMENT[at0177] occurrences matches {0..1} matches {    -- Nausea and vomiting
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..4.0|>
-															>
-														>
+												>
+											>
+										}
+									}
+									ELEMENT[at0176] occurrences matches {0..1} matches {    -- FA scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
-											ELEMENT[at0178] occurrences matches {0..1} matches {    -- Score
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..4.0|>
-															>
-														>
+												>
+											>
+										}
+									}
+									ELEMENT[at0177] occurrences matches {0..1} matches {    -- NV scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
-											ELEMENT[at0179] occurrences matches {0..1} matches {    -- Pain
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..4.0|>
-															>
-														>
+												>
+											>
+										}
+									}
+									ELEMENT[at0179] occurrences matches {0..1} matches {    -- PA scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
-											ELEMENT[at0180] occurrences matches {0..1} matches {    -- Dyspnoea
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..4.0|>
-															>
-														>
+												>
+											>
+										}
+									}
+									ELEMENT[at0180] occurrences matches {0..1} matches {    -- DY scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
-											ELEMENT[at0181] occurrences matches {0..1} matches {    -- Insomnia
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..4.0|>
-															>
-														>
+												>
+											>
+										}
+									}
+									ELEMENT[at0181] occurrences matches {0..1} matches {    -- SL scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
-											ELEMENT[at0182] occurrences matches {0..1} matches {    -- Appetite loss
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..4.0|>
-															>
-														>
+												>
+											>
+										}
+									}
+									ELEMENT[at0182] occurrences matches {0..1} matches {    -- AP scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
-											ELEMENT[at0183] occurrences matches {0..1} matches {    -- Constipation
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..4.0|>
-															>
-														>
+												>
+											>
+										}
+									}
+									ELEMENT[at0183] occurrences matches {0..1} matches {    -- CO scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
-											ELEMENT[at0184] occurrences matches {0..1} matches {    -- Diarrhoea
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..4.0|>
-															>
-														>
+												>
+											>
+										}
+									}
+									ELEMENT[at0184] occurrences matches {0..1} matches {    -- DI scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
-											ELEMENT[at0185] occurrences matches {0..1} matches {    -- Financial difficulties
-												value matches {
-													C_DV_QUANTITY <
-														property = <[openehr::507]>
-														list = <
-															["1"] = <
-																units = <"1">
-																magnitude = <|1.0..4.0|>
-															>
-														>
+												>
+											>
+										}
+									}
+									ELEMENT[at0185] occurrences matches {0..1} matches {    -- FI scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
-												}
-											}
+												>
+											>
+										}
+									}
+									ELEMENT[at0188] occurrences matches {0..1} matches {    -- Total sum
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::380]>
+												list = <
+													["1"] = <
+														units = <"1">
+													>
+												>
+											>
 										}
 									}
 								}
@@ -1216,69 +1209,65 @@ ontology
 					text = <"Select the number between 1 and 7">
 					description = <"For the following questions please select the number between 1 and 7 that best applies to you">
 				>
-				["at0170"] = <
-					text = <"Scoring">
-					description = <"">
-				>
 				["at0171"] = <
-					text = <"Global health status / QoL">
-					description = <"">
+					text = <"QL2 scale">
+					description = <"Global health status/Quality of life scale">
 				>
 				["at0172"] = <
-					text = <"Physical functioning">
-					description = <"">
+					text = <"PF2 scale">
+					description = <"Physical functioning scale">
 				>
 				["at0173"] = <
-					text = <"Emotional functioning">
-					description = <"">
+					text = <"EF scale">
+					description = <"Emotional functioning scale">
 				>
 				["at0174"] = <
-					text = <"Cognitive functioning">
-					description = <"">
+					text = <"CF scale">
+					description = <"Cognitive functioning scale">
 				>
 				["at0175"] = <
-					text = <"Social functioning">
-					description = <"">
+					text = <"SF scale">
+					description = <"Social functioning scale">
 				>
 				["at0176"] = <
-					text = <"Fatigue">
-					description = <"">
+					text = <"FA scale">
+					description = <"Fatigue scale">
 				>
 				["at0177"] = <
-					text = <"Nausea and vomiting">
-					description = <"">
+					text = <"NV scale">
+					description = <"Nausea and vomiting scale">
 				>
 				["at0178"] = <
-					text = <"Score">
-					description = <"">
+					text = <"RF2 scale">
+					description = <"Role functioning scale">
 				>
 				["at0179"] = <
-					text = <"Pain">
-					description = <"">
+					text = <"PA scale">
+					description = <"Pain scale">
 				>
 				["at0180"] = <
-					text = <"Dyspnoea">
-					description = <"">
+					text = <"DY scale">
+					description = <"Dyspnoea scale">
 				>
 				["at0181"] = <
-					text = <"Insomnia">
-					description = <"">
+					text = <"SL scale">
+					description = <"Insomnia scale">
 				>
 				["at0182"] = <
-					text = <"Appetite loss">
-					description = <"">
+					text = <"AP scale">
+					description = <"Appette loss scale">
 				>
 				["at0183"] = <
-					text = <"Constipation">
-					description = <"">
+					text = <"CO scale">
+					description = <"Constipation scale">
 				>
 				["at0184"] = <
-					text = <"Diarrhoea">
-					description = <"">
+					text = <"DI scale">
+					description = <"Diarrhoea scale">
 				>
 				["at0185"] = <
-					text = <"Financial difficulties">
-					description = <"">
+					text = <"FI scale">
+					description = <"Financial difficulties scale">
 				>
 				["at0186"] = <
 					text = <"Item tree">
@@ -1289,12 +1278,16 @@ ontology
 					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
 					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
 				>
+				["at0188"] = <
+					text = <"Total sum">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30) (en)">
+					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30)">
 					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
@@ -1310,7 +1303,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"*1. Strenuous activities (en)">
+					text = <"1. Anstrengende Aktivitäten">
 					description = <"1. Bereitet es Ihnen Schwierigkeiten, sich körperlich anzustrengen (z. B. eine schwere Einkaufstasche oder einen Koffer zu tragen)?">
 				>
 				["at0005"] = <
@@ -1330,7 +1323,7 @@ ontology
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"*2. Long walk (en)">
+					text = <"2. Langer Spaziergang">
 					description = <"2. Bereitet es Ihnen Schwierigkeiten, einen längeren Spaziergang zu machen?">
 				>
 				["at0010"] = <
@@ -1350,7 +1343,7 @@ ontology
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"*3. Short walk outside (en)">
+					text = <"3. Kurzer Spaziergang draußen">
 					description = <"3. Bereitet es Ihnen Schwierigkeiten, eine kurze Strecke außer Haus zu gehen?">
 				>
 				["at0015"] = <
@@ -1370,7 +1363,7 @@ ontology
 					description = <"">
 				>
 				["at0019"] = <
-					text = <"*4. Stay in bed or chair (en)">
+					text = <"4. Im Bett oder auf einem Stuhl bleiben">
 					description = <"4. Müssen Sie tagsüber im Bett liegen oder in einem Sessel sitzen?">
 				>
 				["at0020"] = <
@@ -1390,7 +1383,7 @@ ontology
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"*5. Help with eating, dressing, washing (en)">
+					text = <"5. Hilfe beim Essen, Anziehen, Waschen">
 					description = <"5. Brauchen Sie Hilfe beim Essen, Anziehen, Waschen oder Benutzen der Toilette?">
 				>
 				["at0025"] = <
@@ -1410,7 +1403,7 @@ ontology
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"*6. Limited in work or daily activities (en)">
+					text = <"6. Eingeschränkt bei Arbeit oder täglichen Aktivitäten">
 					description = <"6. Waren Sie bei Ihrer Arbeit oder bei anderen tagtäglichen Beschäftigungen eingeschränkt?">
 				>
 				["at0030"] = <
@@ -1430,7 +1423,7 @@ ontology
 					description = <"">
 				>
 				["at0034"] = <
-					text = <"*7. Limited in hobbies (en)">
+					text = <"7. Eingeschränkt bei Hobbys">
 					description = <"7. Waren Sie bei Ihren Hobbys oder anderen Freizeitbeschäftigungen eingeschränkt?">
 				>
 				["at0035"] = <
@@ -1450,7 +1443,7 @@ ontology
 					description = <"">
 				>
 				["at0039"] = <
-					text = <"*8. Short of breath (en)">
+					text = <"8. Kurzatmigkeit">
 					description = <"8. Waren Sie kurzatmig?">
 				>
 				["at0040"] = <
@@ -1470,7 +1463,7 @@ ontology
 					description = <"">
 				>
 				["at0044"] = <
-					text = <"*9. Pain (en)">
+					text = <"9. Schmerzen">
 					description = <"9. Hatten Sie Schmerzen?">
 				>
 				["at0045"] = <
@@ -1490,7 +1483,7 @@ ontology
 					description = <"">
 				>
 				["at0049"] = <
-					text = <"*10. Need to rest (en)">
+					text = <"10. Bedürfnis nach Ruhe">
 					description = <"10. Mussten Sie sich ausruhen?">
 				>
 				["at0050"] = <
@@ -1510,7 +1503,7 @@ ontology
 					description = <"">
 				>
 				["at0054"] = <
-					text = <"*11. Trouble sleeping (en)">
+					text = <"11. Schlafprobleme">
 					description = <"11. Hatten Sie Schlafstörungen?">
 				>
 				["at0055"] = <
@@ -1530,7 +1523,7 @@ ontology
 					description = <"">
 				>
 				["at0059"] = <
-					text = <"*12. Weakness (en)">
+					text = <"12. Schwäche">
 					description = <"12. Fühlten Sie sich schwach?">
 				>
 				["at0060"] = <
@@ -1550,7 +1543,7 @@ ontology
 					description = <"">
 				>
 				["at0064"] = <
-					text = <"*13. Lacked appetite (en)">
+					text = <"13. Appetitlosigkeit">
 					description = <"13. Hatten Sie Appetitmangel?">
 				>
 				["at0065"] = <
@@ -1570,7 +1563,7 @@ ontology
 					description = <"">
 				>
 				["at0069"] = <
-					text = <"*14. Nausea (en)">
+					text = <"14. Übelkeit">
 					description = <"14. War Ihnen übel?">
 				>
 				["at0070"] = <
@@ -1590,7 +1583,7 @@ ontology
 					description = <"">
 				>
 				["at0074"] = <
-					text = <"*15. Vomiting (en)">
+					text = <"15. Erbrechen">
 					description = <"15. Haben Sie erbrochen?">
 				>
 				["at0075"] = <
@@ -1610,7 +1603,7 @@ ontology
 					description = <"">
 				>
 				["at0079"] = <
-					text = <"*16. Constipation (en)">
+					text = <"16. Verstopfung">
 					description = <"16. Hatten Sie Verstopfung?">
 				>
 				["at0080"] = <
@@ -1630,7 +1623,7 @@ ontology
 					description = <"">
 				>
 				["at0084"] = <
-					text = <"*17. Diarrhea (en)">
+					text = <"17. Durchfall">
 					description = <"17. Hatten Sie Durchfall?">
 				>
 				["at0085"] = <
@@ -1650,7 +1643,7 @@ ontology
 					description = <"">
 				>
 				["at0089"] = <
-					text = <"*18. Tiredness (en)">
+					text = <"18. Müdigkeit">
 					description = <"18. Waren Sie müde?">
 				>
 				["at0090"] = <
@@ -1670,7 +1663,7 @@ ontology
 					description = <"">
 				>
 				["at0094"] = <
-					text = <"*19. Pain interfere with daily activities (en)">
+					text = <"19. Schmerzen beeinträchtigen tägliche Aktivitäten">
 					description = <"19. Fühlten Sie sich durch Schmerzen in Ihrem alltäglichen Leben beeinträchtigt?">
 				>
 				["at0095"] = <
@@ -1690,7 +1683,7 @@ ontology
 					description = <"">
 				>
 				["at0099"] = <
-					text = <"*20. Concentrating (en)">
+					text = <"20. Konzentrationsschwierigkeiten">
 					description = <"20. Hatten Sie Schwierigkeiten, sich auf etwas zu konzentrieren, z. B. auf Zeitunglesen oder Fernsehen?">
 				>
 				["at0100"] = <
@@ -1710,7 +1703,7 @@ ontology
 					description = <"">
 				>
 				["at0104"] = <
-					text = <"*21. Tension (en)">
+					text = <"21. Anspannung">
 					description = <"21. Fühlten Sie sich angespannt?">
 				>
 				["at0105"] = <
@@ -1730,7 +1723,7 @@ ontology
 					description = <"">
 				>
 				["at0109"] = <
-					text = <"*22. Worry (en)">
+					text = <"22. Sorgen">
 					description = <"22. Haben Sie sich Sorgen gemacht?">
 				>
 				["at0110"] = <
@@ -1750,7 +1743,7 @@ ontology
 					description = <"">
 				>
 				["at0114"] = <
-					text = <"*23. Irritation (en)">
+					text = <"23. Reizbarkeit">
 					description = <"23. Waren Sie reizbar?">
 				>
 				["at0115"] = <
@@ -1770,7 +1763,7 @@ ontology
 					description = <"">
 				>
 				["at0119"] = <
-					text = <"*24. Depressed (en)">
+					text = <"24. Niedergeschlagenheit">
 					description = <"24. Fühlten Sie sich niedergeschlagen?">
 				>
 				["at0120"] = <
@@ -1790,7 +1783,7 @@ ontology
 					description = <"">
 				>
 				["at0124"] = <
-					text = <"*25. Difficulty remembering things (en)">
+					text = <"25. Gedächtnisprobleme">
 					description = <"25. Hatten Sie Schwierigkeiten, sich an Dinge zu erinnern?">
 				>
 				["at0125"] = <
@@ -1810,7 +1803,7 @@ ontology
 					description = <"">
 				>
 				["at0129"] = <
-					text = <"*26. Family life (en)">
+					text = <"26. Familienleben">
 					description = <"26. Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung Ihr Familienleben beeinträchtigt?">
 				>
 				["at0130"] = <
@@ -1830,7 +1823,7 @@ ontology
 					description = <"">
 				>
 				["at0134"] = <
-					text = <"*27. Social life (en)">
+					text = <"27. Soziales Leben">
 					description = <"27. Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung Ihr Zusammensein oder Ihre gemeinsamen Unternehmungen mit anderen Menschen beeinträchtigt?">
 				>
 				["at0135"] = <
@@ -1850,7 +1843,7 @@ ontology
 					description = <"">
 				>
 				["at0139"] = <
-					text = <"*28. Financial difficulties (en)">
+					text = <"28. Finanzielle Schwierigkeiten">
 					description = <"28. Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung für Sie finanzielle Schwierigkeiten mit sich gebracht?">
 				>
 				["at0140"] = <
@@ -1870,7 +1863,7 @@ ontology
 					description = <"">
 				>
 				["at0144"] = <
-					text = <"*29. Overall heath rate (en)">
+					text = <"29. Allgemeiner Gesundheitszustand">
 					description = <"29. Wie würden Sie insgesamt Ihren Gesundheitszustand während der letzten Woche einschätzen?">
 				>
 				["at0146"] = <
@@ -1902,7 +1895,7 @@ ontology
 					description = <"">
 				>
 				["at0160"] = <
-					text = <"*30. Overall quality of life rate (en)">
+					text = <"30. Allgemeine Lebensqualität">
 					description = <"30. Wie würden Sie insgesamt Ihre Lebensqualität während der letzten Woche einschätzen?">
 				>
 				["at0161"] = <
@@ -1934,76 +1927,72 @@ ontology
 					description = <"">
 				>
 				["at0168"] = <
-					text = <"*During the past week: (en)">
+					text = <"In der vergangenen Woche:">
 					description = <"Während der letzten Woche:">
 				>
 				["at0169"] = <
-					text = <"*Select the number between 1 and 7 (en)">
+					text = <"Wählen Sie eine Zahl zwischen 1 und 7:">
 					description = <"Bitte kreisen Sie bei den folgenden Fragen die Zahl zwischen 1 und 7 ein, die am besten auf Sie zutrifft:">
 				>
-				["at0170"] = <
-					text = <"*Scoring (en)">
-					description = <"">
-				>
 				["at0171"] = <
-					text = <"*Global health status / QoL (en)">
-					description = <"">
+					text = <"QL2 scale">
+					description = <"Score-Lebensqualität">
 				>
 				["at0172"] = <
-					text = <"*Physical functioning (en)">
-					description = <"">
+					text = <"PF2 scale">
+					description = <"Score-Physische Funktion">
 				>
 				["at0173"] = <
-					text = <"*Emotional functioning (en)">
-					description = <"">
+					text = <"EF scale">
+					description = <"Score-Emotionale Funktion">
 				>
 				["at0174"] = <
-					text = <"*Cognitive functioning (en)">
-					description = <"">
+					text = <"CF scale">
+					description = <"Score-Kognitive Funktion">
 				>
 				["at0175"] = <
-					text = <"*Social functioning (en)">
-					description = <"">
+					text = <"SF scale">
+					description = <"Score-Soziale Funktion">
 				>
 				["at0176"] = <
-					text = <"*Fatigue (en)">
-					description = <"">
+					text = <"FA scale">
+					description = <"Score-Erschöpfung">
 				>
 				["at0177"] = <
-					text = <"*Nausea and vomiting (en)">
-					description = <"">
+					text = <"NV scale">
+					description = <"Score-Übelkeit und Erbrechen">
 				>
 				["at0178"] = <
-					text = <"*Score (en)">
-					description = <"">
+					text = <"RF2 scale">
+					description = <"Score-Rollenfunktion">
 				>
 				["at0179"] = <
-					text = <"*Pain (en)">
-					description = <"">
+					text = <"PA scale">
+					description = <"Score-Schmerzen">
 				>
 				["at0180"] = <
-					text = <"*Dyspnoea (en)">
-					description = <"">
+					text = <"DY scale">
+					description = <"Score-Dyspnoe">
 				>
 				["at0181"] = <
-					text = <"*Insomnia (en)">
-					description = <"">
+					text = <"SL scale">
+					description = <"Score-Schlafstörung">
 				>
 				["at0182"] = <
-					text = <"*Appetite loss (en)">
-					description = <"">
+					text = <"AP scale">
+					description = <"Score-Appetitlosigkeit">
 				>
 				["at0183"] = <
-					text = <"*Constipation (en)">
-					description = <"">
+					text = <"CO scale">
+					description = <"Score-Obstipation">
 				>
 				["at0184"] = <
-					text = <"*Diarrhoea (en)">
-					description = <"">
+					text = <"DI scale">
+					description = <"Score-Diarrhoe">
 				>
 				["at0185"] = <
-					text = <"*Financial difficulties (en)">
-					description = <"">
+					text = <"FI scale">
+					description = <"Score-Finanzielle Schwierigkeiten">
 				>
 				["at0186"] = <
 					text = <"*Item tree (en)">
@@ -2014,12 +2003,16 @@ ontology
 					description = <"Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.">
 					comment = <"Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen.">
 				>
+				["at0188"] = <
+					text = <"Total sum">
+					description = <"Score-Summenscore">
+				>
 			>
 		>
 		["fr"] = <
 			items = <
 				["at0000"] = <
-					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30) (en)">
+					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30)">
 					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
@@ -2035,7 +2028,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"*1. Strenuous activities (en)">
+					text = <"1. Activités intenses">
 					description = <"1. Avez-vous des difficultés à faire certains efforts physiques pénibles comme porter un sac à provisions chargé ou une valise ?">
 				>
 				["at0005"] = <
@@ -2055,7 +2048,7 @@ ontology
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"*2. Long walk (en)">
+					text = <"2. Longue marche">
 					description = <"2. Avez-vous des difficultés à faire une longue promenade ?">
 				>
 				["at0010"] = <
@@ -2075,7 +2068,7 @@ ontology
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"*3. Short walk outside (en)">
+					text = <"3. Petite marche à l’extérieur">
 					description = <"3. Avez-vous des difficultés à faire un petit tour dehors ?">
 				>
 				["at0015"] = <
@@ -2095,7 +2088,7 @@ ontology
 					description = <"">
 				>
 				["at0019"] = <
-					text = <"*4. Stay in bed or chair (en)">
+					text = <"4. Rester au lit ou sur une chaise">
 					description = <"4. Êtes-vous obligé(e) de rester au lit ou dans un fauteuil pendant la journée ?">
 				>
 				["at0020"] = <
@@ -2115,7 +2108,7 @@ ontology
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"*5. Help with eating, dressing, washing (en)">
+					text = <"5. Aide pour manger, s’habiller, se laver">
 					description = <"5. Avez-vous besoin d'aide pour manger, vous habiller, faire votre toilette ou aller aux toilettes ?">
 				>
 				["at0025"] = <
@@ -2135,7 +2128,7 @@ ontology
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"*6. Limited in work or daily activities (en)">
+					text = <"6. Limité dans le travail ou les activités quotidiennes">
 					description = <"6. Avez-vous été gêné(e) pour faire votre travail ou vos activités de tous les jours ?">
 				>
 				["at0030"] = <
@@ -2155,7 +2148,7 @@ ontology
 					description = <"">
 				>
 				["at0034"] = <
-					text = <"*7. Limited in hobbies (en)">
+					text = <"7. Limité dans les loisirs">
 					description = <"7. Avez-vous été gêné(e) dans vos activités de loisirs ?">
 				>
 				["at0035"] = <
@@ -2175,7 +2168,7 @@ ontology
 					description = <"">
 				>
 				["at0039"] = <
-					text = <"*8. Short of breath (en)">
+					text = <"8. Essoufflement">
 					description = <"8. Avez-vous eu le souffle court ?">
 				>
 				["at0040"] = <
@@ -2195,7 +2188,7 @@ ontology
 					description = <"">
 				>
 				["at0044"] = <
-					text = <"*9. Pain (en)">
+					text = <"9. Douleur">
 					description = <"9. Avez-vous ressenti de la douleur ?">
 				>
 				["at0045"] = <
@@ -2215,7 +2208,7 @@ ontology
 					description = <"">
 				>
 				["at0049"] = <
-					text = <"*10. Need to rest (en)">
+					text = <"10. Besoin de repos">
 					description = <"10. Avez-vous eu besoin de repos ?">
 				>
 				["at0050"] = <
@@ -2235,7 +2228,7 @@ ontology
 					description = <"">
 				>
 				["at0054"] = <
-					text = <"*11. Trouble sleeping (en)">
+					text = <"11. Problèmes de sommeil">
 					description = <"11. Avez-vous eu des difficultés à dormir ?">
 				>
 				["at0055"] = <
@@ -2255,7 +2248,7 @@ ontology
 					description = <"">
 				>
 				["at0059"] = <
-					text = <"*12. Weakness (en)">
+					text = <"12. Faiblesse">
 					description = <"12. Vous êtes-vous senti(e) faible ?">
 				>
 				["at0060"] = <
@@ -2275,7 +2268,7 @@ ontology
 					description = <"">
 				>
 				["at0064"] = <
-					text = <"*13. Lacked appetite (en)">
+					text = <"13. Manque d’appétit">
 					description = <"13. Avez-vous manqué d'appétit ?">
 				>
 				["at0065"] = <
@@ -2295,7 +2288,7 @@ ontology
 					description = <"">
 				>
 				["at0069"] = <
-					text = <"*14. Nausea (en)">
+					text = <"14. Nausée">
 					description = <"14. Avez-vous eu des nausées (mal au coeur) ?">
 				>
 				["at0070"] = <
@@ -2315,7 +2308,7 @@ ontology
 					description = <"">
 				>
 				["at0074"] = <
-					text = <"*15. Vomiting (en)">
+					text = <"15. Vomissements">
 					description = <"15. Avez-vous vomi ?">
 				>
 				["at0075"] = <
@@ -2335,7 +2328,7 @@ ontology
 					description = <"">
 				>
 				["at0079"] = <
-					text = <"*16. Constipation (en)">
+					text = <"16. Constipation">
 					description = <"16. Avez-vous été constipé(e) ?">
 				>
 				["at0080"] = <
@@ -2355,7 +2348,7 @@ ontology
 					description = <"">
 				>
 				["at0084"] = <
-					text = <"*17. Diarrhea (en)">
+					text = <"17. Diarrhée">
 					description = <"17. Avez-vous eu de la diarrhée ?">
 				>
 				["at0085"] = <
@@ -2375,7 +2368,7 @@ ontology
 					description = <"">
 				>
 				["at0089"] = <
-					text = <"*18. Tiredness (en)">
+					text = <"18. Fatigue">
 					description = <"18. Étiez-vous fatigué(e) ?">
 				>
 				["at0090"] = <
@@ -2395,7 +2388,7 @@ ontology
 					description = <"">
 				>
 				["at0094"] = <
-					text = <"*19. Pain interfere with daily activities (en)">
+					text = <"19. Douleur gênant les activités quotidiennes">
 					description = <"19. Des douleurs ont-elles perturbé vos activités quotidiennes ?">
 				>
 				["at0095"] = <
@@ -2415,7 +2408,7 @@ ontology
 					description = <"">
 				>
 				["at0099"] = <
-					text = <"*20. Concentrating (en)">
+					text = <"20. Difficulté de concentration">
 					description = <"20. Avez-vous eu des difficultés à vous concentrer sur certaines choses, par exemple, pour lire le journal ou regarder la télévision ?">
 				>
 				["at0100"] = <
@@ -2435,7 +2428,7 @@ ontology
 					description = <"">
 				>
 				["at0104"] = <
-					text = <"*21. Tension (en)">
+					text = <"21. Tension">
 					description = <"21. Vous êtes-vous senti(e) tendu(e) ?">
 				>
 				["at0105"] = <
@@ -2455,7 +2448,7 @@ ontology
 					description = <"">
 				>
 				["at0109"] = <
-					text = <"*22. Worry (en)">
+					text = <"22. Inquiétude">
 					description = <"22. Vous êtes-vous fait du souci ?">
 				>
 				["at0110"] = <
@@ -2475,7 +2468,7 @@ ontology
 					description = <"">
 				>
 				["at0114"] = <
-					text = <"*23. Irritation (en)">
+					text = <"23. Irritabilité">
 					description = <"23. Vous êtes-vous senti(e) irritable ?">
 				>
 				["at0115"] = <
@@ -2495,7 +2488,7 @@ ontology
 					description = <"">
 				>
 				["at0119"] = <
-					text = <"*24. Depressed (en)">
+					text = <"24. Dépression">
 					description = <"24. Vous êtes-vous senti(e) déprimé(e) ?">
 				>
 				["at0120"] = <
@@ -2515,7 +2508,7 @@ ontology
 					description = <"">
 				>
 				["at0124"] = <
-					text = <"*25. Difficulty remembering things (en)">
+					text = <"25. Difficulté à se souvenir des choses">
 					description = <"25. Avez-vous eu des difficultés à vous souvenir de certaines choses ?">
 				>
 				["at0125"] = <
@@ -2535,7 +2528,7 @@ ontology
 					description = <"">
 				>
 				["at0129"] = <
-					text = <"*26. Family life (en)">
+					text = <"26. Vie familiale">
 					description = <"26. Votre état physique ou votre traitement médical vous ont-ils gêné(e) dans votre vie familiale ?">
 				>
 				["at0130"] = <
@@ -2555,7 +2548,7 @@ ontology
 					description = <"">
 				>
 				["at0134"] = <
-					text = <"*27. Social life (en)">
+					text = <"27. Vie sociale">
 					description = <"27. Votre état physique ou votre traitement médical vous ont-ils gêné(e) dans vos activités sociales (par exemple, sortir avec des amis, aller au cinéma... ) ?">
 				>
 				["at0135"] = <
@@ -2575,7 +2568,7 @@ ontology
 					description = <"">
 				>
 				["at0139"] = <
-					text = <"*28. Financial difficulties (en)">
+					text = <"28. Difficultés financières">
 					description = <"28. Votre état physique ou votre traitement médical vous ont-ils causé des problèmes financiers ?">
 				>
 				["at0140"] = <
@@ -2595,7 +2588,7 @@ ontology
 					description = <"">
 				>
 				["at0144"] = <
-					text = <"*29. Overall heath rate (en)">
+					text = <"29. État de santé général">
 					description = <"29. Comment évalueriez-vous votre état de santé au cours de la semaine passée ?">
 				>
 				["at0146"] = <
@@ -2627,7 +2620,7 @@ ontology
 					description = <"">
 				>
 				["at0160"] = <
-					text = <"*30. Overall quality of life rate (en)">
+					text = <"30. Qualité de vie globale">
 					description = <"30. Comment évalueriez-vous l'ensemble de votre qualité de vie au cours de la semaine passée ?">
 				>
 				["at0161"] = <
@@ -2659,76 +2652,72 @@ ontology
 					description = <"">
 				>
 				["at0168"] = <
-					text = <"*During the past week: (en)">
+					text = <"Au cours de la semaine passée :">
 					description = <"Au cours de la semaine passée :">
 				>
 				["at0169"] = <
-					text = <"*Select the number between 1 and 7 (en)">
+					text = <"Choisissez un nombre entre 1 et 7">
 					description = <"Pour les questions suivantes, veuillez répondre en entourant le chiffre entre 1 et 7 qui s'applique le mieux à votre situation">
 				>
-				["at0170"] = <
-					text = <"*Scoring (en)">
-					description = <"">
-				>
 				["at0171"] = <
-					text = <"*Global health status / QoL (en)">
-					description = <"">
+					text = <"QL2 scale">
+					description = <"État de santé global / Qualité de vie">
 				>
 				["at0172"] = <
-					text = <"*Physical functioning (en)">
-					description = <"">
+					text = <"PF2 scale">
+					description = <"Fonctionnement physique">
 				>
 				["at0173"] = <
-					text = <"*Emotional functioning (en)">
-					description = <"">
+					text = <"EF scale">
+					description = <"Fonctionnement émotionnel">
 				>
 				["at0174"] = <
-					text = <"*Cognitive functioning (en)">
-					description = <"">
+					text = <"CF scale">
+					description = <"Fonctionnement cognitif">
 				>
 				["at0175"] = <
-					text = <"*Social functioning (en)">
-					description = <"">
+					text = <"SF scale">
+					description = <"Fonctionnement social">
 				>
 				["at0176"] = <
-					text = <"*Fatigue (en)">
-					description = <"">
+					text = <"FA scale">
+					description = <"Fatigue">
 				>
 				["at0177"] = <
-					text = <"*Nausea and vomiting (en)">
-					description = <"">
+					text = <"NV scale">
+					description = <"Nausées et vomissements">
 				>
 				["at0178"] = <
-					text = <"*Score (en)">
-					description = <"">
+					text = <"RF2 scale">
+					description = <"Fonctionnement dans le rôle">
 				>
 				["at0179"] = <
-					text = <"*Pain (en)">
-					description = <"">
+					text = <"PA scale">
+					description = <"Douleur">
 				>
 				["at0180"] = <
-					text = <"*Dyspnoea (en)">
-					description = <"">
+					text = <"DY scale">
+					description = <"Dyspnée">
 				>
 				["at0181"] = <
-					text = <"*Insomnia (en)">
-					description = <"">
+					text = <"SL scale">
+					description = <"Insomnie">
 				>
 				["at0182"] = <
-					text = <"*Appetite loss (en)">
-					description = <"">
+					text = <"AP scale">
+					description = <"Perte d’appétit">
 				>
 				["at0183"] = <
-					text = <"*Constipation (en)">
-					description = <"">
+					text = <"CO scale">
+					description = <"Constipation">
 				>
 				["at0184"] = <
-					text = <"*Diarrhoea (en)">
-					description = <"">
+					text = <"DI scale">
+					description = <"Diarrhée">
 				>
 				["at0185"] = <
-					text = <"*Financial difficulties (en)">
-					description = <"">
+					text = <"FI scale">
+					description = <"Difficultés financières">
 				>
 				["at0186"] = <
 					text = <"*Item tree (en)">
@@ -2739,12 +2728,16 @@ ontology
 					description = <"Informations supplémentaires nécessaires pour étendre le modèle au contenu local ou pour l'aligner sur d'autres modèles de référence ou formalismes.">
 					comment = <"Par exemple : exigences locales en matière d'information ou métadonnées supplémentaires pour s'aligner sur FHIR.">
 				>
+				["at0188"] = <
+					text = <"Total sum">
+					description = <"Somme totale">
+				>
 			>
 		>
 		["it"] = <
 			items = <
 				["at0000"] = <
-					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30) (en)">
+					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C30)">
 					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
@@ -2760,7 +2753,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"*1. Strenuous activities (en)">
+					text = <"1. Attività faticose">
 					description = <"1. Ha difficoltà nel fare lavori faticosi, come portare una borsa della spesa pesante o una valigia?">
 				>
 				["at0005"] = <
@@ -2780,7 +2773,7 @@ ontology
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"*2. Long walk (en)">
+					text = <"2. Passeggiata lunga">
 					description = <"2. Ha difficoltà nel fare una lunga passeggiata?">
 				>
 				["at0010"] = <
@@ -2800,7 +2793,7 @@ ontology
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"*3. Short walk outside (en)">
+					text = <"3. Breve passeggiata all’aperto">
 					description = <"3. Ha difficoltà nel fare una breve passeggiata fuori casa?">
 				>
 				["at0015"] = <
@@ -2820,7 +2813,7 @@ ontology
 					description = <"">
 				>
 				["at0019"] = <
-					text = <"*4. Stay in bed or chair (en)">
+					text = <"4. Restare a letto o su una sedia">
 					description = <"4. Daten werden abgerufen. Warten Sie ein paar Sekunden, und versuchen Sie noch mal, auszuschneiden oder zu kopieren.">
 				>
 				["at0020"] = <
@@ -2840,7 +2833,7 @@ ontology
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"*5. Help with eating, dressing, washing (en)">
+					text = <"5. Aiuto per mangiare, vestirsi, lavarsi">
 					description = <"5. Ha bisogno di aiuto per mangiare, vestirsi, lavarsi o andare in bagno?">
 				>
 				["at0025"] = <
@@ -2860,7 +2853,7 @@ ontology
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"*6. Limited in work or daily activities (en)">
+					text = <"6. Limitazioni nel lavoro o nelle attività quotidiane">
 					description = <"6. Ha avuto limitazioni nel fare il Suo lavoro o i lavori di casa?">
 				>
 				["at0030"] = <
@@ -2880,7 +2873,7 @@ ontology
 					description = <"">
 				>
 				["at0034"] = <
-					text = <"*7. Limited in hobbies (en)">
+					text = <"7. Limitazioni negli hobby">
 					description = <"7. Ha avuto limitazioni nel praticare i Suoi passatempihobby o altre attività di divertimento o svago?">
 				>
 				["at0035"] = <
@@ -2900,7 +2893,7 @@ ontology
 					description = <"">
 				>
 				["at0039"] = <
-					text = <"*8. Short of breath (en)">
+					text = <"8. Affanno">
 					description = <"8. Le è mancato il fiato?">
 				>
 				["at0040"] = <
@@ -2920,7 +2913,7 @@ ontology
 					description = <"">
 				>
 				["at0044"] = <
-					text = <"*9. Pain (en)">
+					text = <"9. Dolore">
 					description = <"9. Ha avuto dolore?">
 				>
 				["at0045"] = <
@@ -2940,7 +2933,7 @@ ontology
 					description = <"">
 				>
 				["at0049"] = <
-					text = <"*10. Need to rest (en)">
+					text = <"10. Necessità di riposare">
 					description = <"10. Ha avuto bisogno di riposo?">
 				>
 				["at0050"] = <
@@ -2960,7 +2953,7 @@ ontology
 					description = <"">
 				>
 				["at0054"] = <
-					text = <"*11. Trouble sleeping (en)">
+					text = <"11. Difficoltà a dormire">
 					description = <"11. Ha avuto difficoltà a dormire?">
 				>
 				["at0055"] = <
@@ -2980,7 +2973,7 @@ ontology
 					description = <"">
 				>
 				["at0059"] = <
-					text = <"*12. Weakness (en)">
+					text = <"12. Debolezza">
 					description = <"12. Ha sentito debolezza?">
 				>
 				["at0060"] = <
@@ -3000,7 +2993,7 @@ ontology
 					description = <"">
 				>
 				["at0064"] = <
-					text = <"*13. Lacked appetite (en)">
+					text = <"13. Mancanza di appetito">
 					description = <"13. Le è mancato l'appetito?">
 				>
 				["at0065"] = <
@@ -3020,7 +3013,7 @@ ontology
 					description = <"">
 				>
 				["at0069"] = <
-					text = <"*14. Nausea (en)">
+					text = <"14. Nausea">
 					description = <"14. Ha avuto un senso di nausea?">
 				>
 				["at0070"] = <
@@ -3040,7 +3033,7 @@ ontology
 					description = <"">
 				>
 				["at0074"] = <
-					text = <"*15. Vomiting (en)">
+					text = <"15. Vomito">
 					description = <"15. Ha vomitato?">
 				>
 				["at0075"] = <
@@ -3060,7 +3053,7 @@ ontology
 					description = <"">
 				>
 				["at0079"] = <
-					text = <"*16. Constipation (en)">
+					text = <"16. Stitichezza">
 					description = <"16. Ha avuto problemi di stitichezza?">
 				>
 				["at0080"] = <
@@ -3080,7 +3073,7 @@ ontology
 					description = <"">
 				>
 				["at0084"] = <
-					text = <"*17. Diarrhea (en)">
+					text = <"17. Diarrea">
 					description = <"17. Ha avuto problemi di diarrea?">
 				>
 				["at0085"] = <
@@ -3100,7 +3093,7 @@ ontology
 					description = <"">
 				>
 				["at0089"] = <
-					text = <"*18. Tiredness (en)">
+					text = <"18. Stanchezza">
 					description = <"18. Ha sentito stanchezza?">
 				>
 				["at0090"] = <
@@ -3120,7 +3113,7 @@ ontology
 					description = <"">
 				>
 				["at0094"] = <
-					text = <"*19. Pain interfere with daily activities (en)">
+					text = <"19. Il dolore interferisce con le attività quotidiane">
 					description = <"19. Il dolore ha interferito con le Sue attività quotidiane?">
 				>
 				["at0095"] = <
@@ -3140,7 +3133,7 @@ ontology
 					description = <"">
 				>
 				["at0099"] = <
-					text = <"*20. Concentrating (en)">
+					text = <"20. Difficoltà di concentrazione">
 					description = <"20. Ha avuto difficoltà a concentrarsi su cose come leggere un giornale o guardare la televisione?">
 				>
 				["at0100"] = <
@@ -3160,7 +3153,7 @@ ontology
 					description = <"">
 				>
 				["at0104"] = <
-					text = <"*21. Tension (en)">
+					text = <"21. Tensione">
 					description = <"21. Si è sentito(a) teso(a)?">
 				>
 				["at0105"] = <
@@ -3180,7 +3173,7 @@ ontology
 					description = <"">
 				>
 				["at0109"] = <
-					text = <"*22. Worry (en)">
+					text = <"22. Preoccupazione">
 					description = <"22. Ha avuto preoccupazioni?">
 				>
 				["at0110"] = <
@@ -3200,7 +3193,7 @@ ontology
 					description = <"">
 				>
 				["at0114"] = <
-					text = <"*23. Irritation (en)">
+					text = <"23. Irritabilità">
 					description = <"23. Hа avuto manifestazioni di irritabilità?">
 				>
 				["at0115"] = <
@@ -3220,7 +3213,7 @@ ontology
 					description = <"">
 				>
 				["at0119"] = <
-					text = <"*24. Depressed (en)">
+					text = <"24. Depressione">
 					description = <"24. Ha avvertito uno stato di depressione?">
 				>
 				["at0120"] = <
@@ -3240,7 +3233,7 @@ ontology
 					description = <"">
 				>
 				["at0124"] = <
-					text = <"*25. Difficulty remembering things (en)">
+					text = <"25. Difficoltà a ricordare le cose">
 					description = <"25. На avuto difficoltà a ricordare le cose?">
 				>
 				["at0125"] = <
@@ -3260,7 +3253,7 @@ ontology
 					description = <"">
 				>
 				["at0129"] = <
-					text = <"*26. Family life (en)">
+					text = <"26. Vita familiare">
 					description = <"26.  Le Sue condizioni fisiche o il Suo trattamento medico hanno interferito con la Sua vita familiare? ">
 				>
 				["at0130"] = <
@@ -3280,7 +3273,7 @@ ontology
 					description = <"">
 				>
 				["at0134"] = <
-					text = <"*27. Social life (en)">
+					text = <"27. Vita sociale">
 					description = <"27. Le Sue condizioni fisiche o il Suo trattamento medico hanno interferito con le Sue attività sociali?">
 				>
 				["at0135"] = <
@@ -3300,7 +3293,7 @@ ontology
 					description = <"">
 				>
 				["at0139"] = <
-					text = <"*28. Financial difficulties (en)">
+					text = <"28. Difficoltà finanziarie">
 					description = <"28. Le Sue condizioni fisiche o il Suo trattamento medico Le hanno causato difficoltà finanziarie?">
 				>
 				["at0140"] = <
@@ -3320,7 +3313,7 @@ ontology
 					description = <"">
 				>
 				["at0144"] = <
-					text = <"*29. Overall heath rate (en)">
+					text = <"29. Valutazione generale della salute">
 					description = <"29. Come valuterebbe in generale la Sua salute durante gli ultimi sette giorni?">
 				>
 				["at0146"] = <
@@ -3352,7 +3345,7 @@ ontology
 					description = <"">
 				>
 				["at0160"] = <
-					text = <"*30. Overall quality of life rate (en)">
+					text = <"30. Valutazione generale della qualità della vita">
 					description = <"30. Come valuterebbe in generale la Sua qualità di vita durante gli ultimi sette giorni?">
 				>
 				["at0161"] = <
@@ -3384,76 +3377,72 @@ ontology
 					description = <"">
 				>
 				["at0168"] = <
-					text = <"*During the past week: (en)">
+					text = <"Durante gli ultimi sette giorni:">
 					description = <"Durante gli ultimi sette giorni:">
 				>
 				["at0169"] = <
-					text = <"*Select the number between 1 and 7 (en)">
+					text = <"Seleziona un numero tra 1 e 7">
 					description = <"Per le seguenti domande ponga un cerchio intorno al numero da 1 a 7 che meglio corrisponde alla Sua risposta">
 				>
-				["at0170"] = <
-					text = <"*Scoring (en)">
-					description = <"">
-				>
 				["at0171"] = <
-					text = <"*Global health status / QoL (en)">
-					description = <"">
+					text = <"QL2 scale">
+					description = <"Stato di salute globale / Qualità della vita">
 				>
 				["at0172"] = <
-					text = <"*Physical functioning (en)">
-					description = <"">
+					text = <"PF2 scale">
+					description = <"Funzionamento fisico">
 				>
 				["at0173"] = <
-					text = <"*Emotional functioning (en)">
-					description = <"">
+					text = <"EF scale">
+					description = <" Funzionamento emotivo">
 				>
 				["at0174"] = <
-					text = <"*Cognitive functioning (en)">
-					description = <"">
+					text = <"CF scale">
+					description = <"Funzionamento cognitivo">
 				>
 				["at0175"] = <
-					text = <"*Social functioning (en)">
-					description = <"">
+					text = <"SF scale">
+					description = <"Funzionamento sociale">
 				>
 				["at0176"] = <
-					text = <"*Fatigue (en)">
-					description = <"">
+					text = <"FA scale">
+					description = <"Fatica">
 				>
 				["at0177"] = <
-					text = <"*Nausea and vomiting (en)">
-					description = <"">
+					text = <"NV scale">
+					description = <"Nausea e vomito">
 				>
 				["at0178"] = <
-					text = <"*Score (en)">
-					description = <"">
+					text = <"RF2 scale">
+					description = <"Funzionamento nel ruolo">
 				>
 				["at0179"] = <
-					text = <"*Pain (en)">
-					description = <"">
+					text = <"PA scale">
+					description = <"Dolore">
 				>
 				["at0180"] = <
-					text = <"*Dyspnoea (en)">
-					description = <"">
+					text = <"DY scale">
+					description = <"Dispnea">
 				>
 				["at0181"] = <
-					text = <"*Insomnia (en)">
-					description = <"">
+					text = <"SL scale">
+					description = <"Insonnia">
 				>
 				["at0182"] = <
-					text = <"*Appetite loss (en)">
-					description = <"">
+					text = <"AP scale">
+					description = <"Perdita di appetito">
 				>
 				["at0183"] = <
-					text = <"*Constipation (en)">
-					description = <"">
+					text = <"CO scale">
+					description = <"Stitichezza">
 				>
 				["at0184"] = <
-					text = <"*Diarrhoea (en)">
-					description = <"">
+					text = <"DI scale">
+					description = <"Diarrea">
 				>
 				["at0185"] = <
-					text = <"*Financial difficulties (en)">
-					description = <"">
+					text = <"FI scale">
+					description = <"Difficoltà finanziarie">
 				>
 				["at0186"] = <
 					text = <"*Item tree (en)">
@@ -3463,6 +3452,10 @@ ontology
 					text = <"Extension">
 					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
 					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
+				["at0188"] = <
+					text = <"Total sum">
+					description = <"Somma totale">
 				>
 			>
 		>

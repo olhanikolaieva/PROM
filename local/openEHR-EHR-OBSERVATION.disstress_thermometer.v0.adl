@@ -6,18 +6,47 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			author = <
+			>
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
-		["name"] = <"Olha Nikolaieva">
-		["email"] = <"olha.nikolaieva.med@gmail.com">
-		["organisation"] = <"University Hospital Basel">
 		["date"] = <"2025-05-16">
+		["name"] = <"Olha Nikolaieva">
+		["organisation"] = <"University Hospital Basel">
+		["email"] = <"olha.nikolaieva.med@gmail.com">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			copyright = <"© openEHR Foundation">
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			copyright = <"© openEHR Foundation">
 		>
 	>
 	other_details = <
@@ -26,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c0f5c0b1d5505d6ee70e5192b1742a5d">
+		["MD5-CAM-1.0.1"] = <"db779fd731394a6193782c2c66f71ae3">
 		["build_uid"] = <"7c984157-c9f8-341d-8b66-84b55c0cfbf0">
 	>
 
@@ -149,6 +178,237 @@ ontology
 					text = <"Extension">
 					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
 					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"Disstress Thermometer">
+					description = <"*Disstress Thermometer (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Disstress Thermometer">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"No distress">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"10 Extreme distress">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Extension">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+			>
+		>
+		["it"] = <
+			items = <
+				["at0000"] = <
+					text = <"Disstress Thermometer">
+					description = <"*Disstress Thermometer (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Disstress Thermometer">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"0 No distress">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"10 Extreme distress">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Extension">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+			>
+		>
+		["fr"] = <
+			items = <
+				["at0000"] = <
+					text = <"Disstress Thermometer">
+					description = <"*Disstress Thermometer (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Disstress Thermometer">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"0 No distress">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"10 Extreme distress">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Extension">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>

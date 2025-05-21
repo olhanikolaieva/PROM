@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "4.0.0",
+      "sem_ver" : "5.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d2e73369cce220e9597f4ea02757f5c9",
+      "MD5-CAM-1.0.1" : "b74dc3d31a282a5f69fcc9e81d088353",
       "PARENT:MD5-CAM-1.0.1" : "B90C9995DE7CA7BCA27AAC9A42E00280"
     },
     "details" : {
@@ -180,6 +180,15 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "OBSERVATION",
         "occurrences" : "0..1",
+        "nodeId" : "at0.10",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-disstress_thermometer-001.v0",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
         "nodeId" : "at0.4",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -193,15 +202,6 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-social_context_screening_basel-001.v1",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "OBSERVATION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.8",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-disstress_thermometer-001.v0",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -306,7 +306,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "7406fc331707cb0fe1db879d4f96f92b"
+        "PARENT:MD5-CAM-1.0.1" : "fbd0cfb980d0d57e610ec473fa8b90cf"
       },
       "details" : {
         "de" : {
@@ -470,7 +470,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "BEAB7193BB7D94577AC77FC9A46CD1FA"
+        "PARENT:MD5-CAM-1.0.1" : "90e4007aa08a6ba433fc6eda8ba0bcf6"
       },
       "details" : {
         "de" : {
@@ -1130,14 +1130,41 @@
           },
           "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (2)",
+            "code" : "at0022.2",
+            "text" : "Geschwollene Beine oder Hände",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.3" : {
             "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.3",
+            "text" : "Gefühlsstörungen in den Fingern oder Zehen",
+            "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Hatten Sie Juckreiz?",
+            "description" : "Gibt es eine Vorgeschichte, bei der das spezifische Symptom oder Anzeichen vorhanden war?",
+            "comment" : "In einem Template würde das Datenelement normalerweise in die spezifisch gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem der Choice-Datentyp DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "at0005.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.2",
+            "text" : "Hatten Sie geschwollene Beine oder Hände?",
+            "description" : "Gibt es eine Vorgeschichte, bei der das spezifische Symptom oder Anzeichen vorhanden war?",
+            "comment" : "In einem Template würde das Datenelement normalerweise in die spezifisch gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem der Choice-Datentyp DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "at0005.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.3",
+            "text" : "Hatten Sie Gefühlsstörungen in den Fingern oder Zehen (z.B. Taubheit oder Kribbeln)?",
+            "description" : "Gibt es eine Vorgeschichte, bei der das spezifische Symptom oder Anzeichen vorhanden war?",
+            "comment" : "In einem Template würde das Datenelement normalerweise in die spezifisch gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem der Choice-Datentyp DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (3)",
+            "text" : "Juckreiz",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           }
         },
@@ -1288,7 +1315,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "4729ff65edd935e5964939986485f720"
+        "PARENT:MD5-CAM-1.0.1" : "423ef30a6d4327f939f506aaba41cd38"
       },
       "details" : {
         "de" : {
@@ -1364,6 +1391,19 @@
           "keywords" : [ "*homelessness (en)", "*housing (en)", "*gambling (en)", "*employment (en)", "*safety (en)", "*domestic (en)", "*violence (en)", "*dependant (en)", "*guardian (en)", "*situation (en)", "*circumstances (en)", "*abuse (en)", "*education (en)", "*insecurity (en)", "*inclusion (en)", "*exclusion (en)", "*transportation (en)", "*equity (en)", "*hardship (en)", "*unemployment (en)", "*stress (en)", "*connection (en)", "*literacy (en)", "*wellness (en)", "*social (en)", "*sociological (en)", "*socioeconomic (en)", "*poverty (en)", "*hunger (en)", "*refugee (en)", "*immigrant (en)", "*minority (en)" ],
           "use" : "*Use to create a framework for recording answers to pre-defined screening questions about the social context.\n\nCommon use cases include, but are not limited to:\n- Systematic enquiry in any consultation, for example:\n--- Are you homeless? Yes, No, Unknown\n--- Do you feel socially isolated?\n--- Do you feel safe at home/school/work?\n--- Do you think you are a problem gambler?\n--- How many children do you have under the age of 18?\n--- Are any individuals dependent on you?\n--- Do you need an interpreter when you visit the clinic?\n\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.\n\nThe EVENT structure from the reference model can be used to specify whether the questions relate to a point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a social context issue that has been present at any time in the past and information about a social context issue within a specified time interval - for example, the difference between \"Are you safe at home now?\" compared to \"Have you experienced any domestic violence in the past 4 weeks?\"\n\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\n\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening process identifies a social context circumstance, issue or concern and it is intended that the details are to be recorded and persisted as part of an ongoing health record, any further specific details about the social context should be recorded using archetypes specific for the clinical purpose. (en)",
           "misuse" : "*Not to be used to record persistent details about social context-related concepts. Use existing archetypes for this purpose - for example EVALUATION.housing, EVALUATION.education, EVALUATION. occupation, EVALUATION.social_network and other archetypes within the Social context project - https://ckm.openehr.org/ckm/projects/1013.30.39. (en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "keywords" : [ ],
           "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
@@ -1632,6 +1672,73 @@
                         } ]
                       } ],
                       "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0022.4",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0004.4",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "defaultValue" : {
+                                "value" : "Survey per mail",
+                                "@type" : "DV_TEXT"
+                              },
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_STRING",
+                                  "rmTypeName" : "STRING",
+                                  "constraint" : [ "Survey per mail" ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0005.4",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_STRING",
+                                  "rmTypeName" : "STRING",
+                                  "constraint" : [ "Ja", "Nein", "Weiss ich noch nicht" ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0025.4",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1660,7 +1767,7 @@
           "at0022.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.1",
-            "text" : "Material status",
+            "text" : "Marital status",
             "description" : "Details about a specified social context or issue, or a grouping of these, relevant for the screening purpose."
           },
           "at0022.2" : {
@@ -1688,6 +1795,25 @@
             "text" : "Haben Sie Kinder?",
             "description" : "Has there been experience of the specified 'Context'?",
             "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Oncologie Anamnese",
+            "description" : "Series of questions and associated answers used to screen about the social environment and social situation which may impact the health and well-being of the individual, especially to identify potential issues or risks."
+          },
+          "at0022.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.4",
+            "text" : "Survey per mail",
+            "description" : "Details about a specified social context or issue, or a grouping of these, relevant for the screening purpose."
+          },
+          "at0005.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.4",
+            "text" : "Wären Sie damit einverstanden, dass wir Ihnen auch Fragebögen per Email zukommen lassen?",
+            "description" : "Has there been experience of the specified 'Context'?",
+            "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
           }
         },
         "fi" : {
@@ -1701,6 +1827,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0022.1",
             "text" : "*Specific social context (en) (3)",
+            "description" : "*Details about a specified social context or issue, or a grouping of these, relevant for the screening purpose. (en)"
+          },
+          "at0022.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "*Specific social context (en) (4)",
             "description" : "*Details about a specified social context or issue, or a grouping of these, relevant for the screening purpose. (en)"
           }
         },
@@ -1716,6 +1848,12 @@
             "code" : "at0022.1",
             "text" : "Spesifikt sosialt forhold (3)",
             "description" : "Detaljer om et spesifikt sosialt forhold, eller en gruppering av slike, som er innenfor kartleggingsformålet."
+          },
+          "at0022.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Spesifikt sosialt forhold (4)",
+            "description" : "Detaljer om et spesifikt sosialt forhold, eller en gruppering av slike, som er innenfor kartleggingsformålet."
           }
         },
         "it" : {
@@ -1730,22 +1868,69 @@
             "code" : "at0022.1",
             "text" : "*Specific social context (en) (3)",
             "description" : "*Details about a specified social context or issue, or a grouping of these, relevant for the screening purpose. (en)"
+          },
+          "at0022.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "*Specific social context (en) (4)",
+            "description" : "*Details about a specified social context or issue, or a grouping of these, relevant for the screening purpose. (en)"
           }
         },
         "de" : {
           "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "*Specific social context (en) (2)",
+            "code" : "at0022.2",
+            "text" : "Working situation",
             "description" : "*Details about a specified social context or issue, or a grouping of these, relevant for the screening purpose. (en)"
           },
           "at0022.3" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "*Specific social context (en) (3)",
+            "code" : "at0022.3",
+            "text" : "Children",
             "description" : "*Details about a specified social context or issue, or a grouping of these, relevant for the screening purpose. (en)"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Wie ist Ihre Lebenssituation zu Hause?",
+            "description" : "*Has there been experience of the specified 'Context'? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "at0005.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.2",
+            "text" : "Gibt es Fragen/Probleme bezüglich Ihrer Arbeit / Ihres Berufs?",
+            "description" : "*Has there been experience of the specified 'Context'? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "at0005.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "*Presence? (en)",
+            "description" : "Haben Sie Kinder?",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Marital status",
+            "description" : "*Details about a specified social context or issue, or a grouping of these, relevant for the screening purpose. (en)"
+          },
+          "at0022.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.4",
+            "text" : "Survey per mail",
+            "description" : "*Details about a specified social context or issue, or a grouping of these, relevant for the screening purpose. (en)"
+          },
+          "at0005.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.4",
+            "text" : "Wären Sie damit einverstanden, dass wir Ihnen auch Fragebögen per Email zukommen lassen?",
+            "description" : "*Has there been experience of the specified 'Context'? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
           }
-        }
+        },
+        "fr" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1807,6 +1992,16 @@
       },
       "author" : { },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : { },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -1819,9 +2014,61 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "c0f5c0b1d5505d6ee70e5192b1742a5d"
+        "PARENT:MD5-CAM-1.0.1" : "db779fd731394a6193782c2c66f71ae3"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.disstress_thermometer.v0",
     "differential" : true,
@@ -1860,7 +2107,10 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { }
+        "en" : { },
+        "de" : { },
+        "it" : { },
+        "fr" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1878,7 +2128,37 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ ]
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
