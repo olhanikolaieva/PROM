@@ -70,11 +70,11 @@ Rojas-Concha L, Hansen MB, Petersen MA, Groenvold M. Content validation of the E
 
 Koyama N, Matsumura C, Shitashimizu Y, Sako M, Kurosawa H, Nomura T, et al. The role of EORTC QLQ-C15-PAL scores and inflammatory biomarkers in predicting survival in terminally ill patients with cancer. BMC Cancer. 2021 Mar 23;21(1):304. doi: 10.1186/s12885-021-08049-3.
 
-">
+Official EORTC QLQ-C30 Questionnaire and Translations https://qol.eortc.org/eortc-qlq-c15-pal/">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6057684eb4572e396f5a7dec5697715f">
+		["MD5-CAM-1.0.1"] = <"bfa94a161693a76c86caf80b898a7962">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
