@@ -81,7 +81,7 @@ Fayers PM, Machin D. Quality of Life: The Assessment, Analysis and Interpretatio
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"26a2d5aa174277e6a9eab1c0b6922acf">
+		["MD5-CAM-1.0.1"] = <"955c1777874036bff5d0c827e35ba947">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
@@ -758,7 +758,7 @@ ontology
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL) (en)">
+					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL)">
 					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
@@ -1147,7 +1147,7 @@ ontology
 		["fr"] = <
 			items = <
 				["at0000"] = <
-					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL) (en)">
+					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL)">
 					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
@@ -1536,7 +1536,7 @@ ontology
 		["it"] = <
 			items = <
 				["at0000"] = <
-					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL) (en)">
+					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL)">
 					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
