@@ -79,12 +79,12 @@ Fayers PM, Machin D. Quality of Life: The Assessment, Analysis and Interpretatio
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4b9040322d0a57d9311bd03ed04e0d91">
+		["MD5-CAM-1.0.1"] = <"f0736e2c508ce9d04e22297e3c93b83e">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- eortc_qlq_c15
+	OBSERVATION[at0000] matches {    -- EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL)
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -92,23 +92,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {    -- 1. Strenuous activities
-										value matches {
-											0.0|[local::at0005],
-											1.0|[local::at0006],
-											2.0|[local::at0007],
-											3.0|[local::at0008]
-										}
-									}
-									ELEMENT[at0009] occurrences matches {0..1} matches {    -- 2. Long walk
-										value matches {
-											0.0|[local::at0010],
-											1.0|[local::at0011],
-											2.0|[local::at0012],
-											3.0|[local::at0013]
-										}
-									}
-									ELEMENT[at0014] occurrences matches {0..1} matches {    -- 3. Short walk outside
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- 1. Short walk outside
 										value matches {
 											0.0|[local::at0015],
 											1.0|[local::at0016],
@@ -562,7 +546,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"eortc_qlq_c15">
+					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL)">
 					description = <"The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains.">
 				>
 				["at0001"] = <
@@ -577,49 +561,9 @@ ontology
 					text = <"Tree">
 					description = <"@ internal @">
 				>
-				["at0004"] = <
-					text = <"1. Strenuous activities">
-					description = <"1. Do you have any trouble doing strenuous activities, like carrying a heavy shopping bag or a suitcase?">
-				>
-				["at0005"] = <
-					text = <"Not at all">
-					description = <"">
-				>
-				["at0006"] = <
-					text = <"A little">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"Quite a bit">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"Very much">
-					description = <"">
-				>
-				["at0009"] = <
-					text = <"2. Long walk">
-					description = <"2. Do you have any trouble taking a long walk?">
-				>
-				["at0010"] = <
-					text = <"Not at all">
-					description = <"">
-				>
-				["at0011"] = <
-					text = <"A little">
-					description = <"">
-				>
-				["at0012"] = <
-					text = <"Quite a bit">
-					description = <"">
-				>
-				["at0013"] = <
-					text = <"Very much">
-					description = <"">
-				>
 				["at0014"] = <
-					text = <"3. Short walk outside">
-					description = <"3. Do you have any trouble taking a short walk outside of the house?">
+					text = <"1. Short walk outside">
+					description = <"1. Do you have any trouble taking a short walk outside of the house?">
 				>
 				["at0015"] = <
 					text = <"Not at all">
@@ -1287,7 +1231,7 @@ ontology
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"eortc_qlq_c15">
+					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL) (en)">
 					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
@@ -1302,49 +1246,9 @@ ontology
 					text = <"Tree">
 					description = <"@ internal @">
 				>
-				["at0004"] = <
-					text = <"1. Anstrengende Aktivitäten">
-					description = <"1. Bereitet es Ihnen Schwierigkeiten, sich körperlich anzustrengen (z. B. eine schwere Einkaufstasche oder einen Koffer zu tragen)?">
-				>
-				["at0005"] = <
-					text = <"Überhaupt nicht">
-					description = <"">
-				>
-				["at0006"] = <
-					text = <"Wenig">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"Mässig">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"Sehr">
-					description = <"">
-				>
-				["at0009"] = <
-					text = <"2. Langer Spaziergang">
-					description = <"2. Bereitet es Ihnen Schwierigkeiten, einen längeren Spaziergang zu machen?">
-				>
-				["at0010"] = <
-					text = <"Überhaupt nicht">
-					description = <"">
-				>
-				["at0011"] = <
-					text = <"Wenig">
-					description = <"">
-				>
-				["at0012"] = <
-					text = <"Mässig">
-					description = <"">
-				>
-				["at0013"] = <
-					text = <"Sehr">
-					description = <"">
-				>
 				["at0014"] = <
-					text = <"3. Kurzer Spaziergang draußen">
-					description = <"3. Bereitet es Ihnen Schwierigkeiten, eine kurze Strecke außer Haus zu gehen?">
+					text = <"*1. Short walk outside (en)">
+					description = <"*1. Do you have any trouble taking a short walk outside of the house? (en)">
 				>
 				["at0015"] = <
 					text = <"Überhaupt nicht">
@@ -2012,7 +1916,7 @@ ontology
 		["fr"] = <
 			items = <
 				["at0000"] = <
-					text = <"eortc_qlq_c15">
+					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL) (en)">
 					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
@@ -2027,49 +1931,9 @@ ontology
 					text = <"Tree">
 					description = <"@ internal @">
 				>
-				["at0004"] = <
-					text = <"1. Activités intenses">
-					description = <"1. Avez-vous des difficultés à faire certains efforts physiques pénibles comme porter un sac à provisions chargé ou une valise ?">
-				>
-				["at0005"] = <
-					text = <"Pas du tout">
-					description = <"">
-				>
-				["at0006"] = <
-					text = <"Un peu">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"Assez">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"Beaucoup">
-					description = <"">
-				>
-				["at0009"] = <
-					text = <"2. Longue marche">
-					description = <"2. Avez-vous des difficultés à faire une longue promenade ?">
-				>
-				["at0010"] = <
-					text = <"Pas du tout">
-					description = <"">
-				>
-				["at0011"] = <
-					text = <"Un peu">
-					description = <"">
-				>
-				["at0012"] = <
-					text = <"Assez">
-					description = <"">
-				>
-				["at0013"] = <
-					text = <"Beaucoup">
-					description = <"">
-				>
 				["at0014"] = <
-					text = <"3. Petite marche à l’extérieur">
-					description = <"3. Avez-vous des difficultés à faire un petit tour dehors ?">
+					text = <"*1. Short walk outside (en)">
+					description = <"*1. Do you have any trouble taking a short walk outside of the house? (en)">
 				>
 				["at0015"] = <
 					text = <"Pas du tout">
@@ -2737,7 +2601,7 @@ ontology
 		["it"] = <
 			items = <
 				["at0000"] = <
-					text = <"eortc_qlq_c15">
+					text = <"*EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL) (en)">
 					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
@@ -2752,49 +2616,9 @@ ontology
 					text = <"Tree">
 					description = <"@ internal @">
 				>
-				["at0004"] = <
-					text = <"1. Attività faticose">
-					description = <"1. Ha difficoltà nel fare lavori faticosi, come portare una borsa della spesa pesante o una valigia?">
-				>
-				["at0005"] = <
-					text = <"No">
-					description = <"">
-				>
-				["at0006"] = <
-					text = <"Un po'">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"Parecchio">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"Moltissimo">
-					description = <"">
-				>
-				["at0009"] = <
-					text = <"2. Passeggiata lunga">
-					description = <"2. Ha difficoltà nel fare una lunga passeggiata?">
-				>
-				["at0010"] = <
-					text = <"No">
-					description = <"">
-				>
-				["at0011"] = <
-					text = <"Un po'">
-					description = <"">
-				>
-				["at0012"] = <
-					text = <"Parecchio">
-					description = <"">
-				>
-				["at0013"] = <
-					text = <"Moltissimo">
-					description = <"">
-				>
 				["at0014"] = <
-					text = <"3. Breve passeggiata all’aperto">
-					description = <"3. Ha difficoltà nel fare una breve passeggiata fuori casa?">
+					text = <"*1. Short walk outside (en)">
+					description = <"*1. Do you have any trouble taking a short walk outside of the house? (en)">
 				>
 				["at0015"] = <
 					text = <"No">
