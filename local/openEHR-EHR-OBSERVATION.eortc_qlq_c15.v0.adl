@@ -36,27 +36,27 @@ description
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"*To record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
-			keywords = <"*EORTC QLQ C30, PROM, quality of life, cancer, oncology. (en)", ...>
+			keywords = <"*EORTC QLQ C15, PROM, quality of life, cancer, oncology. (en)", ...>
 			copyright = <"© openEHR Foundation">
 			use = <"*Use to record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record the results for each component parameter for the EORTC quality of life questionnaire. ">
-			keywords = <"EORTC QLQ C30, PROM, quality of life, cancer, oncology.", ...>
+			keywords = <"EORTC QLQ C15, PROM, quality of life, cancer, oncology.", ...>
 			use = <"Use to record the results for each component parameter for the EORTC quality of life questionnaire. ">
 		>
 		["it"] = <
 			language = <[ISO_639-1::it]>
 			purpose = <"*To record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
-			keywords = <"*EORTC QLQ C30, PROM, quality of life, cancer, oncology. (en)", ...>
+			keywords = <"*EORTC QLQ C15, PROM, quality of life, cancer, oncology. (en)", ...>
 			copyright = <"© openEHR Foundation">
 			use = <"*Use to record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
 		>
 		["fr"] = <
 			language = <[ISO_639-1::fr]>
 			purpose = <"*To record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
-			keywords = <"*EORTC QLQ C30, PROM, quality of life, cancer, oncology. (en)", ...>
+			keywords = <"*EORTC QLQ C15, PROM, quality of life, cancer, oncology. (en)", ...>
 			copyright = <"© openEHR Foundation">
 			use = <"*Use to record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
 		>
@@ -64,24 +64,17 @@ description
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
-		["references"] = <"Aaronson NK, Ahmedzai S, Bergman B, Bullinger M, Cull A, Duez NJ, et al. The European Organization for Research and Treatment of Cancer QLQ-C30: a quality-of-life instrument for use in international clinical trials in oncology.
-J Natl Cancer Inst. 1993 Mar 3;85(5):365–76. doi: 10.1093/jnci/85.5.365. PMID: 8433390.
+		["references"] = <"Groenvold M, Petersen MA, Aaronson NK, Arraras JI, Blazeby JM, Bottomley A, et al. The development of the EORTC QLQ-C15-PAL: a shortened questionnaire for cancer patients in palliative care. Eur J Cancer. 2006 Jan;42(1):55–64. doi: 10.1016/j.ejca.2005.06.022.
 
-EORTC QLQ-C30 Scoring Manual (3rd Edition). Fayers PM, Aaronson NK, Bjordal K, Groenvold M, Curran D, Bottomley A; on behalf of the EORTC Quality of Life Group.
-Published by the European Organisation for Research and Treatment of Cancer, Brussels, 2001. Available upon request from EORTC QLG: https://qol.eortc.org/manuals/
+Rojas-Concha L, Hansen MB, Petersen MA, Groenvold M. Content validation of the EORTC QLQ-C15-PAL with advanced cancer patients and health care professionals from palliative care services in Chile. BMC Palliat Care. 2020 Oct 12;19(1):157. doi: 10.1186/s12904-020-00656-4.
 
-https://www.ejcancer.com/article/S0959-8049(05)00616-7/fulltext?utm_source=chatgpt.com
+Koyama N, Matsumura C, Shitashimizu Y, Sako M, Kurosawa H, Nomura T, et al. The role of EORTC QLQ-C15-PAL scores and inflammatory biomarkers in predicting survival in terminally ill patients with cancer. BMC Cancer. 2021 Mar 23;21(1):304. doi: 10.1186/s12885-021-08049-3.
 
-Official EORTC QLQ-C30 Questionnaire and Translations https://qol.eortc.org/questionnaire/eortc-qlq-c30/
-
-Cocks K, King MT, Velikova G, Fayers PM, Brown JM. Evidence-based guidelines for determination of sample size and interpretation of the European Organisation for the Research and Treatment of Cancer Quality of Life Questionnaire Core 30.
-J Clin Oncol. 2011 Jan 1;29(1):89–96. doi: 10.1200/JCO.2010.28.0107. PMID: 21098316.
-
-Fayers PM, Machin D. Quality of Life: The Assessment, Analysis and Interpretation of Patient-reported Outcomes (2nd ed.). Wiley, 2007.">
+">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"955c1777874036bff5d0c827e35ba947">
+		["MD5-CAM-1.0.1"] = <"6057684eb4572e396f5a7dec5697715f">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
@@ -370,7 +363,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL)">
-					description = <"The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains.">
+					description = <"The EORTC QLQ C15 version 1 questionnaire used to evaluate the quality of life in patients with cancer across various domains.">
 				>
 				["at0001"] = <
 					text = <"History">
@@ -759,7 +752,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL)">
-					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
+					description = <"*The EORTC QLQ C15 version 1 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
 					text = <"History">
@@ -1148,7 +1141,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL)">
-					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
+					description = <"*The EORTC QLQ C15 version 1 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
 					text = <"History">
@@ -1537,7 +1530,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL)">
-					description = <"*The EORTC QLQ C30 version 3 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
+					description = <"*The EORTC QLQ C15 version 1 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
 				>
 				["at0001"] = <
 					text = <"History">
