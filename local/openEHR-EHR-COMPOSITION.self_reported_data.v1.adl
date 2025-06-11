@@ -81,7 +81,7 @@ description
 		["organisation"] = <"Helse Vest IKT AS">
 		["email"] = <"marit.alice.venheim@helse-vest-ikt.no">
 	>
-	lifecycle_state = <"published">
+	lifecycle_state = <"in_development">
 	other_contributors = <"Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)","Astrid Askeland, Dips AS, Norway","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)","Aleocidio Balzanelo, DASA, Brazil","Maria Berggren, Region Uppsala, Sweden","SB Bhattacharyya, Bhattacharyyas Clinical Records Research & Informatics LLP, India","Diego Bosca, VeraTech for Health, Spain","Samanta Dallagnese, Private Office, Brazil","Gunn Elin Blakkisrud, DIPS ASA, Norway","Kåre Flø, DIPS ASA, Norway","Martin Grundberg, Cambio Healthcare Systems, Sweden","Evelyn Hovenga, EJSH Consulting, Australia","Mikkel Johan Gaup Grønmo, Regional forvaltning EPJ, Helse Nord, Norway (Nasjonal IKT redaktør)","Ronald Krawec, Alberta Health Services, Canada","Kanika Kuwelker, Helse Vest IKT, Norway (Nasjonal IKT redaktør)","Liv Laugen, ​Oslo University Hospital, Norway, Norway","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Manisha Mantri, C-DAC, India","Hanne Marte Bårholm, Helse Vest IKT, Norway (Nasjonal IKT redaktør)","Mikael Nyström, Cambio Healthcare Systems AB, Sweden","Terje Sagmyr, Helse Vest IKT, Norway","Carina Sandell, Region Östergötland, Sweden","Andre Smitt-Ingebretsen, Sørlandet sykehus HF, Norway","Natalia Strauch, Medizinische Hochschule Hannover, Germany","Erik Sundvall, Karolinska Institutet + Karolinska University Hospital, Region Stockholm + Linköping University, Sweden","John Tore Valand, Helse Bergen, Norway (openEHR Editor)","Marit Alice Venheim, Helse Vest IKT, Norway (openEHR Editor)","Ina Wille, Helse-Vest RHF, Norway">
 	details = <
 		["nn"] = <
@@ -133,29 +133,6 @@ Die erwartete Verwendung dieses Archetyps umfasst, ist aber nicht beschränkt au
 Die Hauptkomponente Sections/Content wurde absichtlich nicht eingeschränkt. Dadurch kann sie mit beliebigen SECTION- oder ENTRY-Archetypen gefüllt werden, die für den klinischen Zweck innerhalb eines Templates geeignet sind.">
 			misuse = <"Nicht zur Repräsentation von klinisch generierten Datensätzen verwenden.">
 		>
-		["sv"] = <
-			language = <[ISO_639-1::sv]>
-			purpose = <"*A container for information provided by an individual, to support clear separation of patient generated from clinician-generated health data. (en)">
-			keywords = <"*questionnaire, self-report, form, survey, PROM, PREM, PRO, diary, journal (en)", ...>
-			use = <"*Use as a generic container to record information provided by an individual, to support clear separation of patient-generated from clinician-generated health data.
-
-The scope of content for this archetype can be very broad and be inclusive of many contexts. The anticipated scope of content includes, but not limited to:
-- self-generated responses to questionnaires, including PREMs or PROMs
-- pain or mood diary
-- tobacco smoking diary
-- self-generated health summary for sharing with others
-- self-monitoring of measurements and observations
-
-The anticipated use of this archetype includes, but is not limited to:
-- submission of a self-reported questionnaire to a clinician in advance of a planned contact
-- submission of a contact request form
-- daily measurements within a Personal Health Record
-- patient-entered data in a shared clinical portal
-- patient generated records of information from personal or medical devices
-
-The main Sections/Content component has been deliberately left unconstrained. This will allow it to be populated with any SECTION or ENTRY archetypes appropriate for the clinical purpose within a template. (en)">
-			misuse = <"Ska inte användas för att representera information genererad av hälso- och sjukvårdspersonal.">
-		>
 		["fi"] = <
 			language = <[ISO_639-1::fi]>
 			purpose = <"Henkilön itse ilmoittamien tietojen säiliö, jonka käyttö tukee henkilön itse tuottamien tietojen selkeää erottamista sosiaali- ja terveydenhuollon ammattihenkilöiden tuottamista asiakastiedoista.">
@@ -181,28 +158,28 @@ Arkkityyppiä oletetaan käytettävän seuraavanlaisiin tarkoituksiin, mutta kä
 Arkkityypin sisältöä ei ole tarkoituksella rajoitettu, jotta on voitu mahdollistaa sen täydentäminen templaateissa kaikilla tarkoitukseen sopivilla SECTION- ja ENTRY-arkkityypeillä.">
 			misuse = <"Ei saa käyttää sosiaali- ja terveydenhuollon ammattihenkilön tuottamien asiakastietojen tallentamiseen.">
 		>
-		["pt"] = <
-			language = <[ISO_639-1::pt]>
-			purpose = <"Um contentor para informações fornecidas por um indivíduo, para apoiar uma separação clara dos pacientes gerados a partir de dados de saúde gerados pelo médico.">
-			keywords = <"questionário","auto-relatório","formulário","inquérito","PROM","PREM","PRO","diário">
-			use = <"Utilização como contentor genérico para registar informações fornecidas por um indivíduo, para apoiar uma separação clara entre os dados de saúde gerados pelo paciente e os dados de saúde gerados pelo médico.
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"*A container for information provided by an individual, to support clear separation of patient generated from clinician-generated health data. (en)">
+			keywords = <"*questionnaire, self-report, form, survey, PROM, PREM, PRO, diary, journal (en)", ...>
+			use = <"*Use as a generic container to record information provided by an individual, to support clear separation of patient-generated from clinician-generated health data.
 
-O âmbito do conteúdo deste arquétipo pode ser muito amplo e incluir muitos contextos. O âmbito de conteúdo previsto inclui, mas não se limita a:
-- respostas auto-geradas a questionários, incluindo PREMs ou PROMs
-- diário da dor ou do humor
-- diário de tabagismo
-- resumo de saúde auto-gerada para partilha com outros
-- auto-controlo das medições e observações
+The scope of content for this archetype can be very broad and be inclusive of many contexts. The anticipated scope of content includes, but not limited to:
+- self-generated responses to questionnaires, including PREMs or PROMs
+- pain or mood diary
+- tobacco smoking diary
+- self-generated health summary for sharing with others
+- self-monitoring of measurements and observations
 
-O uso antecipado deste arquétipo inclui, mas não está limitado a
-- apresentação de um questionário autodeclarado a um clínico antes de um contacto planeado
-- apresentação de um formulário de pedido de contacto
-- medições diárias dentro de um Registo de Saúde Pessoal
-- dados centrados no paciente num portal clínico partilhado
-- registos de informação gerados pelo paciente a partir de dispositivos pessoais ou médicos
+The anticipated use of this archetype includes, but is not limited to:
+- submission of a self-reported questionnaire to a clinician in advance of a planned contact
+- submission of a contact request form
+- daily measurements within a Personal Health Record
+- patient-entered data in a shared clinical portal
+- patient generated records of information from personal or medical devices
 
-A componente principal das Secções/Conteúdo foi deliberadamente deixada sem constrangimentos. Isto permitirá que seja preenchida com qualquer arquétipo de SECÇÃO ou ENTRADA apropriado para o propósito clínico dentro de um modelo.">
-			misuse = <"Não deve ser utilizado para representar registos gerados por clínicos.">
+The main Sections/Content component has been deliberately left unconstrained. This will allow it to be populated with any SECTION or ENTRY archetypes appropriate for the clinical purpose within a template. (en)">
+			misuse = <"Ska inte användas för att representera information genererad av hälso- och sjukvårdspersonal.">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -227,6 +204,29 @@ Den antatte bruken av denne arketypen inkluderer, men er ikke avgrenset til:
 
 Det er ikke satt begrensinger på hovedkomponenten Section/content. Dette gjør at man kan legge til hvilken som helst SECTION eller ENTRY arketype som er som passer til det kliniske formålet i templatet.">
 			misuse = <"Skal ikke brukes til å representere data generert av kliniker.">
+		>
+		["pt"] = <
+			language = <[ISO_639-1::pt]>
+			purpose = <"Um contentor para informações fornecidas por um indivíduo, para apoiar uma separação clara dos pacientes gerados a partir de dados de saúde gerados pelo médico.">
+			keywords = <"questionário","auto-relatório","formulário","inquérito","PROM","PREM","PRO","diário">
+			use = <"Utilização como contentor genérico para registar informações fornecidas por um indivíduo, para apoiar uma separação clara entre os dados de saúde gerados pelo paciente e os dados de saúde gerados pelo médico.
+
+O âmbito do conteúdo deste arquétipo pode ser muito amplo e incluir muitos contextos. O âmbito de conteúdo previsto inclui, mas não se limita a:
+- respostas auto-geradas a questionários, incluindo PREMs ou PROMs
+- diário da dor ou do humor
+- diário de tabagismo
+- resumo de saúde auto-gerada para partilha com outros
+- auto-controlo das medições e observações
+
+O uso antecipado deste arquétipo inclui, mas não está limitado a
+- apresentação de um questionário autodeclarado a um clínico antes de um contacto planeado
+- apresentação de um formulário de pedido de contacto
+- medições diárias dentro de um Registo de Saúde Pessoal
+- dados centrados no paciente num portal clínico partilhado
+- registos de informação gerados pelo paciente a partir de dispositivos pessoais ou médicos
+
+A componente principal das Secções/Conteúdo foi deliberadamente deixada sem constrangimentos. Isto permitirá que seja preenchida com qualquer arquétipo de SECÇÃO ou ENTRADA apropriado para o propósito clínico dentro de um modelo.">
+			misuse = <"Não deve ser utilizado para representar registos gerados por clínicos.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -306,8 +306,8 @@ Les sections/contenus principaux sont volontairement sans contraintes. Cela perm
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["MD5-CAM-1.0.1"] = <"B90C9995DE7CA7BCA27AAC9A42E00280">
-		["build_uid"] = <"5e6b0dcf-eae2-449a-be94-7bc12dc37b9f">
-		["revision"] = <"1.1.1">
+		["build_uid"] = <"0189266e-488b-40fd-a789-b5df180fe586">
+		["revision"] = <"1.1.2-alpha">
 	>
 
 definition
