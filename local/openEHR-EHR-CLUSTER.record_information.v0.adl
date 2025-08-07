@@ -1,0 +1,141 @@
+archetype (adl_version=1.4; uid=7bff2495-06b2-4478-9034-711e1c35f0c4)
+	openEHR-EHR-CLUSTER.record_information.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+		["fi"] = <
+			language = <[ISO_639-1::fi]>
+			author = <
+			>
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2024-08-19">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
+		["fi"] = <
+			language = <[ISO_639-1::fi]>
+			copyright = <"© openEHR Foundation">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"4cd4cc0a15124b5023fa339ecc40a81d">
+		["build_uid"] = <"07ee93bc-971e-3b57-9b9e-ee7f0159cf87">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Record information
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Record ID
+				value matches {
+					DV_IDENTIFIER matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- DateTime
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Record information">
+					description = <"record information">
+				>
+				["at0002"] = <
+					text = <"Record ID">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"DateTime">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Registrera information">
+					description = <"*record information (en)">
+				>
+				["at0002"] = <
+					text = <"Record ID">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"DatumTid">
+					description = <"">
+				>
+			>
+		>
+		["fi"] = <
+			items = <
+				["at0000"] = <
+					text = <"Tallenna tiedot">
+					description = <"*record information (en)">
+				>
+				["at0002"] = <
+					text = <"Tietueen tunnus">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"DateTime">
+					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Record information">
+					description = <"*record information (en)">
+				>
+				["at0002"] = <
+					text = <"Record ID">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"DateTime">
+					description = <"">
+				>
+			>
+		>
+	>
