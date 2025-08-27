@@ -74,7 +74,7 @@ Official EORTC QLQ-C30 Questionnaire and Translations https://qol.eortc.org/eort
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bfa94a161693a76c86caf80b898a7962">
+		["MD5-CAM-1.0.1"] = <"3628487ba8d02da6e9dab027f8434e5d">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
@@ -225,6 +225,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -237,6 +238,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -249,6 +251,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -261,6 +264,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -273,6 +277,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -285,6 +290,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -297,6 +303,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -309,6 +316,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -321,6 +329,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -333,6 +342,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
