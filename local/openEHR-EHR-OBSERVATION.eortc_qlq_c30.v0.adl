@@ -76,7 +76,7 @@ Fayers PM, Machin D. Quality of Life: The Assessment, Analysis and Interpretatio
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7fae390826811ac3cebfe6af7e63838b">
+		["MD5-CAM-1.0.1"] = <"4416b03cdece8bd35e87a76626599216">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
@@ -350,6 +350,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -362,6 +363,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -374,6 +376,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -386,6 +389,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -398,6 +402,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -410,6 +415,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -422,6 +428,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -434,6 +441,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -446,6 +454,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -458,6 +467,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -470,6 +480,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -482,6 +493,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -494,6 +506,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -506,6 +519,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -518,6 +532,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
@@ -530,6 +545,7 @@ definition
 												list = <
 													["1"] = <
 														units = <"1">
+														precision = <|0|>
 													>
 												>
 											>
