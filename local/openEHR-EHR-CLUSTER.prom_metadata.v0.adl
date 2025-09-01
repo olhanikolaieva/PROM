@@ -1,0 +1,278 @@
+archetype (adl_version=1.4; uid=c7715ac0-943b-4ae3-b8b5-df05d0ba8a69)
+	openEHR-EHR-CLUSTER.prom_metadata.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Olha Nikolaieva">
+		["email"] = <"olha.nikolaieva.med@gmail.com">
+		["organisation"] = <"University Hospital Basel">
+		["date"] = <"2025-09-01">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"344e47e51423b091d307b5adfdf17b24">
+		["build_uid"] = <"c4ec8dab-804a-3c0e-898d-ffb2081fc982">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- PROM Metadata
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Event
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Event date
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Medium
+				value matches {
+					1|[local::at0004],
+					2|[local::at0005],
+					3|[local::at0006]
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Start of survey
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- End of survey
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Status
+				value matches {
+					0|[local::at0010],
+					1|[local::at0011],
+					2|[local::at0012]
+				}
+			}
+			ELEMENT[at0013] occurrences matches {0..1} matches {    -- Language
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0014] occurrences matches {0..1} matches {    -- Patient deactivation
+				value matches {
+					0|[local::at0017],
+					1|[local::at0018],
+					999|[local::at0019]
+				}
+			}
+			ELEMENT[at0015] occurrences matches {0..1} matches {    -- Patient deactivation other
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0016] occurrences matches {0..1} matches {    -- Patient deactivation date
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0020] occurrences matches {0..1} matches {    -- Path deactivation
+				value matches {
+					1|[local::at0021],
+					2|[local::at0022],
+					3|[local::at0023],
+					4|[local::at0024],
+					999|[local::at0025]
+				}
+			}
+			ELEMENT[at0026] occurrences matches {0..1} matches {    -- Path deactivation other
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0027] occurrences matches {0..1} matches {    -- Path deactivation date
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0028] occurrences matches {0..1} matches {    -- Survey skip
+				value matches {
+					1|[local::at0029],
+					2|[local::at0030],
+					3|[local::at0031],
+					999|[local::at0032]
+				}
+			}
+			ELEMENT[at0033] occurrences matches {0..1} matches {    -- Survey skip other
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0034] occurrences matches {0..1} matches {    -- Survey skip date
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"PROM Metadata">
+					description = <"Metadata to support PROM templates. ">
+				>
+				["at0001"] = <
+					text = <"Event">
+					description = <"Designation of the created task or sent survey.">
+				>
+				["at0002"] = <
+					text = <"Event date">
+					description = <"Date the survey was sent or the task was created.">
+				>
+				["at0003"] = <
+					text = <"Medium">
+					description = <"Selected medium used to provide the task.">
+				>
+				["at0004"] = <
+					text = <"Tablet">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Email">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Paper">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Start of survey">
+					description = <"Date and time when the questionnaire was opened.">
+				>
+				["at0008"] = <
+					text = <"End of survey">
+					description = <"Date and time when the questionnaire was completed.">
+				>
+				["at0009"] = <
+					text = <"Status">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Not opened">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Opened">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Completed">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Language">
+					description = <"Language in which the patient filled out the survey.">
+				>
+				["at0014"] = <
+					text = <"Patient deactivation">
+					description = <"Deactivation of the patient from the system or all surveys.">
+				>
+				["at0015"] = <
+					text = <"Patient deactivation other">
+					description = <"Text for remarks on patient deactivation.">
+				>
+				["at0016"] = <
+					text = <"Patient deactivation date">
+					description = <"Date of patient deactivation.">
+				>
+				["at0017"] = <
+					text = <"Patient deceased">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Patient no longer wishes to participate">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Other">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Path deactivation">
+					description = <"Deactivation of the patient from the survey set.">
+				>
+				["at0021"] = <
+					text = <"Patient does not respond to follow-ups and can no longer be reached">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Patient no longer wishes to participate">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Language-related reasons">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Patient’s health situation">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Other">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Path deactivation other">
+					description = <"Text for remarks on path deactivation.">
+				>
+				["at0027"] = <
+					text = <"Path deactivation date">
+					description = <"Date of deactivation of the survey set.">
+				>
+				["at0028"] = <
+					text = <"Survey skip">
+					description = <"Skipping of a survey time point.">
+				>
+				["at0029"] = <
+					text = <"Patient does not respond within the survey period">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Patient no longer wishes to participate">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Patient’s health situation">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Other">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Survey skip other">
+					description = <"Text for remarks on skipping survey.">
+				>
+				["at0034"] = <
+					text = <"Survey skip date">
+					description = <"Date of skipping a survey time point.">
+				>
+			>
+		>
+	>
