@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "4889813590a10f3f6aa271957af973aa",
-      "PARENT:MD5-CAM-1.0.1" : "6D34CF0B5CC4E97B39CD3254BCDAD43E",
+      "MD5-CAM-1.0.1" : "8888f72d374f48e3af921581073ab415",
+      "PARENT:MD5-CAM-1.0.1" : "0C9C24C7FD5A3E1351E581E1C5A757D1",
       "sem_ver" : "0.1.0",
       "build_uid" : ""
     },
@@ -124,6 +124,36 @@
         "keywords" : [ "筛查", "问卷", "调查问卷", "主诉", "症状", "表现", "起始", "发作", "障碍", "失调", "紊乱", "问题", "不适", "体征" ],
         "use" : "旨在建立统一的框架，用于记录针对预先定义的关于症状或体征的筛查问题的答案。\r\n\r\n常见的用例包括但不仅限于：\r\n- 任何就诊过程中系统性的询问，例如：\r\n--- 您头痛吗？是、否、未知。\r\n--- 您在过去 4 周内是否出现过头晕？是、否、未知。\r\n- 与疾病监测（disease surveillance）相关的具体询问。\r\n\r\n本原始型故意保持着宽松的语义/含义，因而，通常只有在每个具体/特定模板的上下文背景下，针对本原始型的查询才会有用或安全。在具体的模板当中，通常会将每个数据元重命名为所提出的具体/特定问题。如果已经提出了针对常见用例的取值集合，则可以利用数据类型为文本型 DV_TEXT 或布尔型 DV_BOOLEAN 的选项来匹配每个具体/特定的用例，使得能够对此类的取值集合加以改编，以适合本地的使用。\r\n\r\n参考模型之中的事件结构 EVENT 可用于明确规定这些相应的问题是否与特定的时间点/时刻或时段相关。建议利用本原始型的单独/不同实例来区分记录过去任何时间出现的特定症状信息的调查问卷与指定时段/时间间隔内特定症状的相关信息 - 例如，“你现在头晕吗？”与“过去 4 周内你有没有出现过头晕？”\r\n\r\n在不同的上下文背景下，调查问卷答复之中信息的来源可能会有所不同，但可以利用参考模型之中的信息提供方数据元“'Information provider”元素来加以具体的标识。\r\n\r\n本原始型旨在作为筛查工具或者用于记录简单的问卷格式数据，以便将其用于疾病登记之类的情况。如果筛查问卷标识确定了症状或体征的存在情况，则建议临床系统利用嵌套在本原始型的其它详情槽位“Additional details”之中的群簇型症状体征原始型 CLUSTER.symptom_sign 来记录并持久保留关于相应症状或体征的具体详情。",
         "misuse" : "除了筛查的上下文背景之外，并非旨在用于记录关于症状存在情况/存在与否的详情。应当采用群簇型症状体征原始型 CLUSTER.symptom_sign 或群簇型除外症状体征原始型 CLUSTER.exclusion_symptom_sign 来实现此类的目的。\r\n\r\n并非旨在用于记录关于简单的选项列表的详情：其中，可能会将问题的答案选项记录为 “存在” 或 “不确定”。对于此类的目的，应当采用观察型选项列表原始型 OBSERVATION.selection_list。",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Crear un marc per registrar respostes a preguntes de cribratge predefinides sobre símptomes o signes.",
+        "keywords" : [ "cribratge", "qüestionari", "queixa", "símptoma", "pertorbació", "problema", "malestar", "signe" ],
+        "use" : "Utilitzar per crear un marc per registrar respostes a preguntes de cribratge predefinides sobre símptomes o signes.\r\n\r\nEls casos d'ús comuns inclouen, entre d'altres:\r\n- Consulta sistemàtica en qualsevol consulta, per exemple:\r\n--- Té mals de cap? Sí, No, Desconegut.\r\n--- Ha tingut marejos en les darreres quatre setmanes? Sí, No, Desconegut.\r\n- Preguntes específiques relacionades amb la vigilància de malalties.\r\n\r\nLa semàntica d'aquest arquetip és intencionadament flexible, i consultar aquest arquetip normalment només seria útil o segur dins del context de cada plantilla específica. En una plantilla, cada element de dades normalment es canviaria de nom a la pregunta específica que es fa. Quan s'han proposat conjunts de valors per a casos d'ús comuns, aquests es poden adaptar per a ús local mitjançant l'opció de tipus de dades DV_TEXT o DV_BOOLEAN per coincidir amb cada cas d'ús específic.\r\n\r\nL'estructura EVENT del model de referència es pot utilitzar per especificar si les preguntes es refereixen a un punt en el temps o a un període de temps. Utilitzeu una instància separada d'aquest arquetip per distingir entre un qüestionari que registra informació sobre un símptoma que ha estat present en qualsevol moment del passat i informació sobre un símptoma dins d'un interval de temps especificat; per exemple, la diferència entre \"Està marejat ara?\" en comparació amb \"Ha tingut marejos en les darreres 4 setmanes?\"\r\n\r\nLa font de la informació en una resposta al qüestionari pot variar en diferents contextos, però es pot identificar específicament mitjançant l'element \"Proveïdor d'informació\" del model de referència.\r\n\r\nAquest arquetip s'ha dissenyat per ser utilitzat com a eina de cribratge o per registrar dades simples en format de qüestionari per al seu ús en situacions com ara un registre de malalties. Si el qüestionari de cribratge identifica la presència d'un símptoma o signe, es recomana que el sistema clínic registri i persisteixi els detalls específics sobre el símptoma o signe mitjançant l'arquetip CLUSTER.symptom_sign imbricat dins de l'SLOT Detalls addicionals d'aquest arquetip.",
+        "misuse" : "No s'ha d'utilitzar per registrar detalls sobre la presència o absència d'un símptoma, fora d'un context de cribratge. Utilitzeu CLUSTER.symptom_sign o CLUSTER.exclusion_symptom_sign per a aquests propòsits.\r\n\r\nNo s'ha d'utilitzar per registrar detalls sobre una llista de selecció simple on una pregunta es pot registrar com a \"present\" o \"indeterminada\". Utilitzeu OBSERVATION.selection_list per a aquest propòsit.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es"
+        },
+        "purpose" : "Crear un marco para registrar respuestas a preguntas de detección predefinidas sobre síntomas o signos.",
+        "keywords" : [ "cribado", "cuestionario", "queja", "síntoma", "perturbación", "problema", "malestar", "signo" ],
+        "use" : "Se utiliza para crear un marco para registrar las respuestas a preguntas de cribado predefinidas sobre síntomas o signos.\r\n\r\nLos casos de uso comunes incluyen, entre otros:\r\n- Indagación sistemática en cualquier consulta, por ejemplo:\r\n--- ¿Tiene dolor de cabeza? Sí, No, Desconocido.\r\n--- ¿Ha tenido mareos en las últimas cuatro semanas? Sí, No, Desconocido.\r\n- Preguntas específicas relacionadas con la vigilancia de enfermedades.\r\n\r\nLa semántica de este arquetipo es intencionadamente imprecisa, y consultarlo normalmente solo sería útil o seguro en el contexto de cada plantilla específica. En una plantilla, cada elemento de datos se renombraría generalmente según la pregunta específica formulada. Cuando se han propuesto conjuntos de valores para casos de uso comunes, estos se pueden adaptar para uso local utilizando los tipos de datos DV_TEXT o DV_BOOLEAN para que coincidan con cada caso de uso específico.\r\n\r\nLa estructura EVENT del modelo de referencia se puede utilizar para especificar si las preguntas se refieren a un momento específico o a un período de tiempo. Utilice una instancia independiente de este arquetipo para distinguir entre un cuestionario para registrar información sobre un síntoma presente en cualquier momento del pasado e información sobre un síntoma dentro de un intervalo de tiempo específico; por ejemplo, la diferencia entre \"¿Se siente mareado ahora?\" y \"¿Ha tenido mareos en las últimas 4 semanas?\".\r\n\r\nLa fuente de información en una respuesta a un cuestionario puede variar según el contexto, pero se puede identificar específicamente mediante el elemento \"Proveedor de información\" del Modelo de Referencia.\r\n\r\nEste arquetipo se ha diseñado para usarse como herramienta de cribado o para registrar datos sencillos en formato de cuestionario para su uso en situaciones como un registro de enfermedades. Si el cuestionario de cribado identifica la presencia de un síntoma o signo, se recomienda que el sistema clínico registre y conserve los detalles específicos sobre el síntoma o signo utilizando el arquetipo CLUSTER.symptom_sign, anidado dentro de la ranura \"Detalles adicionales\" de este arquetipo.",
+        "misuse" : "No debe utilizarse para registrar detalles sobre la presencia o ausencia de un síntoma fuera del contexto de un cribado. Utilice CLUSTER.symptom_sign o CLUSTER.exclusion_symptom_sign para estos fines.\r\n\r\nNo debe utilizarse para registrar detalles sobre una lista de selección simple donde una pregunta pueda registrarse como \"presente\" o \"indeterminada\". Utilice OBSERVATION.selection_list para este fin.",
         "originalResourceUri" : { },
         "otherDetails" : { }
       }
@@ -794,6 +824,22 @@
           "code" : "ac0.1",
           "description" : ""
         }
+      },
+      "ca" : {
+        "ac0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.1",
+          "description" : ""
+        }
+      },
+      "es" : {
+        "ac0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.1",
+          "description" : ""
+        }
       }
     },
     "termBindings" : { },
@@ -906,6 +952,34 @@
       "name" : "Lin Zhang",
       "organisation" : "Freelancer",
       "email" : "linforest@163.com"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Clara Calleja Vega",
+      "organisation" : "CatSalut. Servei Català de la Salut.",
+      "email" : "ccalleja@catsalut.cat"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es"
+    },
+    "author" : {
+      "name" : "Clara Calleja Vega",
+      "organisation" : "CatSalut. Servei Català de la Salut.",
+      "email" : "ccalleja@catsalut.cat"
     },
     "otherDetails" : { }
   } ]
