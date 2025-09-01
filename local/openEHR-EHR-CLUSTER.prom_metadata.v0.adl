@@ -26,10 +26,10 @@ language
 
 description
 	original_author = <
-		["name"] = <"Olha Nikolaieva">
-		["email"] = <"olha.nikolaieva.med@gmail.com">
-		["organisation"] = <"University Hospital Basel">
 		["date"] = <"2025-09-01">
+		["name"] = <"Olha Nikolaieva">
+		["organisation"] = <"University Hospital Basel">
+		["email"] = <"olha.nikolaieva.med@gmail.com">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -55,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"61012613cbe292addfd82fd05f7f256d">
+		["MD5-CAM-1.0.1"] = <"066158cf9f058ac67025a7629c525e92">
 		["build_uid"] = <"c4ec8dab-804a-3c0e-898d-ffb2081fc982">
 	>
 
@@ -154,6 +154,10 @@ definition
 				value matches {
 					DV_DATE_TIME matches {*}
 				}
+			}
+			allow_archetype CLUSTER[at0035] occurrences matches {0..*} matches {    -- Additional details
+				include
+					archetype_id/value matches {/.*/}
 			}
 		}
 	}
@@ -302,6 +306,10 @@ ontology
 					text = <"Survey skip date">
 					description = <"Date of skipping a survey time point.">
 				>
+				["at0035"] = <
+					text = <"Additional details">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
@@ -445,6 +453,10 @@ ontology
 				["at0034"] = <
 					text = <"Survey skip date">
 					description = <"Datum des Auslassens eines Befragungszeitpunktes.">
+				>
+				["at0035"] = <
+					text = <"*Additional details (en)">
+					description = <"">
 				>
 			>
 		>
@@ -590,6 +602,10 @@ ontology
 					text = <"*Survey skip date (en)">
 					description = <"*Date of skipping a survey time point. (en)">
 				>
+				["at0035"] = <
+					text = <"*Additional details (en)">
+					description = <"">
+				>
 			>
 		>
 		["fr"] = <
@@ -733,6 +749,10 @@ ontology
 				["at0034"] = <
 					text = <"*Survey skip date (en)">
 					description = <"*Date of skipping a survey time point. (en)">
+				>
+				["at0035"] = <
+					text = <"*Additional details (en)">
+					description = <"">
 				>
 			>
 		>
