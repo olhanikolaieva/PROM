@@ -17,6 +17,21 @@ language
 			author = <
 			>
 		>
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			author = <
+			>
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			author = <
+			>
+		>
 	>
 
 description
@@ -25,6 +40,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			copyright = <"© openEHR Foundation">
@@ -36,6 +55,14 @@ description
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			copyright = <"© openEHR Foundation">
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			copyright = <"© openEHR Foundation">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -43,7 +70,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0d7d50e89c1deabd1760e613657ca6b4">
+		["MD5-CAM-1.0.1"] = <"017d0974320adea3878ad31707eeb3cf">
 		["build_uid"] = <"88e1b729-a894-3a2a-ac2a-2e8b7ec0768f">
 	>
 
@@ -91,6 +118,42 @@ ontology
 				>
 				["at0001"] = <
 					text = <"Items">
+					description = <"">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Metadata (en)">
+					description = <"*metadata (en)">
+				>
+				["at0001"] = <
+					text = <"*Items (en)">
+					description = <"">
+				>
+			>
+		>
+		["it"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Metadata (en)">
+					description = <"*metadata (en)">
+				>
+				["at0001"] = <
+					text = <"*Items (en)">
+					description = <"">
+				>
+			>
+		>
+		["fr"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Metadata (en)">
+					description = <"*metadata (en)">
+				>
+				["at0001"] = <
+					text = <"*Items (en)">
 					description = <"">
 				>
 			>
