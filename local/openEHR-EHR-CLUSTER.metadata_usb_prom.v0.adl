@@ -55,12 +55,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b489ac42b01cbf6fc306df5317920fad">
+		["MD5-CAM-1.0.1"] = <"17185add4ed11a303867bf962c932d64">
 		["build_uid"] = <"c4ec8dab-804a-3c0e-898d-ffb2081fc982">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- metadata_usb_prom
+	CLUSTER[at0000] matches {    -- Metadata USB PROM
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Event
 				value matches {
@@ -167,7 +167,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"metadata_usb_prom">
+					text = <"Metadata USB PROM">
 					description = <"Metadata to support PROM templates. ">
 				>
 				["at0001"] = <
@@ -315,7 +315,7 @@ ontology
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"metadata_usb_prom">
+					text = <"*Metadata USB PROM (en)">
 					description = <"*Metadata to support PROM templates.  (en)">
 				>
 				["at0001"] = <
@@ -463,7 +463,7 @@ ontology
 		["it"] = <
 			items = <
 				["at0000"] = <
-					text = <"metadata_usb_prom">
+					text = <"*Metadata USB PROM (en)">
 					description = <"*Metadata to support PROM templates.  (en)">
 				>
 				["at0001"] = <
@@ -611,7 +611,7 @@ ontology
 		["fr"] = <
 			items = <
 				["at0000"] = <
-					text = <"metadata_usb_prom">
+					text = <"*Metadata USB PROM (en)">
 					description = <"*Metadata to support PROM templates.  (en)">
 				>
 				["at0001"] = <
