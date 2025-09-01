@@ -55,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fe744f5fb1c952372c970ea60de9f268">
+		["MD5-CAM-1.0.1"] = <"61012613cbe292addfd82fd05f7f256d">
 		["build_uid"] = <"c4ec8dab-804a-3c0e-898d-ffb2081fc982">
 	>
 
@@ -307,7 +307,7 @@ ontology
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"*PROM Metadata (en)">
+					text = <"PROM Metadata">
 					description = <"*Metadata to support PROM templates.  (en)">
 				>
 				["at0001"] = <
