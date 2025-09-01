@@ -1,0 +1,1928 @@
+archetype (adl_version=1.4; uid=59f4381c-dcd7-4753-8e7f-755e32040592)
+	openEHR-EHR-OBSERVATION.eortc_qlq_c15.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			author = <
+			>
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2025-05-14">
+		["name"] = <"Olha Nikolaieva">
+		["organisation"] = <"University Hospital Basel">
+		["email"] = <"olha.nikolaieva.med@gmail.com">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			purpose = <"*To record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
+			keywords = <"*EORTC QLQ C15, PROM, quality of life, cancer, oncology. (en)", ...>
+			copyright = <"© openEHR Foundation">
+			use = <"*Use to record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the results for each component parameter for the EORTC quality of life questionnaire. ">
+			keywords = <"EORTC QLQ C15, PROM, quality of life, cancer, oncology.", ...>
+			use = <"Use to record the results for each component parameter for the EORTC quality of life questionnaire. ">
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			purpose = <"*To record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
+			keywords = <"*EORTC QLQ C15, PROM, quality of life, cancer, oncology. (en)", ...>
+			copyright = <"© openEHR Foundation">
+			use = <"*Use to record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			purpose = <"*To record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
+			keywords = <"*EORTC QLQ C15, PROM, quality of life, cancer, oncology. (en)", ...>
+			copyright = <"© openEHR Foundation">
+			use = <"*Use to record the results for each component parameter for the EORTC quality of life questionnaire.  (en)">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Groenvold M, Petersen MA, Aaronson NK, Arraras JI, Blazeby JM, Bottomley A, et al. The development of the EORTC QLQ-C15-PAL: a shortened questionnaire for cancer patients in palliative care. Eur J Cancer. 2006 Jan;42(1):55–64. doi: 10.1016/j.ejca.2005.06.022.
+
+Rojas-Concha L, Hansen MB, Petersen MA, Groenvold M. Content validation of the EORTC QLQ-C15-PAL with advanced cancer patients and health care professionals from palliative care services in Chile. BMC Palliat Care. 2020 Oct 12;19(1):157. doi: 10.1186/s12904-020-00656-4.
+
+Koyama N, Matsumura C, Shitashimizu Y, Sako M, Kurosawa H, Nomura T, et al. The role of EORTC QLQ-C15-PAL scores and inflammatory biomarkers in predicting survival in terminally ill patients with cancer. BMC Cancer. 2021 Mar 23;21(1):304. doi: 10.1186/s12885-021-08049-3.
+
+Official EORTC QLQ-C30 Questionnaire and Translations https://qol.eortc.org/eortc-qlq-c15-pal/">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"3628487ba8d02da6e9dab027f8434e5d">
+		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL)
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- 1. Short walk outside
+										value matches {
+											0.0|[local::at0015],
+											1.0|[local::at0016],
+											2.0|[local::at0017],
+											3.0|[local::at0018]
+										}
+									}
+									ELEMENT[at0019] occurrences matches {0..1} matches {    -- 2. Stay in bed or chair
+										value matches {
+											0.0|[local::at0020],
+											1.0|[local::at0021],
+											2.0|[local::at0022],
+											3.0|[local::at0023]
+										}
+									}
+									ELEMENT[at0024] occurrences matches {0..1} matches {    -- 3. Help with eating, dressing, washing
+										value matches {
+											0.0|[local::at0025],
+											1.0|[local::at0026],
+											2.0|[local::at0027],
+											3.0|[local::at0028]
+										}
+									}
+									CLUSTER[at0168] occurrences matches {0..1} matches {    -- During the past week:
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0039] occurrences matches {0..1} matches {    -- 4. Short of breath
+												value matches {
+													0.0|[local::at0040],
+													1.0|[local::at0041],
+													2.0|[local::at0042],
+													3.0|[local::at0043]
+												}
+											}
+											ELEMENT[at0044] occurrences matches {0..1} matches {    -- 5. Pain
+												value matches {
+													0.0|[local::at0045],
+													1.0|[local::at0046],
+													2.0|[local::at0047],
+													3.0|[local::at0048]
+												}
+											}
+											ELEMENT[at0054] occurrences matches {0..1} matches {    -- 6. Trouble sleeping
+												value matches {
+													0.0|[local::at0055],
+													1.0|[local::at0056],
+													2.0|[local::at0057],
+													3.0|[local::at0058]
+												}
+											}
+											ELEMENT[at0059] occurrences matches {0..1} matches {    -- 7. Weakness
+												value matches {
+													0.0|[local::at0060],
+													1.0|[local::at0061],
+													2.0|[local::at0062],
+													3.0|[local::at0063]
+												}
+											}
+											ELEMENT[at0064] occurrences matches {0..1} matches {    -- 8. Lacked appetite
+												value matches {
+													0.0|[local::at0065],
+													1.0|[local::at0066],
+													2.0|[local::at0067],
+													3.0|[local::at0068]
+												}
+											}
+											ELEMENT[at0069] occurrences matches {0..1} matches {    -- 9. Nausea
+												value matches {
+													0.0|[local::at0070],
+													1.0|[local::at0071],
+													2.0|[local::at0072],
+													3.0|[local::at0073]
+												}
+											}
+											ELEMENT[at0079] occurrences matches {0..1} matches {    -- 10. Constipation
+												value matches {
+													0.0|[local::at0080],
+													1.0|[local::at0081],
+													2.0|[local::at0082],
+													3.0|[local::at0083]
+												}
+											}
+											ELEMENT[at0089] occurrences matches {0..1} matches {    -- 11. Tiredness
+												value matches {
+													0.0|[local::at0090],
+													1.0|[local::at0091],
+													2.0|[local::at0092],
+													3.0|[local::at0093]
+												}
+											}
+											ELEMENT[at0094] occurrences matches {0..1} matches {    -- 12. Pain interfere with daily activities
+												value matches {
+													0.0|[local::at0095],
+													1.0|[local::at0096],
+													2.0|[local::at0097],
+													3.0|[local::at0098]
+												}
+											}
+											ELEMENT[at0104] occurrences matches {0..1} matches {    -- 13. Tension
+												value matches {
+													0.0|[local::at0105],
+													1.0|[local::at0106],
+													2.0|[local::at0107],
+													3.0|[local::at0108]
+												}
+											}
+											ELEMENT[at0119] occurrences matches {0..1} matches {    -- 14. Depressed
+												value matches {
+													0.0|[local::at0120],
+													1.0|[local::at0121],
+													2.0|[local::at0122],
+													3.0|[local::at0123]
+												}
+											}
+										}
+									}
+									CLUSTER[at0169] occurrences matches {0..1} matches {    -- Select the number between 1 and 7
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0160] occurrences matches {0..1} matches {    -- 15. Overall quality of life rate
+												value matches {
+													1.0|[local::at0161],
+													2.0|[local::at0162],
+													3.0|[local::at0163],
+													4.0|[local::at0164],
+													5.0|[local::at0165],
+													6.0|[local::at0166],
+													7.0|[local::at0167]
+												}
+											}
+										}
+									}
+									ELEMENT[at0171] occurrences matches {0..1} matches {    -- QL scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
+														precision = <|0|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0172] occurrences matches {0..1} matches {    -- PF scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
+														precision = <|0|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0178] occurrences matches {0..1} matches {    -- RF scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
+														precision = <|0|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0173] occurrences matches {0..1} matches {    -- EF scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
+														precision = <|0|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0174] occurrences matches {0..1} matches {    -- CF scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
+														precision = <|0|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0175] occurrences matches {0..1} matches {    -- SF scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
+														precision = <|0|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0176] occurrences matches {0..1} matches {    -- FA scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
+														precision = <|0|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0177] occurrences matches {0..1} matches {    -- NV scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
+														precision = <|0|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0179] occurrences matches {0..1} matches {    -- PA scale
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
+														precision = <|0|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0188] occurrences matches {0..1} matches {    -- Total sum
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::380]>
+												list = <
+													["1"] = <
+														units = <"1">
+														precision = <|0|>
+													>
+												>
+											>
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0186] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0187] occurrences matches {0..1} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL)">
+					description = <"The EORTC QLQ C15 version 1 questionnaire used to evaluate the quality of life in patients with cancer across various domains.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0014"] = <
+					text = <"1. Short walk outside">
+					description = <"1. Do you have any trouble taking a short walk outside of the house?">
+				>
+				["at0015"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Very much">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"2. Stay in bed or chair">
+					description = <"2. Do you need to stay in bed or a chair during the day?">
+				>
+				["at0020"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Very much">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"3. Help with eating, dressing, washing">
+					description = <"3. Do you need help with eating, dressing, washing yourself or using the toilet?">
+				>
+				["at0025"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Very much">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"4. Short of breath">
+					description = <"4. Were you short of breath?">
+				>
+				["at0040"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Very much">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"5. Pain">
+					description = <"5. Have you had pain?">
+				>
+				["at0045"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Very much">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"6. Trouble sleeping">
+					description = <"6. Have you had trouble sleeping?">
+				>
+				["at0055"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Very much">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"7. Weakness">
+					description = <"7. Have you felt weak?">
+				>
+				["at0060"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"Very much">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"8. Lacked appetite">
+					description = <"8. Have you lacked appetite?">
+				>
+				["at0065"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"Very much">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"9. Nausea">
+					description = <"9. Have you felt nauseated?">
+				>
+				["at0070"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Very much">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"10. Constipation">
+					description = <"10. Have you been constipated?">
+				>
+				["at0080"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"Very much">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"11. Tiredness">
+					description = <"11. Were you tired?">
+				>
+				["at0090"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"Very much">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"12. Pain interfere with daily activities">
+					description = <"12. Did pain interfere with your daily activities?">
+				>
+				["at0095"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"Very much">
+					description = <"">
+				>
+				["at0104"] = <
+					text = <"13. Tension">
+					description = <"13. Did you feel tense?">
+				>
+				["at0105"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0106"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0107"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0108"] = <
+					text = <"Very much">
+					description = <"">
+				>
+				["at0119"] = <
+					text = <"14. Depressed">
+					description = <"14. Did you feel depressed?">
+				>
+				["at0120"] = <
+					text = <"Not at all">
+					description = <"">
+				>
+				["at0121"] = <
+					text = <"A little">
+					description = <"">
+				>
+				["at0122"] = <
+					text = <"Quite a bit">
+					description = <"">
+				>
+				["at0123"] = <
+					text = <"Very much">
+					description = <"">
+				>
+				["at0160"] = <
+					text = <"15. Overall quality of life rate">
+					description = <"15. How would you rate your overall quality of life during the past week?">
+				>
+				["at0161"] = <
+					text = <"1. Very poor">
+					description = <"">
+				>
+				["at0162"] = <
+					text = <"2.">
+					description = <"">
+				>
+				["at0163"] = <
+					text = <"3.">
+					description = <"">
+				>
+				["at0164"] = <
+					text = <"4.">
+					description = <"">
+				>
+				["at0165"] = <
+					text = <"5.">
+					description = <"">
+				>
+				["at0166"] = <
+					text = <"6.">
+					description = <"">
+				>
+				["at0167"] = <
+					text = <"7. Excellent">
+					description = <"">
+				>
+				["at0168"] = <
+					text = <"During the past week:">
+					description = <"During the past week:">
+				>
+				["at0169"] = <
+					text = <"Select the number between 1 and 7">
+					description = <"For the following questions please select the number between 1 and 7 that best applies to you">
+				>
+				["at0171"] = <
+					text = <"QL scale">
+					description = <"Global health status/Quality of life scale">
+				>
+				["at0172"] = <
+					text = <"PF scale">
+					description = <"Physical functioning scale">
+				>
+				["at0173"] = <
+					text = <"EF scale">
+					description = <"Emotional functioning scale">
+				>
+				["at0174"] = <
+					text = <"CF scale">
+					description = <"Cognitive functioning scale">
+				>
+				["at0175"] = <
+					text = <"SF scale">
+					description = <"Social functioning scale">
+				>
+				["at0176"] = <
+					text = <"FA scale">
+					description = <"Fatigue scale">
+				>
+				["at0177"] = <
+					text = <"NV scale">
+					description = <"Nausea and vomiting scale">
+				>
+				["at0178"] = <
+					text = <"RF scale">
+					description = <"Role functioning scale">
+				>
+				["at0179"] = <
+					text = <"PA scale">
+					description = <"Pain scale">
+				>
+				["at0186"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0187"] = <
+					text = <"Extension">
+					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
+				["at0188"] = <
+					text = <"Total sum">
+					description = <"">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL)">
+					description = <"*The EORTC QLQ C15 version 1 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0014"] = <
+					text = <"1. Kurzer Spaziergang draußen">
+					description = <"1. Bereitet es Ihnen Schwierigkeiten, eine kurze Strecke außer Haus zu gehen?">
+				>
+				["at0015"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"2. Im Bett oder auf einem Stuhl bleiben">
+					description = <"2. Müssen Sie tagsüber im Bett liegen oder in einem Sessel sitzen?">
+				>
+				["at0020"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"3. Hilfe beim Essen, Anziehen, Waschen">
+					description = <"3. Brauchen Sie Hilfe beim Essen, Anziehen, Waschen oder Benutzen der Toilette?">
+				>
+				["at0025"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"4. Kurzatmigkeit">
+					description = <"4. Waren Sie kurzatmig?">
+				>
+				["at0040"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"5. Schmerzen">
+					description = <"5. Hatten Sie Schmerzen?">
+				>
+				["at0045"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"6. Schlafprobleme">
+					description = <"6. Hatten Sie Schlafstörungen?">
+				>
+				["at0055"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"7. Schwäche">
+					description = <"7. Fühlten Sie sich schwach?">
+				>
+				["at0060"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"8. Appetitlosigkeit">
+					description = <"8. Hatten Sie Appetitmangel?">
+				>
+				["at0065"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"9. Übelkeit">
+					description = <"9. War Ihnen übel?">
+				>
+				["at0070"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"10. Verstopfung">
+					description = <"10. Hatten Sie Verstopfung?">
+				>
+				["at0080"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"11. Müdigkeit">
+					description = <"11. Waren Sie müde?">
+				>
+				["at0090"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"12. Schmerzen beeinträchtigen tägliche Aktivitäten">
+					description = <"12. Fühlten Sie sich durch Schmerzen in Ihrem alltäglichen Leben beeinträchtigt?">
+				>
+				["at0095"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+				["at0104"] = <
+					text = <"13. Anspannung">
+					description = <"13. Fühlten Sie sich angespannt?">
+				>
+				["at0105"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0106"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0107"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0108"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+				["at0119"] = <
+					text = <"14. Niedergeschlagenheit">
+					description = <"14. Fühlten Sie sich niedergeschlagen?">
+				>
+				["at0120"] = <
+					text = <"Überhaupt nicht">
+					description = <"">
+				>
+				["at0121"] = <
+					text = <"Wenig">
+					description = <"">
+				>
+				["at0122"] = <
+					text = <"Mässig">
+					description = <"">
+				>
+				["at0123"] = <
+					text = <"Sehr">
+					description = <"">
+				>
+				["at0160"] = <
+					text = <"15. Allgemeine Lebensqualität">
+					description = <"15. Wie würden Sie insgesamt Ihre Lebensqualität während der letzten Woche einschätzen?">
+				>
+				["at0161"] = <
+					text = <"1. Sehr schlecht">
+					description = <"">
+				>
+				["at0162"] = <
+					text = <"2.">
+					description = <"">
+				>
+				["at0163"] = <
+					text = <"3.">
+					description = <"">
+				>
+				["at0164"] = <
+					text = <"4.">
+					description = <"">
+				>
+				["at0165"] = <
+					text = <"5.">
+					description = <"">
+				>
+				["at0166"] = <
+					text = <"6.">
+					description = <"">
+				>
+				["at0167"] = <
+					text = <"7. Ausgezeichnet">
+					description = <"">
+				>
+				["at0168"] = <
+					text = <"In der vergangenen Woche:">
+					description = <"Während der letzten Woche:">
+				>
+				["at0169"] = <
+					text = <"Wählen Sie eine Zahl zwischen 1 und 7:">
+					description = <"Bitte kreisen Sie bei den folgenden Fragen die Zahl zwischen 1 und 7 ein, die am besten auf Sie zutrifft:">
+				>
+				["at0171"] = <
+					text = <"QL scale">
+					description = <"Score-Lebensqualität">
+				>
+				["at0172"] = <
+					text = <"PF scale">
+					description = <"Score-Physische Funktion">
+				>
+				["at0173"] = <
+					text = <"EF scale">
+					description = <"Score-Emotionale Funktion">
+				>
+				["at0174"] = <
+					text = <"CF scale">
+					description = <"Score-Kognitive Funktion">
+				>
+				["at0175"] = <
+					text = <"SF scale">
+					description = <"Score-Soziale Funktion">
+				>
+				["at0176"] = <
+					text = <"FA scale">
+					description = <"Score-Erschöpfung">
+				>
+				["at0177"] = <
+					text = <"NV scale">
+					description = <"Score-Übelkeit und Erbrechen">
+				>
+				["at0178"] = <
+					text = <"RF scale">
+					description = <"Score-Rollenfunktion">
+				>
+				["at0179"] = <
+					text = <"PA scale">
+					description = <"Score-Schmerzen">
+				>
+				["at0186"] = <
+					text = <"*Item tree (en)">
+					description = <"@ internal @">
+				>
+				["at0187"] = <
+					text = <"Erweiterung">
+					description = <"Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.">
+					comment = <"Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen.">
+				>
+				["at0188"] = <
+					text = <"Total sum">
+					description = <"Score-Summenscore">
+				>
+			>
+		>
+		["fr"] = <
+			items = <
+				["at0000"] = <
+					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL)">
+					description = <"*The EORTC QLQ C15 version 1 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0014"] = <
+					text = <"1. Petite marche à l’extérieur">
+					description = <"1. Avez-vous des difficultés à faire un petit tour dehors ?">
+				>
+				["at0015"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"2. Rester au lit ou sur une chaise">
+					description = <"2. Êtes-vous obligé(e) de rester au lit ou dans un fauteuil pendant la journée ?">
+				>
+				["at0020"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"3. Aide pour manger, s’habiller, se laver">
+					description = <"3. Avez-vous besoin d'aide pour manger, vous habiller, faire votre toilette ou aller aux toilettes ?">
+				>
+				["at0025"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"4. Essoufflement">
+					description = <"4. Avez-vous eu le souffle court ?">
+				>
+				["at0040"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"5. Douleur">
+					description = <"5. Avez-vous ressenti de la douleur ?">
+				>
+				["at0045"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"6. Problèmes de sommeil">
+					description = <"6. Avez-vous eu des difficultés à dormir ?">
+				>
+				["at0055"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"7. Faiblesse">
+					description = <"7. Vous êtes-vous senti(e) faible ?">
+				>
+				["at0060"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"8. Manque d’appétit">
+					description = <"8. Avez-vous manqué d'appétit ?">
+				>
+				["at0065"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"9. Nausée">
+					description = <"9. Avez-vous eu des nausées (mal au coeur) ?">
+				>
+				["at0070"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"10. Constipation">
+					description = <"10. Avez-vous été constipé(e) ?">
+				>
+				["at0080"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"11. Fatigue">
+					description = <"11. Étiez-vous fatigué(e) ?">
+				>
+				["at0090"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"12. La douleur gêne les activités quotidiennes">
+					description = <"12. Des douleurs ont-elles perturbé vos activités quotidiennes ?">
+				>
+				["at0095"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+				["at0104"] = <
+					text = <"13. Tension">
+					description = <"13. Vous êtes-vous senti(e) tendu(e) ?">
+				>
+				["at0105"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0106"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0107"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0108"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+				["at0119"] = <
+					text = <"14. Dépression">
+					description = <"14. Vous êtes-vous senti(e) déprimé(e) ?">
+				>
+				["at0120"] = <
+					text = <"Pas du tout">
+					description = <"">
+				>
+				["at0121"] = <
+					text = <"Un peu">
+					description = <"">
+				>
+				["at0122"] = <
+					text = <"Assez">
+					description = <"">
+				>
+				["at0123"] = <
+					text = <"Beaucoup">
+					description = <"">
+				>
+				["at0160"] = <
+					text = <"15. Qualité de vie globale">
+					description = <"15. Comment évalueriez-vous l'ensemble de votre qualité de vie au cours de la semaine passée ?">
+				>
+				["at0161"] = <
+					text = <"1. Très mauvaise">
+					description = <"">
+				>
+				["at0162"] = <
+					text = <"2.">
+					description = <"">
+				>
+				["at0163"] = <
+					text = <"3.">
+					description = <"">
+				>
+				["at0164"] = <
+					text = <"4.">
+					description = <"">
+				>
+				["at0165"] = <
+					text = <"5.">
+					description = <"">
+				>
+				["at0166"] = <
+					text = <"6.">
+					description = <"">
+				>
+				["at0167"] = <
+					text = <"7. Excellente">
+					description = <"">
+				>
+				["at0168"] = <
+					text = <"Au cours de la semaine passée :">
+					description = <"Au cours de la semaine passée :">
+				>
+				["at0169"] = <
+					text = <"Choisissez un nombre entre 1 et 7">
+					description = <"Pour les questions suivantes, veuillez répondre en entourant le chiffre entre 1 et 7 qui s'applique le mieux à votre situation">
+				>
+				["at0171"] = <
+					text = <"QL scale">
+					description = <"État de santé global / Qualité de vie">
+				>
+				["at0172"] = <
+					text = <"PF scale">
+					description = <"Fonctionnement physique">
+				>
+				["at0173"] = <
+					text = <"EF scale">
+					description = <"Fonctionnement émotionnel">
+				>
+				["at0174"] = <
+					text = <"CF scale">
+					description = <"Fonctionnement cognitif">
+				>
+				["at0175"] = <
+					text = <"SF scale">
+					description = <"Fonctionnement social">
+				>
+				["at0176"] = <
+					text = <"FA scale">
+					description = <"Fatigue">
+				>
+				["at0177"] = <
+					text = <"NV scale">
+					description = <"Nausées et vomissements">
+				>
+				["at0178"] = <
+					text = <"RF scale">
+					description = <"Fonctionnement dans le rôle">
+				>
+				["at0179"] = <
+					text = <"PA scale">
+					description = <"Douleur">
+				>
+				["at0186"] = <
+					text = <"*Item tree (en)">
+					description = <"@ internal @">
+				>
+				["at0187"] = <
+					text = <"Extension">
+					description = <"Informations supplémentaires nécessaires pour étendre le modèle au contenu local ou pour l'aligner sur d'autres modèles de référence ou formalismes.">
+					comment = <"Par exemple : exigences locales en matière d'information ou métadonnées supplémentaires pour s'aligner sur FHIR.">
+				>
+				["at0188"] = <
+					text = <"Total sum">
+					description = <"Somme totale">
+				>
+			>
+		>
+		["it"] = <
+			items = <
+				["at0000"] = <
+					text = <"EORTC Core Quality of Life Questionnaire (EORTC QLQ-C15-PAL)">
+					description = <"*The EORTC QLQ C15 version 1 questionnaire used to evaluate the quality of life in patients with cancer across various domains. (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0014"] = <
+					text = <"1. Breve passeggiata all’aperto">
+					description = <"1. Ha difficoltà nel fare una breve passeggiata fuori casa?">
+				>
+				["at0015"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"2. Restare a letto o su una sedia">
+					description = <"2. Daten werden abgerufen. Warten Sie ein paar Sekunden, und versuchen Sie noch mal, auszuschneiden oder zu kopieren.">
+				>
+				["at0020"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"3. Aiuto per mangiare, vestirsi, lavarsi">
+					description = <"3. Ha bisogno di aiuto per mangiare, vestirsi, lavarsi o andare in bagno?">
+				>
+				["at0025"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"4. Affanno">
+					description = <"4. Le è mancato il fiato?">
+				>
+				["at0040"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"5. Dolore">
+					description = <"5. Ha avuto dolore?">
+				>
+				["at0045"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"6. Difficoltà a dormire">
+					description = <"6. Ha avuto difficoltà a dormire?">
+				>
+				["at0055"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"7. Debolezza">
+					description = <"7. Ha sentito debolezza?">
+				>
+				["at0060"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"8. Mancanza di appetito">
+					description = <"8. Le è mancato l'appetito?">
+				>
+				["at0065"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"9. Nausea">
+					description = <"9. Ha avuto un senso di nausea?">
+				>
+				["at0070"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"10. Stitichezza">
+					description = <"10. Ha avuto problemi di stitichezza?">
+				>
+				["at0080"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"11. Stanchezza">
+					description = <"11. Ha sentito stanchezza?">
+				>
+				["at0090"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"12. Il dolore interferisce con le attività quotidiane">
+					description = <"12. Il dolore ha interferito con le Sue attività quotidiane?">
+				>
+				["at0095"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+				["at0104"] = <
+					text = <"13. Tensione">
+					description = <"13. Si è sentito(a) teso(a)?">
+				>
+				["at0105"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0106"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0107"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0108"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+				["at0119"] = <
+					text = <"14. Depressione">
+					description = <"14. Ha avvertito uno stato di depressione?">
+				>
+				["at0120"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0121"] = <
+					text = <"Un po'">
+					description = <"">
+				>
+				["at0122"] = <
+					text = <"Parecchio">
+					description = <"">
+				>
+				["at0123"] = <
+					text = <"Moltissimo">
+					description = <"">
+				>
+				["at0160"] = <
+					text = <"15. Valutazione complessiva della qualità della vita">
+					description = <"15. Come valuterebbe in generale la Sua qualità di vita durante gli ultimi sette giorni?">
+				>
+				["at0161"] = <
+					text = <"1. Pessima">
+					description = <"">
+				>
+				["at0162"] = <
+					text = <"2.">
+					description = <"">
+				>
+				["at0163"] = <
+					text = <"3.">
+					description = <"">
+				>
+				["at0164"] = <
+					text = <"4.">
+					description = <"">
+				>
+				["at0165"] = <
+					text = <"5.">
+					description = <"">
+				>
+				["at0166"] = <
+					text = <"6.">
+					description = <"">
+				>
+				["at0167"] = <
+					text = <"7. Ottima">
+					description = <"">
+				>
+				["at0168"] = <
+					text = <"Durante gli ultimi sette giorni:">
+					description = <"Durante gli ultimi sette giorni:">
+				>
+				["at0169"] = <
+					text = <"Seleziona un numero tra 1 e 7">
+					description = <"Per le seguenti domande ponga un cerchio intorno al numero da 1 a 7 che meglio corrisponde alla Sua risposta">
+				>
+				["at0171"] = <
+					text = <"QL scale">
+					description = <"Stato di salute globale / Qualità della vita">
+				>
+				["at0172"] = <
+					text = <"PF scale">
+					description = <"Funzionamento fisico">
+				>
+				["at0173"] = <
+					text = <"EF scale">
+					description = <" Funzionamento emotivo">
+				>
+				["at0174"] = <
+					text = <"CF scale">
+					description = <"Funzionamento cognitivo">
+				>
+				["at0175"] = <
+					text = <"SF scale">
+					description = <"Funzionamento sociale">
+				>
+				["at0176"] = <
+					text = <"FA scale">
+					description = <"Fatica">
+				>
+				["at0177"] = <
+					text = <"NV scale">
+					description = <"Nausea e vomito">
+				>
+				["at0178"] = <
+					text = <"*RF scale (en)">
+					description = <"Funzionamento nel ruolo">
+				>
+				["at0179"] = <
+					text = <"PA scale">
+					description = <"Dolore">
+				>
+				["at0186"] = <
+					text = <"*Item tree (en)">
+					description = <"@ internal @">
+				>
+				["at0187"] = <
+					text = <"Extension">
+					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
+				["at0188"] = <
+					text = <"Total sum">
+					description = <"Somma totale">
+				>
+			>
+		>
+	>
