@@ -6,6 +6,23 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			author = <
+			>
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,8 +33,20 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			copyright = <"© openEHR Foundation">
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			copyright = <"© openEHR Foundation">
 		>
 	>
 	other_details = <
@@ -26,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"344e47e51423b091d307b5adfdf17b24">
+		["MD5-CAM-1.0.1"] = <"fe744f5fb1c952372c970ea60de9f268">
 		["build_uid"] = <"c4ec8dab-804a-3c0e-898d-ffb2081fc982">
 	>
 
@@ -272,6 +301,438 @@ ontology
 				["at0034"] = <
 					text = <"Survey skip date">
 					description = <"Date of skipping a survey time point.">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"*PROM Metadata (en)">
+					description = <"*Metadata to support PROM templates.  (en)">
+				>
+				["at0001"] = <
+					text = <"*Event (en)">
+					description = <"Bezeichnung der erstellten Aufgabe oder versendete Befragung.">
+				>
+				["at0002"] = <
+					text = <"*Event date (en)">
+					description = <"Datum des Versandes der Befragung oder Erstellung der Aufgabe.">
+				>
+				["at0003"] = <
+					text = <"Medium">
+					description = <"Gewähltes Medium mit der die Aufgabe bereitgestellt wurde.">
+				>
+				["at0004"] = <
+					text = <"Tablet">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Mail">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Paper">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Start of survey">
+					description = <"Datum und Zeit bei der der Fragebogen geöffnet wurde.">
+				>
+				["at0008"] = <
+					text = <"End of survey">
+					description = <"Datum und Zeit bei der der Fragebogen abgeschlossen wurde.">
+				>
+				["at0009"] = <
+					text = <"Status">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Ungeöffnet">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Geöffnet">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Abgeschlossen">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Language">
+					description = <"Sprache mit der der Patient die Befragung ausgefüllt hat.">
+				>
+				["at0014"] = <
+					text = <"Patient deactivation">
+					description = <"Deaktivierung des  Patienten aus dem System bzw. allen Befragungen.">
+				>
+				["at0015"] = <
+					text = <"Patient deactivation other">
+					description = <"Freitext für Bemerkungen zur Deaktivierung.">
+				>
+				["at0016"] = <
+					text = <"Patient deactivation date">
+					description = <"Datum der Deaktivierung des Patienten.">
+				>
+				["at0017"] = <
+					text = <"Patient verstorben">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Patient will nicht (mehr) teilnehmen">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Sonstige">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Path deactivation">
+					description = <"Deaktivierung des  Patienten aus des Befragung-Sets.">
+				>
+				["at0021"] = <
+					text = <"Patient reagiert nicht auf Follow-ups und ist nicht mehr zu erreichen.">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Patient will nicht (mehr) teilnehmen">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Sprachliche Gründe">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Gesundheitliche Situation des Patienten">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Sonstige">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Path deactivation other">
+					description = <"Freitext für Bemerkungen zur Deaktivierung.">
+				>
+				["at0027"] = <
+					text = <"Path deactivation date">
+					description = <"Datum der Deaktivierung des Befragungs-Sets.">
+				>
+				["at0028"] = <
+					text = <"Survey skip">
+					description = <"Auslassen eines Befragungszeitpunktes.">
+				>
+				["at0029"] = <
+					text = <"Patient reagiert nicht innerhalb des Befragungszeitraums.">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Patient will nicht (mehr) teilnehmen">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Gesundheiteitliche Situation">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Sonstige">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Survey skip other">
+					description = <"Freitext für Bemerkungen zum Auslassen.">
+				>
+				["at0034"] = <
+					text = <"Survey skip date">
+					description = <"Datum des Auslassens eines Befragungszeitpunktes.">
+				>
+			>
+		>
+		["it"] = <
+			items = <
+				["at0000"] = <
+					text = <"*PROM Metadata (en)">
+					description = <"*Metadata to support PROM templates.  (en)">
+				>
+				["at0001"] = <
+					text = <"*Event (en)">
+					description = <"*Designation of the created task or sent survey. (en)">
+				>
+				["at0002"] = <
+					text = <"*Event date (en)">
+					description = <"*Date the survey was sent or the task was created. (en)">
+				>
+				["at0003"] = <
+					text = <"*Medium (en)">
+					description = <"*Selected medium used to provide the task. (en)">
+				>
+				["at0004"] = <
+					text = <"*Tablet (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*Email (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Paper (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Start of survey (en)">
+					description = <"*Date and time when the questionnaire was opened. (en)">
+				>
+				["at0008"] = <
+					text = <"*End of survey (en)">
+					description = <"*Date and time when the questionnaire was completed. (en)">
+				>
+				["at0009"] = <
+					text = <"*Status (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*Not opened (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Opened (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Completed (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Language (en)">
+					description = <"*Language in which the patient filled out the survey. (en)">
+				>
+				["at0014"] = <
+					text = <"*Patient deactivation (en)">
+					description = <"*Deactivation of the patient from the system or all surveys. (en)">
+				>
+				["at0015"] = <
+					text = <"*Patient deactivation other (en)">
+					description = <"*Text for remarks on patient deactivation. (en)">
+				>
+				["at0016"] = <
+					text = <"*Patient deactivation date (en)">
+					description = <"*Date of patient deactivation. (en)">
+				>
+				["at0017"] = <
+					text = <"*Patient deceased (en)">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"*Patient no longer wishes to participate (en)">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"*Other (en)">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"*Path deactivation (en)">
+					description = <"*Deactivation of the patient from the survey set. (en)">
+				>
+				["at0021"] = <
+					text = <"*Patient does not respond to follow-ups and can no longer be reached (en)">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"*Patient no longer wishes to participate (en)">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"*Language-related reasons (en)">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"*Patient’s health situation (en)">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"*Other (en)">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"*Path deactivation other (en)">
+					description = <"*Text for remarks on path deactivation. (en)">
+				>
+				["at0027"] = <
+					text = <"*Path deactivation date (en)">
+					description = <"*Date of deactivation of the survey set. (en)">
+				>
+				["at0028"] = <
+					text = <"*Survey skip (en)">
+					description = <"*Skipping of a survey time point. (en)">
+				>
+				["at0029"] = <
+					text = <"*Patient does not respond within the survey period (en)">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"*Patient no longer wishes to participate (en)">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"*Patient’s health situation (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Other (en)">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"*Survey skip other (en)">
+					description = <"*Text for remarks on skipping survey. (en)">
+				>
+				["at0034"] = <
+					text = <"*Survey skip date (en)">
+					description = <"*Date of skipping a survey time point. (en)">
+				>
+			>
+		>
+		["fr"] = <
+			items = <
+				["at0000"] = <
+					text = <"*PROM Metadata (en)">
+					description = <"*Metadata to support PROM templates.  (en)">
+				>
+				["at0001"] = <
+					text = <"*Event (en)">
+					description = <"*Designation of the created task or sent survey. (en)">
+				>
+				["at0002"] = <
+					text = <"*Event date (en)">
+					description = <"*Date the survey was sent or the task was created. (en)">
+				>
+				["at0003"] = <
+					text = <"*Medium (en)">
+					description = <"*Selected medium used to provide the task. (en)">
+				>
+				["at0004"] = <
+					text = <"*Tablet (en)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*Email (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Paper (en)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Start of survey (en)">
+					description = <"*Date and time when the questionnaire was opened. (en)">
+				>
+				["at0008"] = <
+					text = <"*End of survey (en)">
+					description = <"*Date and time when the questionnaire was completed. (en)">
+				>
+				["at0009"] = <
+					text = <"*Status (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*Not opened (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Opened (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Completed (en)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"*Language (en)">
+					description = <"*Language in which the patient filled out the survey. (en)">
+				>
+				["at0014"] = <
+					text = <"*Patient deactivation (en)">
+					description = <"*Deactivation of the patient from the system or all surveys. (en)">
+				>
+				["at0015"] = <
+					text = <"*Patient deactivation other (en)">
+					description = <"*Text for remarks on patient deactivation. (en)">
+				>
+				["at0016"] = <
+					text = <"*Patient deactivation date (en)">
+					description = <"*Date of patient deactivation. (en)">
+				>
+				["at0017"] = <
+					text = <"*Patient deceased (en)">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"*Patient no longer wishes to participate (en)">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"*Other (en)">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"*Path deactivation (en)">
+					description = <"*Deactivation of the patient from the survey set. (en)">
+				>
+				["at0021"] = <
+					text = <"*Patient does not respond to follow-ups and can no longer be reached (en)">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"*Patient no longer wishes to participate (en)">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"*Language-related reasons (en)">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"*Patient’s health situation (en)">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"*Other (en)">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"*Path deactivation other (en)">
+					description = <"*Text for remarks on path deactivation. (en)">
+				>
+				["at0027"] = <
+					text = <"*Path deactivation date (en)">
+					description = <"*Date of deactivation of the survey set. (en)">
+				>
+				["at0028"] = <
+					text = <"*Survey skip (en)">
+					description = <"*Skipping of a survey time point. (en)">
+				>
+				["at0029"] = <
+					text = <"*Patient does not respond within the survey period (en)">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"*Patient no longer wishes to participate (en)">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"*Patient’s health situation (en)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"*Other (en)">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"*Survey skip other (en)">
+					description = <"*Text for remarks on skipping survey. (en)">
+				>
+				["at0034"] = <
+					text = <"*Survey skip date (en)">
+					description = <"*Date of skipping a survey time point. (en)">
 				>
 			>
 		>
