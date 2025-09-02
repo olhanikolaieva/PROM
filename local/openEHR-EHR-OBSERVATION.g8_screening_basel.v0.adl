@@ -55,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5076a7e1b5cefa3af79647763f6f9de2">
+		["MD5-CAM-1.0.1"] = <"44868e2cab02c28bbc6e59de8499a27a">
 		["build_uid"] = <"f155c70c-9ad1-3080-bcd8-71234ffc27f6">
 	>
 
@@ -440,7 +440,7 @@ ontology
 		["it"] = <
 			items = <
 				["at0000"] = <
-					text = <"*G8-Screening Basel (de)">
+					text = <"G8-Screening Basel">
 					description = <"*G8 screening_Basel (de)">
 				>
 				["at0001"] = <
@@ -456,39 +456,39 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"*1. Weniger gegessen (de)">
+					text = <"1. Perdita di appetito">
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"*2. Niedergeschlagen, Gedächtnis (de)">
+					text = <"2. Depressione/Memoria">
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"*3. Medikamente pro Tag (de)">
+					text = <"3. Quantità di farmaco">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"*4. Gesundheit im Vergleich (de)">
+					text = <"4. Stato di salute">
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"*5. Bewegung im Alltag (de)">
+					text = <"5. Mobilità">
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"*6. Grösse (de)">
+					text = <"6. Altezza">
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"*7. Aktuelles Gewicht (de)">
+					text = <"7. Peso">
 					description = <"">
 				>
 				["at0011"] = <
-					text = <"*8. Gewicht vor 3 Monaten (de)">
+					text = <"8. Follow-up del peso">
 					description = <"">
 				>
 				["at0012"] = <
-					text = <"*Gesamtpunktzahl (de)">
+					text = <"Punteggio totale">
 					description = <"">
 				>
 				["at0013"] = <
@@ -564,7 +564,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0031"] = <
-					text = <"*Erweiterung (de)">
+					text = <"Estensione">
 					description = <"*Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen. (de)">
 					comment = <"*Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen. (de)">
 				>
@@ -573,7 +573,7 @@ ontology
 		["fr"] = <
 			items = <
 				["at0000"] = <
-					text = <"*G8-Screening Basel (de)">
+					text = <"G8-Screening Basel">
 					description = <"*G8 screening_Basel (de)">
 				>
 				["at0001"] = <
@@ -589,39 +589,39 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"*1. Weniger gegessen (de)">
+					text = <"1. Perte d’appétit">
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"*2. Niedergeschlagen, Gedächtnis (de)">
+					text = <"2. Dépression/Mémoire">
 					description = <"">
 				>
 				["at0006"] = <
-					text = <"*3. Medikamente pro Tag (de)">
+					text = <"3. Quantité de médicament">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"*4. Gesundheit im Vergleich (de)">
+					text = <"4. État de santé">
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"*5. Bewegung im Alltag (de)">
+					text = <"5. Mobilité">
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"*6. Grösse (de)">
+					text = <"6. Taille">
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"*7. Aktuelles Gewicht (de)">
+					text = <"7. Poids">
 					description = <"">
 				>
 				["at0011"] = <
-					text = <"*8. Gewicht vor 3 Monaten (de)">
+					text = <"8. Suivi du poids">
 					description = <"">
 				>
 				["at0012"] = <
-					text = <"*Gesamtpunktzahl (de)">
+					text = <"Score total">
 					description = <"">
 				>
 				["at0013"] = <
@@ -697,7 +697,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0031"] = <
-					text = <"*Erweiterung (de)">
+					text = <"Extension">
 					description = <"*Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen. (de)">
 					comment = <"*Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen. (de)">
 				>
