@@ -55,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a241ccac34052c9b7cfa8a1d85f70c0a">
+		["MD5-CAM-1.0.1"] = <"1dc8f366ab15fbcac2dfe3d555639483">
 		["build_uid"] = <"f155c70c-9ad1-3080-bcd8-71234ffc27f6">
 	>
 
@@ -431,7 +431,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0031"] = <
-					text = <"*Erweiterung (de)">
+					text = <"Extension">
 					description = <"*Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen. (de)">
 					comment = <"*Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen. (de)">
 				>
