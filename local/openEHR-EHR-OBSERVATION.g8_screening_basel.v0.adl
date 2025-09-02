@@ -55,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"44868e2cab02c28bbc6e59de8499a27a">
+		["MD5-CAM-1.0.1"] = <"a241ccac34052c9b7cfa8a1d85f70c0a">
 		["build_uid"] = <"f155c70c-9ad1-3080-bcd8-71234ffc27f6">
 	>
 
@@ -457,106 +457,106 @@ ontology
 				>
 				["at0004"] = <
 					text = <"1. Perdita di appetito">
-					description = <"">
+					description = <"1. Negli ultimi 3 mesi ha mangiato di meno?">
 				>
 				["at0005"] = <
 					text = <"2. Depressione/Memoria">
-					description = <"">
+					description = <"2. Si sente spesso molto depresso e/o ha problemi di memoria?">
 				>
 				["at0006"] = <
 					text = <"3. Quantità di farmaco">
-					description = <"">
+					description = <"3. Quanti farmaci diversi assume regolarmente ogni giorno?">
 				>
 				["at0007"] = <
 					text = <"4. Stato di salute">
-					description = <"">
+					description = <"4. Come valuta il Suo stato di salute rispetto a quello dei Suoi coetanei (ad es. amici o colleghi)?">
 				>
 				["at0008"] = <
 					text = <"5. Mobilità">
-					description = <"">
+					description = <"5. Come Si muove autonomamente nella vita quotidiana?">
 				>
 				["at0009"] = <
 					text = <"6. Altezza">
-					description = <"">
+					description = <"6. Quanto è alta/alto in cm?">
 				>
 				["at0010"] = <
 					text = <"7. Peso">
-					description = <"">
+					description = <"7. Quanto pesa attualmente?">
 				>
 				["at0011"] = <
 					text = <"8. Follow-up del peso">
-					description = <"">
+					description = <"8. Quanto pesava circa 3 mesi fa?">
 				>
 				["at0012"] = <
 					text = <"Punteggio totale">
 					description = <"">
 				>
 				["at0013"] = <
-					text = <"*Ja, sehr (de)">
+					text = <"Sì, molto">
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"*Ja, ein wenig (de)">
+					text = <"Sì, un po’">
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"*Nein, überhaupt nicht (de)">
+					text = <"No, per niente">
 					description = <"">
 				>
 				["at0016"] = <
-					text = <"*Ja, sehr (de)">
+					text = <"Sì, molto">
 					description = <"">
 				>
 				["at0017"] = <
-					text = <"*Ja, ein wenig (de)">
+					text = <"Sì, un po’">
 					description = <"">
 				>
 				["at0018"] = <
-					text = <"*Nein, überhaupt nicht (de)">
+					text = <"No, per niente">
 					description = <"">
 				>
 				["at0019"] = <
-					text = <"*Keine (de)">
+					text = <"Nessuno">
 					description = <"">
 				>
 				["at0020"] = <
-					text = <"*1-3 pro Tag (de)">
+					text = <"1-3 al giorno">
 					description = <"">
 				>
 				["at0021"] = <
-					text = <"*4 oder mehr pro Tag (de)">
+					text = <"4 o più al giorno">
 					description = <"">
 				>
 				["at0022"] = <
-					text = <"*Nicht so gut (de)">
+					text = <"Non tanto buono">
 					description = <"">
 				>
 				["at0023"] = <
-					text = <"*Weniger gut (de)">
+					text = <"Meno buono">
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"*Gleich gut (de)">
+					text = <"Uguale">
 					description = <"">
 				>
 				["at0025"] = <
-					text = <"*Besser (de)">
+					text = <"Meglio">
 					description = <"">
 				>
 				["at0026"] = <
-					text = <"*Weiss nicht (de)">
+					text = <"Non so">
 					description = <"">
 				>
 				["at0027"] = <
-					text = <"*Ich bin meist am Sitzen und Liegen (de)">
+					text = <"Sto spesso seduto/sdraiato">
 					description = <"">
 				>
 				["at0028"] = <
-					text = <"*Ich kann mich im Haushalt selbstständig bewegen, gehe aber kaum nach draussen (de)">
+					text = <"Riesco a muovermi autonomamente in casa, ma esco difficilmente">
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"*Ich gehe nach draussen (de)">
+					text = <"Esco">
 					description = <"">
 				>
 				["at0030"] = <
@@ -590,106 +590,106 @@ ontology
 				>
 				["at0004"] = <
 					text = <"1. Perte d’appétit">
-					description = <"">
+					description = <"1. Avez-vous moins mangé au cours des 3 derniers mois ?">
 				>
 				["at0005"] = <
 					text = <"2. Dépression/Mémoire">
-					description = <"">
+					description = <"2. Vous sentez-vous souvent très abattu*e et/ou avez-vous des troubles de la mémoire ?">
 				>
 				["at0006"] = <
 					text = <"3. Quantité de médicament">
-					description = <"">
+					description = <"3. Combien de différents médicaments prenez-vous régulièrement par jour ?">
 				>
 				["at0007"] = <
 					text = <"4. État de santé">
-					description = <"">
+					description = <"4. Comment estimez-vous votre état de santé par rapport à d’autres personnes de votre âge ?">
 				>
 				["at0008"] = <
 					text = <"5. Mobilité">
-					description = <"">
+					description = <"5. Dans quelle mesure êtes-vous mobile au quotidien ?">
 				>
 				["at0009"] = <
 					text = <"6. Taille">
-					description = <"">
+					description = <"6. Quelle est votre hauteur en cm ?">
 				>
 				["at0010"] = <
 					text = <"7. Poids">
-					description = <"">
+					description = <"7. Quel est votre poids actuel ?">
 				>
 				["at0011"] = <
 					text = <"8. Suivi du poids">
-					description = <"">
+					description = <"8. Quel était votre poids il y a 3 mois ?">
 				>
 				["at0012"] = <
 					text = <"Score total">
 					description = <"">
 				>
 				["at0013"] = <
-					text = <"*Ja, sehr (de)">
+					text = <"Oui, beaucoup moins">
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"*Ja, ein wenig (de)">
+					text = <"Oui, un peu moins">
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"*Nein, überhaupt nicht (de)">
+					text = <"Non, pas du tout">
 					description = <"">
 				>
 				["at0016"] = <
-					text = <"*Ja, sehr (de)">
+					text = <"Oui, souvent">
 					description = <"">
 				>
 				["at0017"] = <
-					text = <"*Ja, ein wenig (de)">
+					text = <"Oui, un peu">
 					description = <"">
 				>
 				["at0018"] = <
-					text = <"*Nein, überhaupt nicht (de)">
+					text = <"Non, pas du tout">
 					description = <"">
 				>
 				["at0019"] = <
-					text = <"*Keine (de)">
+					text = <"Aucun">
 					description = <"">
 				>
 				["at0020"] = <
-					text = <"*1-3 pro Tag (de)">
+					text = <"1-3 par jour">
 					description = <"">
 				>
 				["at0021"] = <
-					text = <"*4 oder mehr pro Tag (de)">
+					text = <"4 ou plus par jour">
 					description = <"">
 				>
 				["at0022"] = <
-					text = <"*Nicht so gut (de)">
+					text = <"Moins bon">
 					description = <"">
 				>
 				["at0023"] = <
-					text = <"*Weniger gut (de)">
+					text = <"Moyennment bon">
 					description = <"">
 				>
 				["at0024"] = <
-					text = <"*Gleich gut (de)">
+					text = <"Identique">
 					description = <"">
 				>
 				["at0025"] = <
-					text = <"*Besser (de)">
+					text = <"Meilleur">
 					description = <"">
 				>
 				["at0026"] = <
-					text = <"*Weiss nicht (de)">
+					text = <"Je ne sais pas">
 					description = <"">
 				>
 				["at0027"] = <
-					text = <"*Ich bin meist am Sitzen und Liegen (de)">
+					text = <"Je suis principalement assis ou couché.">
 					description = <"">
 				>
 				["at0028"] = <
-					text = <"*Ich kann mich im Haushalt selbstständig bewegen, gehe aber kaum nach draussen (de)">
+					text = <"Je peux me déplacer de manière autonome dans la maison, mais je sors très peu">
 					description = <"">
 				>
 				["at0029"] = <
-					text = <"*Ich gehe nach draussen (de)">
+					text = <"Je sors dehors.">
 					description = <"">
 				>
 				["at0030"] = <
