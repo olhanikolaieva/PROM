@@ -1,0 +1,193 @@
+archetype (adl_version=1.4; uid=8c371fbc-69d0-464c-88d7-e80258bb784a)
+	openEHR-EHR-OBSERVATION.oncology_anamnesis.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"Olha Nikolaieva">
+		["email"] = <"olha.nikolaieva.med@gmail.com">
+		["organisation"] = <"University Hospital Basel">
+		["date"] = <"2025-09-02">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"aa1e94e2ff31f51e99f4e45886dfd42b">
+		["build_uid"] = <"244dd2de-28b2-3fa7-a682-81660fe001cd">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Oncology anamnesis PROM
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Material status
+										value matches {
+											1|[local::at0005],
+											2|[local::at0006],
+											3|[local::at0007],
+											999|[local::at0008]
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Children
+										value matches {
+											0|[local::at0015],
+											1|[local::at0016],
+											2|[local::at0017]
+										}
+									}
+									ELEMENT[at0018] occurrences matches {0..1} matches {    -- Working situation
+										value matches {
+											0|[local::at0019],
+											1|[local::at0020],
+											888|[local::at0021],
+											999|[local::at0022]
+										}
+									}
+									ELEMENT[at0023] occurrences matches {0..1} matches {    -- Survey per mail
+										value matches {
+											0|[local::at0024],
+											1|[local::at0025],
+											999|[local::at0026]
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0027] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0029] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Oncology anamnesis PROM">
+					description = <"Oncology anamnesis">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Material status">
+					description = <"What is your living situation at home?">
+				>
+				["at0005"] = <
+					text = <"Living alone">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Living with partner">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Living with family in the same home">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"No answer">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Children">
+					description = <"Do you have children?">
+				>
+				["at0015"] = <
+					text = <"No, I don’t have children">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Yes and at least one of them is under 18">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Yes, all are adults">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Working situation">
+					description = <"Do you have questions or problems regarding your work or profession?">
+				>
+				["at0019"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"I’m not working">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Don’t want to answer">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Survey per mail">
+					description = <"May we send you questionnaires by e-mail?">
+				>
+				["at0024"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Don’t know yet">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0029"] = <
+					text = <"Extension">
+					description = <"">
+				>
+			>
+		>
+	>
