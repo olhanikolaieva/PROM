@@ -55,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"db779fd731394a6193782c2c66f71ae3">
+		["MD5-CAM-1.0.1"] = <"e83e64f1f6f93055577e7d459112f5b4">
 		["build_uid"] = <"7c984157-c9f8-341d-8b66-84b55c0cfbf0">
 	>
 
@@ -128,10 +128,10 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Disstress Thermometer">
-					description = <"">
+					description = <"On the thermometer on the right mark the number (0-10) which best describes how stressed you have felt during the past week, including today.">
 				>
 				["at0006"] = <
-					text = <"0 No distress">
+					text = <"0 No stress">
 					description = <"">
 				>
 				["at0007"] = <
@@ -171,7 +171,7 @@ ontology
 					description = <"">
 				>
 				["at0016"] = <
-					text = <"10 Extreme distress">
+					text = <"10 Extremely stressed">
 					description = <"">
 				>
 				["at0017"] = <
@@ -205,10 +205,11 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Disstress Thermometer">
-					description = <"">
+					description = <"Bitte kreisen Sie am Thermometer (rechts) die Zahl ein (0 – 10), die am besten beschreibt, wie belastet Sie sich in
+der letzten Woche einschliesslich heute gefühlt haben.">
 				>
 				["at0006"] = <
-					text = <"No distress">
+					text = <"0 Gar nicht belastet">
 					description = <"">
 				>
 				["at0007"] = <
@@ -248,7 +249,7 @@ ontology
 					description = <"">
 				>
 				["at0016"] = <
-					text = <"10 Extreme distress">
+					text = <"10 Extrem belastet">
 					description = <"">
 				>
 				["at0017"] = <
@@ -282,10 +283,10 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Disstress Thermometer">
-					description = <"">
+					description = <"La preghiamo di cerchiare il numero (da 0 a 10) che meglio descrive la quantità di disagio e motivo che ha provato nell’ultima settimana oggi compreso.">
 				>
 				["at0006"] = <
-					text = <"0 No distress">
+					text = <"0 Nessun disagio">
 					description = <"">
 				>
 				["at0007"] = <
@@ -325,7 +326,7 @@ ontology
 					description = <"">
 				>
 				["at0016"] = <
-					text = <"10 Extreme distress">
+					text = <"10 Massimo disagio">
 					description = <"">
 				>
 				["at0017"] = <
@@ -359,10 +360,10 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Disstress Thermometer">
-					description = <"">
+					description = <"Sur le thermomètre ci-joint veuillez cerner le chiffre (0-10) qui décrit le mieux à quel point vous vous sentiez chargé la semaine dernière, aujourd’hui inclus.">
 				>
 				["at0006"] = <
-					text = <"0 No distress">
+					text = <"0 Aucune charge">
 					description = <"">
 				>
 				["at0007"] = <
@@ -402,7 +403,7 @@ ontology
 					description = <"">
 				>
 				["at0016"] = <
-					text = <"10 Extreme distress">
+					text = <"10 Chargé maximale">
 					description = <"">
 				>
 				["at0017"] = <
