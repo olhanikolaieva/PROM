@@ -29,7 +29,7 @@ description
 		["date"] = <"2025-05-14">
 		["name"] = <"Olha Nikolaieva">
 		["organisation"] = <"University Hospital Basel">
-		["email"] = <"olha.nikolaieva.med@gmail.com">
+		["email"] = <"olha.nikolaieva@usb.ch">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -76,7 +76,7 @@ Fayers PM, Machin D. Quality of Life: The Assessment, Analysis and Interpretatio
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4416b03cdece8bd35e87a76626599216">
+		["MD5-CAM-1.0.1"] = <"02028628198a04a19908c5592bcb537c">
 		["build_uid"] = <"d59c1748-8197-3d76-8e5a-82b35eac9baa">
 	>
 
