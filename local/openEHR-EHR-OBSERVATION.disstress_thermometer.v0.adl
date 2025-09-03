@@ -29,7 +29,7 @@ description
 		["date"] = <"2025-05-16">
 		["name"] = <"Olha Nikolaieva">
 		["organisation"] = <"University Hospital Basel">
-		["email"] = <"olha.nikolaieva.med@gmail.com">
+		["email"] = <"olha.nikolaieva@usb.ch">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -55,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e83e64f1f6f93055577e7d459112f5b4">
+		["MD5-CAM-1.0.1"] = <"8f5be5d95fc43d0baed7d71a0add495a">
 		["build_uid"] = <"7c984157-c9f8-341d-8b66-84b55c0cfbf0">
 	>
 
