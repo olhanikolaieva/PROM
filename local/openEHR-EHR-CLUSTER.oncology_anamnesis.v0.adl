@@ -26,10 +26,10 @@ language
 
 description
 	original_author = <
-		["name"] = <"Olha Nikolaieva">
-		["email"] = <"olha.nikolaieva@usb.ch">
-		["organisation"] = <"University Hospital Basel">
 		["date"] = <"2025-09-02">
+		["name"] = <"Olha Nikolaieva">
+		["organisation"] = <"University Hospital Basel">
+		["email"] = <"olha.nikolaieva@usb.ch">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -55,14 +55,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3f3352f52d6d49f330a253d73b897129">
+		["MD5-CAM-1.0.1"] = <"f2880c46a67b9a460d45ecfbeed6646d">
 		["build_uid"] = <"4a959071-e574-3f99-bf6f-0309f4eaba0e">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Oncology anamnesis
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Material status
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Marital status
 				value matches {
 					1|[local::at0005],
 					2|[local::at0006],
@@ -104,7 +104,7 @@ ontology
 					description = <"Oncology anamnesis">
 				>
 				["at0001"] = <
-					text = <"Material status">
+					text = <"Marital status">
 					description = <"What is your living situation at home?">
 				>
 				["at0002"] = <
@@ -184,7 +184,7 @@ ontology
 					description = <"*Oncology anamnesis (en)">
 				>
 				["at0001"] = <
-					text = <"*Material status (en)">
+					text = <"*Marital status (en)">
 					description = <"Wie ist Ihre Lebenssituation zu Hause?">
 				>
 				["at0002"] = <
@@ -264,7 +264,7 @@ ontology
 					description = <"*Oncology anamnesis (en)">
 				>
 				["at0001"] = <
-					text = <"*Material status (en)">
+					text = <"*Marital status (en)">
 					description = <"Qual è la sua situazione a casa?">
 				>
 				["at0002"] = <
@@ -344,7 +344,7 @@ ontology
 					description = <"*Oncology anamnesis (en)">
 				>
 				["at0001"] = <
-					text = <"*Material status (en)">
+					text = <"*Marital status (en)">
 					description = <"Quel est votre situation familiale ?">
 				>
 				["at0002"] = <
