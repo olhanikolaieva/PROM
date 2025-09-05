@@ -6,6 +6,23 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			author = <
+			>
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,8 +33,20 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			copyright = <"© openEHR Foundation">
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			copyright = <"© openEHR Foundation">
 		>
 	>
 	other_details = <
@@ -26,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e25cbacc159af035e1d7f2704cfabf2b">
+		["MD5-CAM-1.0.1"] = <"9a757f3d1023c01862b9476d1b8c75bb">
 		["build_uid"] = <"244dd2de-28b2-3fa7-a682-81660fe001cd">
 	>
 
@@ -39,34 +68,34 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Material status
+									ELEMENT[at0030] occurrences matches {0..1} matches {    -- Material status
 										value matches {
-											1|[local::at0005],
-											2|[local::at0006],
-											3|[local::at0007],
-											999|[local::at0008]
+											1|[local::at0031],
+											2|[local::at0032],
+											3|[local::at0033],
+											999|[local::at0034]
 										}
 									}
-									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Children
+									ELEMENT[at0035] occurrences matches {0..1} matches {    -- Children
 										value matches {
-											0|[local::at0015],
-											1|[local::at0016],
-											2|[local::at0017]
+											0|[local::at0036],
+											1|[local::at0037],
+											2|[local::at0038]
 										}
 									}
-									ELEMENT[at0018] occurrences matches {0..1} matches {    -- Working situation
+									ELEMENT[at0039] occurrences matches {0..1} matches {    -- Working situation
 										value matches {
-											0|[local::at0019],
-											1|[local::at0020],
-											888|[local::at0021],
-											999|[local::at0022]
+											0|[local::at0040],
+											1|[local::at0041],
+											888|[local::at0042],
+											999|[local::at0043]
 										}
 									}
-									ELEMENT[at0023] occurrences matches {0..1} matches {    -- Survey per mail
+									ELEMENT[at0044] occurrences matches {0..1} matches {    -- Survey per mail
 										value matches {
-											0|[local::at0024],
-											1|[local::at0025],
-											999|[local::at0026]
+											0|[local::at0045],
+											1|[local::at0046],
+											999|[local::at0047]
 										}
 									}
 								}
@@ -108,84 +137,384 @@ ontology
 					text = <"Tree">
 					description = <"@ internal @">
 				>
-				["at0004"] = <
-					text = <"Material status">
-					description = <"What is your living situation at home?">
-				>
-				["at0005"] = <
-					text = <"Living alone">
-					description = <"">
-				>
-				["at0006"] = <
-					text = <"Living with partner">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"Living with family in the same home">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"No answer">
-					description = <"">
-				>
-				["at0014"] = <
-					text = <"Children">
-					description = <"Do you have children?">
-				>
-				["at0015"] = <
-					text = <"No, I don’t have children">
-					description = <"">
-				>
-				["at0016"] = <
-					text = <"Yes and at least one of them is under 18">
-					description = <"">
-				>
-				["at0017"] = <
-					text = <"Yes, all are adults">
-					description = <"">
-				>
-				["at0018"] = <
-					text = <"Working situation">
-					description = <"Do you have questions or problems regarding your work or profession?">
-				>
-				["at0019"] = <
-					text = <"No">
-					description = <"">
-				>
-				["at0020"] = <
-					text = <"Yes">
-					description = <"">
-				>
-				["at0021"] = <
-					text = <"I’m not working">
-					description = <"">
-				>
-				["at0022"] = <
-					text = <"Don’t want to answer">
-					description = <"">
-				>
-				["at0023"] = <
-					text = <"Survey per mail">
-					description = <"May we send you questionnaires by e-mail?">
-				>
-				["at0024"] = <
-					text = <"No">
-					description = <"">
-				>
-				["at0025"] = <
-					text = <"Yes">
-					description = <"">
-				>
-				["at0026"] = <
-					text = <"Don’t know yet">
-					description = <"">
-				>
 				["at0027"] = <
 					text = <"Item tree">
 					description = <"@ internal @">
 				>
 				["at0029"] = <
 					text = <"Extension">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Material status">
+					description = <"What is your living situation at home?">
+				>
+				["at0031"] = <
+					text = <"Living alone">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Living with partner">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Living with family in the same home">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"No answer">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Children">
+					description = <"Do you have children?">
+				>
+				["at0036"] = <
+					text = <"No, I don’t have children">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Yes and at least one of them is under 18">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Yes, all are adults">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Working situation">
+					description = <"Do you have questions or problems regarding your work or profession?">
+				>
+				["at0040"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"I’m not working">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Don’t want to answer">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Survey per mail">
+					description = <"May we send you questionnaires by e-mail?">
+				>
+				["at0045"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Don’t know yet">
+					description = <"">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Oncology anamnesis PROM (en)">
+					description = <"*Oncology anamnesis (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0027"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0029"] = <
+					text = <"*Extension (en)">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"*Material status (en)">
+					description = <"Wie ist Ihre Lebenssituation zu Hause?">
+				>
+				["at0031"] = <
+					text = <"Lebe alleine">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Lebe mit Partnerin/Partner">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Mit Familie im gleichen Haus">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Keine Antwort">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"*Children (en)">
+					description = <"Haben Sie Kinder?">
+				>
+				["at0036"] = <
+					text = <"Nein, keine Kinder">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Ja, mindestens eins minderjährig">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Ja, alle erwachsen">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"*Working situation (en)">
+					description = <"Gibt es Fragen/Probleme bezüglich Ihrer Arbeit / Ihres Berufs?">
+				>
+				["at0040"] = <
+					text = <"Nein">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Ich bin nicht arbeitstätig">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Möchte ich nicht beantworten\"">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"*Survey per mail (en)">
+					description = <"Wären Sie damit einverstanden, dass wir Ihnen auch Fragebögen per Email zukommen lassen?">
+				>
+				["at0045"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Nein">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Weiss ich noch nicht">
+					description = <"">
+				>
+			>
+		>
+		["fr"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Oncology anamnesis PROM (en)">
+					description = <"*Oncology anamnesis (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0027"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0029"] = <
+					text = <"*Extension (en)">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"*Material status (en)">
+					description = <"Quel est votre situation familiale ?">
+				>
+				["at0031"] = <
+					text = <"Je vis seul(e)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Je vis avec ma partenaire/mon partenaire.">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"En famille dans la même maison">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Pas de réponse">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"*Children (en)">
+					description = <"Avez-vous des enfants ?">
+				>
+				["at0036"] = <
+					text = <"Non pas d’enfants">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Oui, au moins un est mineur">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Oui, tous sont adultes">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"*Working situation (en)">
+					description = <"Y a-t-il des questions/problèmes concernant votre travail/votre profession ?">
+				>
+				["at0040"] = <
+					text = <"Non">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Oui">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Je suis sans emploi">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Je ne veux pas répondre">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"*Survey per mail (en)">
+					description = <"Seriez-vous d’accord si nous vous envoyions des questionnaires par courrier électronique ?">
+				>
+				["at0045"] = <
+					text = <"Non">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Oui">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Je ne sais pas encore">
+					description = <"">
+				>
+			>
+		>
+		["it"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Oncology anamnesis PROM (en)">
+					description = <"*Oncology anamnesis (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0027"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0029"] = <
+					text = <"*Extension (en)">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"*Material status (en)">
+					description = <"Qual è la sua situazione a casa?">
+				>
+				["at0031"] = <
+					text = <"Vivo da solo/a">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Vivo con il/la partner">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Vivo con la famiglia nella stessa casa">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Nessuna risposta">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"*Children (en)">
+					description = <"Ha figli?">
+				>
+				["at0036"] = <
+					text = <"No, nessun figlio">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Sì, almeno uno minorenne">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Sì, tutti adulti">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"*Working situation (en)">
+					description = <"Ha domande o problemi riguardanti il suo lavoro o la sua professione?">
+				>
+				["at0040"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Sì">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Non svolgo alcuna attività lavorativa">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Preferisco non rispondere">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"*Survey per mail (en)">
+					description = <"Sarebbe d'accordo a ricevere dei questionari anche via e-mail?">
+				>
+				["at0045"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Sì">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Non lo so ancora">
 					description = <"">
 				>
 			>
