@@ -55,12 +55,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"10583e82bde5fa44d8220322dc5be07b">
+		["MD5-CAM-1.0.1"] = <"61de0cbb12afc42a67ec1b6b570e6f41">
 		["build_uid"] = <"7c984157-c9f8-341d-8b66-84b55c0cfbf0">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- distress_thermometer
+	OBSERVATION[at0000] matches {    -- Distress thermometer
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -68,7 +68,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Disstress Thermometer
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Distress Thermometer
 										value matches {
 											0|[local::at0006],
 											1|[local::at0007],
@@ -107,7 +107,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"distress_thermometer">
+					text = <"Distress thermometer">
 					description = <"Disstress Thermometer">
 				>
 				["at0001"] = <
@@ -127,7 +127,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0005"] = <
-					text = <"Disstress Thermometer">
+					text = <"Distress Thermometer">
 					description = <"On the thermometer on the right mark the number (0-10) which best describes how stressed you have felt during the past week, including today.">
 				>
 				["at0006"] = <
@@ -184,7 +184,7 @@ ontology
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"distress_thermometer">
+					text = <"*Distress thermometer (en)">
 					description = <"*Disstress Thermometer (en)">
 				>
 				["at0001"] = <
@@ -204,7 +204,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0005"] = <
-					text = <"Disstress Thermometer">
+					text = <"*Distress Thermometer (en)">
 					description = <"Bitte kreisen Sie am Thermometer (rechts) die Zahl ein (0 – 10), die am besten beschreibt, wie belastet Sie sich in
 der letzten Woche einschliesslich heute gefühlt haben.">
 				>
@@ -262,7 +262,7 @@ der letzten Woche einschliesslich heute gefühlt haben.">
 		["it"] = <
 			items = <
 				["at0000"] = <
-					text = <"distress_thermometer">
+					text = <"*Distress thermometer (en)">
 					description = <"*Disstress Thermometer (en)">
 				>
 				["at0001"] = <
@@ -282,7 +282,7 @@ der letzten Woche einschliesslich heute gefühlt haben.">
 					description = <"@ internal @">
 				>
 				["at0005"] = <
-					text = <"Disstress Thermometer">
+					text = <"*Distress Thermometer (en)">
 					description = <"La preghiamo di cerchiare il numero (da 0 a 10) che meglio descrive la quantità di disagio e motivo che ha provato nell’ultima settimana oggi compreso.">
 				>
 				["at0006"] = <
@@ -339,7 +339,7 @@ der letzten Woche einschliesslich heute gefühlt haben.">
 		["fr"] = <
 			items = <
 				["at0000"] = <
-					text = <"distress_thermometer">
+					text = <"*Distress thermometer (en)">
 					description = <"*Disstress Thermometer (en)">
 				>
 				["at0001"] = <
@@ -359,7 +359,7 @@ der letzten Woche einschliesslich heute gefühlt haben.">
 					description = <"@ internal @">
 				>
 				["at0005"] = <
-					text = <"Disstress Thermometer">
+					text = <"*Distress Thermometer (en)">
 					description = <"Sur le thermomètre ci-joint veuillez cerner le chiffre (0-10) qui décrit le mieux à quel point vous vous sentiez chargé la semaine dernière, aujourd’hui inclus.">
 				>
 				["at0006"] = <
