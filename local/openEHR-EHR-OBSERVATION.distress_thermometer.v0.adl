@@ -1,0 +1,416 @@
+archetype (adl_version=1.4; uid=7c12d202-c232-4821-83d5-9ee3570d26fb)
+	openEHR-EHR-OBSERVATION.distress_thermometer.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			author = <
+			>
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2025-05-16">
+		["name"] = <"Olha Nikolaieva">
+		["organisation"] = <"University Hospital Basel">
+		["email"] = <"olha.nikolaieva@usb.ch">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+		["it"] = <
+			language = <[ISO_639-1::it]>
+			copyright = <"© openEHR Foundation">
+		>
+		["fr"] = <
+			language = <[ISO_639-1::fr]>
+			copyright = <"© openEHR Foundation">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"10583e82bde5fa44d8220322dc5be07b">
+		["build_uid"] = <"7c984157-c9f8-341d-8b66-84b55c0cfbf0">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- distress_thermometer
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Disstress Thermometer
+										value matches {
+											0|[local::at0006],
+											1|[local::at0007],
+											2|[local::at0008],
+											3|[local::at0009],
+											4|[local::at0010],
+											5|[local::at0011],
+											6|[local::at0012],
+											7|[local::at0013],
+											8|[local::at0014],
+											9|[local::at0015],
+											10|[local::at0016]
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0004] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0017] occurrences matches {0..1} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"distress_thermometer">
+					description = <"Disstress Thermometer">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Disstress Thermometer">
+					description = <"On the thermometer on the right mark the number (0-10) which best describes how stressed you have felt during the past week, including today.">
+				>
+				["at0006"] = <
+					text = <"0 No stress">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"10 Extremely stressed">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Extension">
+					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"distress_thermometer">
+					description = <"*Disstress Thermometer (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Disstress Thermometer">
+					description = <"Bitte kreisen Sie am Thermometer (rechts) die Zahl ein (0 – 10), die am besten beschreibt, wie belastet Sie sich in
+der letzten Woche einschliesslich heute gefühlt haben.">
+				>
+				["at0006"] = <
+					text = <"0 Gar nicht belastet">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"10 Extrem belastet">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Extension">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+			>
+		>
+		["it"] = <
+			items = <
+				["at0000"] = <
+					text = <"distress_thermometer">
+					description = <"*Disstress Thermometer (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Disstress Thermometer">
+					description = <"La preghiamo di cerchiare il numero (da 0 a 10) che meglio descrive la quantità di disagio e motivo che ha provato nell’ultima settimana oggi compreso.">
+				>
+				["at0006"] = <
+					text = <"0 Nessun disagio">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"10 Massimo disagio">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Extension">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+			>
+		>
+		["fr"] = <
+			items = <
+				["at0000"] = <
+					text = <"distress_thermometer">
+					description = <"*Disstress Thermometer (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Disstress Thermometer">
+					description = <"Sur le thermomètre ci-joint veuillez cerner le chiffre (0-10) qui décrit le mieux à quel point vous vous sentiez chargé la semaine dernière, aujourd’hui inclus.">
+				>
+				["at0006"] = <
+					text = <"0 Aucune charge">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"6">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"7">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"8">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"9">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"10 Chargé maximale">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Extension">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+			>
+		>
+	>
