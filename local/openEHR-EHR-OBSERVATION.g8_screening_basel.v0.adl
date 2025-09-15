@@ -55,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1dc8f366ab15fbcac2dfe3d555639483">
+		["MD5-CAM-1.0.1"] = <"059a2490f90ab5bac55cc81b7e1484bc">
 		["build_uid"] = <"f155c70c-9ad1-3080-bcd8-71234ffc27f6">
 	>
 
@@ -147,7 +147,16 @@ definition
 									ELEMENT[at0012] occurrences matches {0..1} matches {    -- Gesamtpunktzahl
 										value matches {
 											DV_COUNT matches {*}
-											DV_QUANTITY matches {*}
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"1">
+														magnitude = <|0.0..17.0|>
+														precision = <|0|>
+													>
+												>
+											>
 										}
 									}
 								}
