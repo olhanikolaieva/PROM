@@ -55,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7513d04b6137bcea2db54e1b7e7602c5">
+		["MD5-CAM-1.0.1"] = <"372656f35abca688b69dbdd95e45c902">
 		["build_uid"] = <"c4ec8dab-804a-3c0e-898d-ffb2081fc982">
 	>
 
@@ -79,12 +79,12 @@ definition
 					3|[local::at0006]
 				}
 			}
-			ELEMENT[at0036] occurrences matches {0..1} matches {    -- DV_BOOLEAN
+			ELEMENT[at0036] occurrences matches {0..1} matches {    -- Survey skip
 				value matches {
 					DV_BOOLEAN matches {*}
 				}
 			}
-			ELEMENT[at0028] occurrences matches {0..1} matches {    -- Survey skip
+			ELEMENT[at0028] occurrences matches {0..1} matches {    -- Survey skip reason
 				value matches {
 					1|[local::at0029],
 					2|[local::at0030],
@@ -142,7 +142,7 @@ ontology
 					description = <"">
 				>
 				["at0028"] = <
-					text = <"Survey skip">
+					text = <"Survey skip reason">
 					description = <"Skipping of a survey time point.">
 				>
 				["at0029"] = <
@@ -170,7 +170,7 @@ ontology
 					description = <"">
 				>
 				["at0036"] = <
-					text = <"DV_BOOLEAN">
+					text = <"Survey skip">
 					description = <"">
 				>
 				["at0037"] = <
@@ -210,7 +210,7 @@ ontology
 					description = <"">
 				>
 				["at0028"] = <
-					text = <"Survey skip">
+					text = <"*Survey skip reason (en)">
 					description = <"Auslassen eines Befragungszeitpunktes.">
 				>
 				["at0029"] = <
@@ -238,7 +238,7 @@ ontology
 					description = <"">
 				>
 				["at0036"] = <
-					text = <"*DV_BOOLEAN (en)">
+					text = <"*Survey skip (en)">
 					description = <"">
 				>
 				["at0037"] = <
@@ -278,7 +278,7 @@ ontology
 					description = <"">
 				>
 				["at0028"] = <
-					text = <"*Survey skip (en)">
+					text = <"*Survey skip reason (en)">
 					description = <"*Skipping of a survey time point. (en)">
 				>
 				["at0029"] = <
@@ -306,7 +306,7 @@ ontology
 					description = <"">
 				>
 				["at0036"] = <
-					text = <"*DV_BOOLEAN (en)">
+					text = <"*Survey skip (en)">
 					description = <"">
 				>
 				["at0037"] = <
@@ -346,7 +346,7 @@ ontology
 					description = <"">
 				>
 				["at0028"] = <
-					text = <"*Survey skip (en)">
+					text = <"*Survey skip reason (en)">
 					description = <"*Skipping of a survey time point. (en)">
 				>
 				["at0029"] = <
@@ -374,7 +374,7 @@ ontology
 					description = <"">
 				>
 				["at0036"] = <
-					text = <"*DV_BOOLEAN (en)">
+					text = <"*Survey skip (en)">
 					description = <"">
 				>
 				["at0037"] = <
