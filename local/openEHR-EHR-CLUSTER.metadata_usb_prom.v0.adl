@@ -55,7 +55,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"05f53e92bec5dfa1434f9f816fba6b3f">
+		["MD5-CAM-1.0.1"] = <"7513d04b6137bcea2db54e1b7e7602c5">
 		["build_uid"] = <"c4ec8dab-804a-3c0e-898d-ffb2081fc982">
 	>
 
@@ -93,6 +93,11 @@ definition
 				}
 			}
 			ELEMENT[at0033] occurrences matches {0..1} matches {    -- Survey skip other
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0037] occurrences matches {0..*} matches {    -- Care plan identifier
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -168,6 +173,10 @@ ontology
 					text = <"DV_BOOLEAN">
 					description = <"">
 				>
+				["at0037"] = <
+					text = <"Care plan identifier">
+					description = <"The identifier , preferably coded, of the Care plan with which this journey is associated, and against which the composition was updated.">
+				>
 			>
 		>
 		["de"] = <
@@ -231,6 +240,10 @@ ontology
 				["at0036"] = <
 					text = <"*DV_BOOLEAN (en)">
 					description = <"">
+				>
+				["at0037"] = <
+					text = <"Care plan identifier">
+					description = <"The identifier , preferably coded, of the Care plan with which this journey is associated, and against which the composition was updated.">
 				>
 			>
 		>
@@ -296,6 +309,10 @@ ontology
 					text = <"*DV_BOOLEAN (en)">
 					description = <"">
 				>
+				["at0037"] = <
+					text = <"Care plan identifier">
+					description = <"The identifier , preferably coded, of the Care plan with which this journey is associated, and against which the composition was updated.">
+				>
 			>
 		>
 		["fr"] = <
@@ -359,6 +376,10 @@ ontology
 				["at0036"] = <
 					text = <"*DV_BOOLEAN (en)">
 					description = <"">
+				>
+				["at0037"] = <
+					text = <"Care plan identifier">
+					description = <"The identifier , preferably coded, of the Care plan with which this journey is associated, and against which the composition was updated.">
 				>
 			>
 		>
